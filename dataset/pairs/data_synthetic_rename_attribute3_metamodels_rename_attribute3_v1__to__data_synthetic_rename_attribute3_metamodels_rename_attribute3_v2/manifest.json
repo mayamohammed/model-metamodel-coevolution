@@ -1,0 +1,13 @@
+{
+  "pair_id" : "model-metamodel-coevolution2__data_synthetic_rename_attribute3_metamodels_rename_attribute3_v1 -> data_synthetic_rename_attribute3_metamodels_rename_attribute3_v2__HEAD:da__HEAD:da",
+  "repo" : "model-metamodel-coevolution2",
+  "file_path" : "data/synthetic/rename_attribute3/metamodels/rename_attribute3_v1.ecore -> data/synthetic/rename_attribute3/metamodels/rename_attribute3_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/rename_attribute3/metamodels/rename_attribute3_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/rename_attribute3/metamodels/rename_attribute3_v2.ecore",
+  "sha_v1" : "e66ffc36219064fbe57010b2f49e758296e0c1a00c6c193e234ffde6fd232151",
+  "sha_v2" : "10996a7fe5d50029c7f0f02510508b4bddd286a62afb51a692fceb60ffda7544",
+  "size_v1" : 805,
+  "size_v2" : 819,
+  "timestamp" : "2026-03-01 02:21:08",
+  "identical" : false
+}

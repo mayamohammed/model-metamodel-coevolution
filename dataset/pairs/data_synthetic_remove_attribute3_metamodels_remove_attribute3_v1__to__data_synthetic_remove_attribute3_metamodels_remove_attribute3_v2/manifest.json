@@ -1,0 +1,13 @@
+{
+  "pair_id" : "model-metamodel-coevolution2__data_synthetic_remove_attribute3_metamodels_remove_attribute3_v1 -> data_synthetic_remove_attribute3_metamodels_remove_attribute3_v2__HEAD:da__HEAD:da",
+  "repo" : "model-metamodel-coevolution2",
+  "file_path" : "data/synthetic/remove_attribute3/metamodels/remove_attribute3_v1.ecore -> data/synthetic/remove_attribute3/metamodels/remove_attribute3_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/remove_attribute3/metamodels/remove_attribute3_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/remove_attribute3/metamodels/remove_attribute3_v2.ecore",
+  "sha_v1" : "7e5397063f179848ede811e0e0970203675fae51c2635b552177123c5ffe626e",
+  "sha_v2" : "a0f6fc6db61fa23fc4b8a6d2bc5ba593f4b17806aef6129d197de9e0335802a5",
+  "size_v1" : 928,
+  "size_v2" : 648,
+  "timestamp" : "2026-03-01 02:21:08",
+  "identical" : false
+}
