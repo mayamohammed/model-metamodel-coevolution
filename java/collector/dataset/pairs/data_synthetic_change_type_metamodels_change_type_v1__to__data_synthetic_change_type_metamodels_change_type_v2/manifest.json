@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_change_type_metamodels_change_type_v1 -> data_synthetic_change_type_metamodels_change_type_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/change_type/metamodels/change_type_v1.ecore -> data/synthetic/change_type/metamodels/change_type_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/change_type/metamodels/change_type_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/change_type/metamodels/change_type_v2.ecore",
+  "sha_v1" : "39e3747d0581edffffa93dba5552cbb7abbc96776cb6188eaa294007a5410306",
+  "sha_v2" : "15ba670a1ebda9e3e9fd0ba6074b334980dfcaeab386fba7084bd94f1a410d9b",
+  "size_v1" : 657,
+  "size_v2" : 658,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

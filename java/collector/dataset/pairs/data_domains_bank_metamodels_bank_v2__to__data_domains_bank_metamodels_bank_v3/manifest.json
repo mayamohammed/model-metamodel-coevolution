@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_domains_bank_metamodels_bank_v2 -> data_domains_bank_metamodels_bank_v3__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/domains/bank/metamodels/bank_v2.ecore -> data/domains/bank/metamodels/bank_v3.ecore",
+  "commit_before" : "HEAD:data/domains/bank/metamodels/bank_v2.ecore",
+  "commit_after" : "HEAD:data/domains/bank/metamodels/bank_v3.ecore",
+  "sha_v1" : "ab5ccc1d018dbc03dff5f540af24d3d871e2016948ec18b0ff5848613d639aba",
+  "sha_v2" : "3a731d89d6d03e6844c4ea29ae439e6f0a8f970d005eac37cfb18dd5ccc658db",
+  "size_v1" : 1329,
+  "size_v2" : 1513,
+  "timestamp" : "2026-03-18 12:47:18",
+  "identical" : false
+}

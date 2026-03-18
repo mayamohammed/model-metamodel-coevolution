@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_mixed2_metamodels_mixed2_v1 -> data_synthetic_mixed2_metamodels_mixed2_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/mixed2/metamodels/mixed2_v1.ecore -> data/synthetic/mixed2/metamodels/mixed2_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/mixed2/metamodels/mixed2_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/mixed2/metamodels/mixed2_v2.ecore",
+  "sha_v1" : "7026a28ec763090828240c8328773ae0bd4ddc0d6a50316361369b7ba944b849",
+  "sha_v2" : "df7c06a472e1abd6875a06845009eddb1ead31eecbe807c1ec2e5d35deff674e",
+  "size_v1" : 887,
+  "size_v2" : 1678,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

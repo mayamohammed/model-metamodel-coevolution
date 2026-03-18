@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_domains_university_metamodels_university_v2 -> data_domains_university_metamodels_university_v3__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/domains/university/metamodels/university_v2.ecore -> data/domains/university/metamodels/university_v3.ecore",
+  "commit_before" : "HEAD:data/domains/university/metamodels/university_v2.ecore",
+  "commit_after" : "HEAD:data/domains/university/metamodels/university_v3.ecore",
+  "sha_v1" : "af80bec47e1289e9fa0426b27efb0d29097ab873cfdf9897e413395c9ca29d1b",
+  "sha_v2" : "7d41aaa179ac20e164a0c695d3c4cee7d963d5ad963c58d50dad686500afeb1c",
+  "size_v1" : 2192,
+  "size_v2" : 2401,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

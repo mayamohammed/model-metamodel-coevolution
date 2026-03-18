@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_domains_shop_metamodels_shop_v2 -> data_domains_shop_metamodels_shop_v3__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/domains/shop/metamodels/shop_v2.ecore -> data/domains/shop/metamodels/shop_v3.ecore",
+  "commit_before" : "HEAD:data/domains/shop/metamodels/shop_v2.ecore",
+  "commit_after" : "HEAD:data/domains/shop/metamodels/shop_v3.ecore",
+  "sha_v1" : "16415067ae1cdde536d72319faeb3b034815392c9f16223ef7d2d16817458a36",
+  "sha_v2" : "1ef739ee56f453fa2e76fddcdb39811dc559c0fca818651c040fb41e8f641626",
+  "size_v1" : 1409,
+  "size_v2" : 2197,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

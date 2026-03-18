@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_rename_attribute2_metamodels_rename_attribute2_v1 -> data_synthetic_rename_attribute2_metamodels_rename_attribute2_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/rename_attribute2/metamodels/rename_attribute2_v1.ecore -> data/synthetic/rename_attribute2/metamodels/rename_attribute2_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/rename_attribute2/metamodels/rename_attribute2_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/rename_attribute2/metamodels/rename_attribute2_v2.ecore",
+  "sha_v1" : "140c606e55aa3fd224552ed0d7a8314eb48b7f091b9852cc874dcce3f3a15767",
+  "sha_v2" : "87f8bc196889de45a5376f6162c312301ea20cf5afd52305419a3d2d7fc6255a",
+  "size_v1" : 795,
+  "size_v2" : 813,
+  "timestamp" : "2026-03-18 12:47:18",
+  "identical" : false
+}

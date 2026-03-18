@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_remove_eclass4_metamodels_remove_eclass4_v1 -> data_synthetic_remove_eclass4_metamodels_remove_eclass4_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/remove_eclass4/metamodels/remove_eclass4_v1.ecore -> data/synthetic/remove_eclass4/metamodels/remove_eclass4_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/remove_eclass4/metamodels/remove_eclass4_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/remove_eclass4/metamodels/remove_eclass4_v2.ecore",
+  "sha_v1" : "b34bd065c0a860267de73540441d2d981cd9f0bf56897468839a038847180027",
+  "sha_v2" : "7b91469fad4258c1ee20c791c22f33b6b20e1414f5ab9d3a49e3f26f9df3ea35",
+  "size_v1" : 1246,
+  "size_v2" : 1023,
+  "timestamp" : "2026-03-18 12:47:18",
+  "identical" : false
+}

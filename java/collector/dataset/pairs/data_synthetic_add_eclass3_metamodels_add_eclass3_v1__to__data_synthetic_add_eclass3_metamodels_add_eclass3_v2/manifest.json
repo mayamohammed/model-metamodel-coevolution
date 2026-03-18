@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_add_eclass3_metamodels_add_eclass3_v1 -> data_synthetic_add_eclass3_metamodels_add_eclass3_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/add_eclass3/metamodels/add_eclass3_v1.ecore -> data/synthetic/add_eclass3/metamodels/add_eclass3_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/add_eclass3/metamodels/add_eclass3_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/add_eclass3/metamodels/add_eclass3_v2.ecore",
+  "sha_v1" : "e0e1ba02f8f4af070f7d5d89a21b45ef90f689474a3f77f42b030cbcf68d0842",
+  "sha_v2" : "a33e5a0c4454ade71a28ff419769c9f9b98b4e43067a5b85bc88df07d989f905",
+  "size_v1" : 525,
+  "size_v2" : 1249,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

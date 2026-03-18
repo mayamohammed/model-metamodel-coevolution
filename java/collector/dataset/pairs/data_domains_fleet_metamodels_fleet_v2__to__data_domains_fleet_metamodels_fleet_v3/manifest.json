@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_domains_fleet_metamodels_fleet_v2 -> data_domains_fleet_metamodels_fleet_v3__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/domains/fleet/metamodels/fleet_v2.ecore -> data/domains/fleet/metamodels/fleet_v3.ecore",
+  "commit_before" : "HEAD:data/domains/fleet/metamodels/fleet_v2.ecore",
+  "commit_after" : "HEAD:data/domains/fleet/metamodels/fleet_v3.ecore",
+  "sha_v1" : "cdad357082a2f754998f4e1a9a16bb8407e0d647f8e371802e9d38409076d921",
+  "sha_v2" : "886e0255bda59032506cc2554b7ab4994d06a321fec7e9548788bdf2e5b5fe90",
+  "size_v1" : 1530,
+  "size_v2" : 2151,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

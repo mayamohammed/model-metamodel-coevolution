@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_remove_attribute_metamodels_remove_attribute_v1 -> data_synthetic_remove_attribute_metamodels_remove_attribute_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/remove_attribute/metamodels/remove_attribute_v1.ecore -> data/synthetic/remove_attribute/metamodels/remove_attribute_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/remove_attribute/metamodels/remove_attribute_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/remove_attribute/metamodels/remove_attribute_v2.ecore",
+  "sha_v1" : "e1a212a4fa938a76f07bcd70bdfd5e12452de75f283741efc13413e31d3a11ed",
+  "sha_v2" : "76862e1458fafe7eedfc9cddd9a08560e91d229d94b86864eddd8fbe7467b8c5",
+  "size_v1" : 954,
+  "size_v2" : 667,
+  "timestamp" : "2026-03-18 12:47:17",
+  "identical" : false
+}

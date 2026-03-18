@@ -1,0 +1,13 @@
+{
+  "pair_id" : "coffee-editor__backend_plugins_org.eclipse.emfcloud.coffee.model_model_Coffee__24b7174__b4ed8d1",
+  "repo" : "coffee-editor",
+  "file_path" : "backend/plugins/org.eclipse.emfcloud.coffee.model/model/Coffee.ecore",
+  "commit_before" : "24b71745ed09e96fbeb276b5c9ffb4e5dfc19f75",
+  "commit_after" : "b4ed8d19f28858bb860001084a08d5530c17227a",
+  "sha_v1" : "e8910ef3f04dba0e64fda8d5d2733901111c92151afe4aa259529e147c4e6ca0",
+  "sha_v2" : "2cc907b22f3446441c4b18cfb6830508b77d861610d62c4cd18712d3c6929914",
+  "size_v1" : 11608,
+  "size_v2" : 12113,
+  "timestamp" : "2026-03-18 12:47:18",
+  "identical" : false
+}

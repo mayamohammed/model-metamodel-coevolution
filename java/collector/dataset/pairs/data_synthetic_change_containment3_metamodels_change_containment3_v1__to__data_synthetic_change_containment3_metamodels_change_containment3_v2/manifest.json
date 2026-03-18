@@ -1,0 +1,13 @@
+{
+  "pair_id" : "..__data_synthetic_change_containment3_metamodels_change_containment3_v1 -> data_synthetic_change_containment3_metamodels_change_containment3_v2__HEAD:da__HEAD:da",
+  "repo" : "..",
+  "file_path" : "data/synthetic/change_containment3/metamodels/change_containment3_v1.ecore -> data/synthetic/change_containment3/metamodels/change_containment3_v2.ecore",
+  "commit_before" : "HEAD:data/synthetic/change_containment3/metamodels/change_containment3_v1.ecore",
+  "commit_after" : "HEAD:data/synthetic/change_containment3/metamodels/change_containment3_v2.ecore",
+  "sha_v1" : "3a4c29823dd69d001f6173618686c4db7f8f1d00c94a5a19ec8bccc38f5dbbdc",
+  "sha_v2" : "48d346d0ccf5513ad16cce46b39e95f282d68abb07926740c70782d68e2f3ba1",
+  "size_v1" : 854,
+  "size_v2" : 873,
+  "timestamp" : "2026-03-18 12:47:18",
+  "identical" : false
+}

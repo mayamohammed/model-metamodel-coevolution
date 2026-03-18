@@ -31,7 +31,7 @@ public class CollectorMain {
 
         String repoPath  = args[0];
         String outputDir = args.length > 1 ? args[1] : "dataset";
-        int    maxPairs  = args.length > 2 ? parseIntSafe(args[2], 50) : 50;
+        int    maxPairs  = args.length > 2 ? parseIntSafe(args[2], 100) : 100;
 
         // ── Afficher la configuration ─────────────────────────────────────────
         System.out.println("=================================================");
