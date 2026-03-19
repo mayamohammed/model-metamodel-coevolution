@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2178_eclass_added_from_domains__WaterUtil_v2__to__WaterUtil_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__WaterUtil_v2__to__WaterUtil_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:05",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "GeneratedEntity_600",
+    "context" : "WaterUtil",
+    "old_value" : "",
+    "new_value" : "GeneratedEntity_600",
+    "description" : "Added EClass GeneratedEntity_600"
+  }
+}

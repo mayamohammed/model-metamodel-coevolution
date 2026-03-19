@@ -1,36 +1,6 @@
-
+﻿
 package com.coevolution.analyzer.features;
 
-/**
- * FeatureVector — vecteur de 20 features numeriques
- * extrait d une paire (v1.ecore, v2.ecore).
- *
- * Ces features sont utilisees par le modele ML
- * pour predire le type de changement.
- *
- * FEATURES :
- *  [0]  nb_classes_v1
- *  [1]  nb_classes_v2
- *  [2]  delta_classes         = v2 - v1
- *  [3]  nb_added_classes
- *  [4]  nb_removed_classes
- *  [5]  nb_attributes_v1
- *  [6]  nb_attributes_v2
- *  [7]  delta_attributes      = v2 - v1
- *  [8]  nb_added_attributes
- *  [9]  nb_removed_attributes
- *  [10] nb_type_changes
- *  [11] nb_references_v1
- *  [12] nb_references_v2
- *  [13] delta_references      = v2 - v1
- *  [14] nb_added_references
- *  [15] nb_removed_references
- *  [16] nb_multiplicity_changes
- *  [17] nb_containment_changes
- *  [18] nb_abstract_changes
- *  [19] nb_supertype_changes
- *  [20] nsuri_changed         = 0 ou 1
- */
 public class FeatureVector {
 
     public static final String[] FEATURE_NAMES = {
@@ -59,7 +29,7 @@ public class FeatureVector {
 
     private final String pairId;
     private final double[] values;
-    private String label;   // ground truth : ECLASS_ADDED, etc.
+    private String label;   
 
     public FeatureVector(String pairId, double[] values, String label) {
         this.pairId = pairId;
@@ -74,7 +44,7 @@ public class FeatureVector {
 
     public static int size() { return FEATURE_NAMES.length; }
 
-    /** Retourne une ligne CSV : pairId, f1, f2, ..., label */
+    
     public String toCsvRow() {
         StringBuilder sb = new StringBuilder();
         sb.append(pairId);
@@ -83,7 +53,7 @@ public class FeatureVector {
         return sb.toString();
     }
 
-    /** En-tete CSV */
+    
     public static String csvHeader() {
         StringBuilder sb = new StringBuilder("pair_id");
         for (String f : FEATURE_NAMES) sb.append(",").append(f);

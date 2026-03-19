@@ -1,4 +1,4 @@
-
+﻿
 package com.coevolution.analyzer.diff;
 
 import org.eclipse.emf.common.util.URI;
@@ -11,14 +11,9 @@ import java.io.File;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * EcoreDiff — compare deux EPackage (v1, v2)
- * et calcule toutes les differences structurelles.
- * Ces differences deviennent les FEATURES pour le ML.
- */
 public class EcoreDiff {
 
-    // ── Chargement ────────────────────────────────────────────────
+    
     public static EPackage load(File f) throws Exception {
         ResourceSet rs = new ResourceSetImpl();
         rs.getResourceFactoryRegistry()
@@ -30,7 +25,7 @@ public class EcoreDiff {
         return (EPackage) res.getContents().get(0);
     }
 
-    // ── Listes des EClass ─────────────────────────────────────────
+    
     public static List<EClass> getClasses(EPackage pkg) {
         return pkg.getEClassifiers().stream()
                 .filter(c -> c instanceof EClass)
@@ -44,7 +39,7 @@ public class EcoreDiff {
                 .collect(Collectors.toSet());
     }
 
-    // ── Classes ajoutees / supprimees ─────────────────────────────
+    
     public static Set<String> getAddedClasses(EPackage v1, EPackage v2) {
         Set<String> s = getClassNames(v2);
         s.removeAll(getClassNames(v1));
@@ -57,7 +52,7 @@ public class EcoreDiff {
         return s;
     }
 
-    // ── Attributs ─────────────────────────────────────────────────
+    
     public static int countAttributes(EPackage pkg) {
         return getClasses(pkg).stream()
                 .mapToInt(c -> c.getEAttributes().size()).sum();
@@ -106,7 +101,7 @@ public class EcoreDiff {
         return changes;
     }
 
-    // ── References ────────────────────────────────────────────────
+    
     public static int countReferences(EPackage pkg) {
         return getClasses(pkg).stream()
                 .mapToInt(c -> c.getEReferences().size()).sum();
@@ -172,7 +167,7 @@ public class EcoreDiff {
         return changes;
     }
 
-    // ── Abstract / SuperTypes ─────────────────────────────────────
+    
     public static int countAbstractChanges(EPackage v1, EPackage v2) {
         int changes = 0;
         Map<String, EClass> v1map = classMap(v1);
@@ -197,14 +192,14 @@ public class EcoreDiff {
         return changes;
     }
 
-    // ── NsURI ─────────────────────────────────────────────────────
+    
     public static int nsUriChanged(EPackage v1, EPackage v2) {
         String u1 = v1.getNsURI() != null ? v1.getNsURI() : "";
         String u2 = v2.getNsURI() != null ? v2.getNsURI() : "";
         return u1.equals(u2) ? 0 : 1;
     }
 
-    // ── Helpers ───────────────────────────────────────────────────
+    
     public static Map<String, EClass> classMap(EPackage pkg) {
         Map<String, EClass> m = new HashMap<>();
         for (EClass c : getClasses(pkg)) m.put(c.getName(), c);

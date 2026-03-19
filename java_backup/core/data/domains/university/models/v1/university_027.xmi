@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Oujda_27"
+>
+  <faculties name="Faculte_27">
+    <students name="Soufiane" grade="15.0" year="3" credits="14"/>
+    <courses title="Chimie" credits="3"/>
+  </faculties>
+</university:University>

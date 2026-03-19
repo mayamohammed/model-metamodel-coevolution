@@ -1,0 +1,13 @@
+{
+  "pair_id" : "company__company_v1 -> company_v2__disk:C:__disk:C:",
+  "repo" : "company",
+  "file_path" : "company_v1.ecore -> company_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\company\\metamodels\\company_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\company\\metamodels\\company_v2.ecore",
+  "sha_v1" : "a3c81ed27a99e2acbf06ced5174276a7ee79aecc605f513a7e9d8509945f8df7",
+  "sha_v2" : "26e4e70ec6e41ed4ef294f61703c7c3a3b245d0ba965a4d591b9179cdcc25056",
+  "size_v1" : 2073,
+  "size_v2" : 2665,
+  "timestamp" : "2026-03-19 14:54:36",
+  "identical" : false
+}

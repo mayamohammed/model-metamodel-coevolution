@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Agadir_11"
+>
+  <products name="Clavier_11" price="4302.99" weight="11.0" stock="54"/>
+</ecommerce:Shop>

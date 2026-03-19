@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueBeniMellal_48"
+>
+  <wards name="Service_48">
+    <patients name="Houda" diagnosis="Allergie" room="131" phone="+212697826192"/>
+    <doctors name="Dr_Youssef" specialty="Dermatologie"/>
+  </wards>
+</hospital:Hospital>

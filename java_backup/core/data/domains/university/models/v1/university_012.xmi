@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Tetouan_12"
+>
+  <faculties name="Faculte_12">
+    <students name="Soufiane" grade="19.0" year="3" credits="20"/>
+    <courses title="Physique" credits="4"/>
+  </faculties>
+</university:University>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Kenitra_23"
+>
+  <products name="Moniteur_23" price="3870.99" weight="16.0" stock="143"/>
+</ecommerce:Shop>

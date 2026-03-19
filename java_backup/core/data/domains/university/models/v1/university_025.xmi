@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Rabat_25"
+>
+  <faculties name="Faculte_25">
+    <students name="Zineb" grade="16.0" year="2" credits="36"/>
+    <courses title="Histoire" credits="2"/>
+  </faculties>
+</university:University>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="HopitalAgadir_24"
+>
+  <wards name="Service_24">
+    <patients name="Fatima" diagnosis="Anemie" room="385" phone="+212698441471"/>
+    <doctors name="Dr_Hassan" specialty="Dermatologie"/>
+  </wards>
+</hospital:Hospital>

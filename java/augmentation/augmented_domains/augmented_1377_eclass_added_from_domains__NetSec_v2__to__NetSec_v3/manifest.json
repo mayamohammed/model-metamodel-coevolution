@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1377_eclass_added_from_domains__NetSec_v2__to__NetSec_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__NetSec_v2__to__NetSec_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:01",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "AugmentedNode_511",
+    "context" : "NetSec",
+    "old_value" : "",
+    "new_value" : "AugmentedNode_511",
+    "description" : "Added EClass AugmentedNode_511"
+  }
+}

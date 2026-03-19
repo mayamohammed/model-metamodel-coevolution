@@ -1,11 +1,8 @@
-
+﻿
 package com.coevolution.core.model;
 
 import java.util.List;
 
-/**
- * Result of a model validation.
- */
 public class ValidationResult {
 
     private final boolean      valid;
@@ -27,7 +24,7 @@ public class ValidationResult {
     public int getWarningCount()      { return warnings.size(); }
 
     public String getSummary() {
-        return (valid ? "✅ VALID" : "❌ INVALID")
+        return (valid ? "âœ… VALID" : "âŒ INVALID")
             + " | errors="   + errors.size()
             + " | warnings=" + warnings.size();
     }
@@ -39,11 +36,11 @@ public class ValidationResult {
         sb.append("  valid=").append(valid).append("\n");
         sb.append("  errors=").append(errors.size()).append("\n");
         for (String e : errors)
-            sb.append("    → ").append(e).append("\n");
+            sb.append("    â†’ ").append(e).append("\n");
         sb.append("  warnings=")
           .append(warnings.size()).append("\n");
         for (String w : warnings)
-            sb.append("    → ").append(w).append("\n");
+            sb.append("    â†’ ").append(w).append("\n");
         sb.append("}");
         return sb.toString();
     }

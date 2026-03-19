@@ -1,0 +1,13 @@
+{
+  "pair_id" : "occi-repo__clouddesigner_org.occiware.clouddesigner.occi.linkeddata_model_linkeddata__fc447a9__cf9e688",
+  "repo" : "occi-repo",
+  "file_path" : "clouddesigner/org.occiware.clouddesigner.occi.linkeddata/model/linkeddata.ecore",
+  "commit_before" : "fc447a9c1564a4b91bc59c7caa14c26ac0985cd4",
+  "commit_after" : "cf9e688e77095593a7cd48b9320dc3771508dcf8",
+  "sha_v1" : "4ab82082c0ae0203aadc9e45fe05dd8a44b8e9aefb0c6345c76edde8c160375b",
+  "sha_v2" : "e103835e93e7f0d618c238d724387a6c2e19ff9b476bb5bfb9c4f03138c9773c",
+  "size_v1" : 3456,
+  "size_v2" : 5040,
+  "timestamp" : "2026-03-19 14:53:56",
+  "identical" : false
+}

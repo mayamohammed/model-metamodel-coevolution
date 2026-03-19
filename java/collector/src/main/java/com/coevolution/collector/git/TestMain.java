@@ -1,4 +1,4 @@
-package com.coevolution.collector.git;
+﻿package com.coevolution.collector.git;
 
 public class TestMain {
     public static void main(String[] args) throws Exception {
@@ -7,3 +7,4 @@ public class TestMain {
         mgr.close();
     }
 }
+

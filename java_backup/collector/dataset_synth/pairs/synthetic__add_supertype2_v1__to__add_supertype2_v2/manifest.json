@@ -1,0 +1,13 @@
+{
+  "pair_id" : "synthetic__add_supertype2_v1 -> add_supertype2_v2__disk:C:__disk:C:",
+  "repo" : "synthetic",
+  "file_path" : "add_supertype2_v1.ecore -> add_supertype2_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\add_supertype2\\metamodels\\add_supertype2_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\add_supertype2\\metamodels\\add_supertype2_v2.ecore",
+  "sha_v1" : "01c2c526504684dfeefcce5346ae41cc918b261efce029fe1f3a5a33bf246398",
+  "sha_v2" : "b294436de3a5540e624fe237e0b40a06c700cb2ad3dcc200578019469814e0bd",
+  "size_v1" : 1100,
+  "size_v2" : 1150,
+  "timestamp" : "2026-03-19 14:54:44",
+  "identical" : false
+}

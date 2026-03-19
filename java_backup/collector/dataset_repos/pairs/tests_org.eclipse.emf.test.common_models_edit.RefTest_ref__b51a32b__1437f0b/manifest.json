@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.common_models_edit.RefTest_ref__b51a32b__1437f0b",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.common/models/edit.RefTest/ref.ecore",
+  "commit_before" : "b51a32b44471902fd78357acba350f146e12b067",
+  "commit_after" : "1437f0b2ce8651a0566aaed6caaa5e1012c7cb51",
+  "sha_v1" : "e06558df0a469e5e95fe4152a488bfe67931f690cbfb8b086f02a839a639e286",
+  "sha_v2" : "dae300bc626290d07c410e33127e010c4c46f6e20b7f53df46a9e63eb284a910",
+  "size_v1" : 8846,
+  "size_v2" : 8711,
+  "timestamp" : "2026-03-19 14:53:33",
+  "identical" : false
+}

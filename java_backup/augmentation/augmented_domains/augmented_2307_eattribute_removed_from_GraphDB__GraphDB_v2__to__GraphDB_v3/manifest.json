@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2307_eattribute_removed_from_GraphDB__GraphDB_v2__to__GraphDB_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\GraphDB__GraphDB_v2__to__GraphDB_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:06",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "email",
+    "context" : "Customer",
+    "old_value" : "email",
+    "new_value" : "",
+    "description" : "Removed EAttribute email from Customer"
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="vehicle" nsURI="http://vehicle/2.0" nsPrefix="vehicle">
+  <eClassifiers xsi:type="ecore:EClass" name="Motorized" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="enginePower">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="generatedRef_740" upperBound="-1" eType="//Truck"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Truck">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="payload">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Motorcycle">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sidecar">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

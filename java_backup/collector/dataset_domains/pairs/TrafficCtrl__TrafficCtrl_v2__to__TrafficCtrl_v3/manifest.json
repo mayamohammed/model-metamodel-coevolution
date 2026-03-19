@@ -1,0 +1,13 @@
+{
+  "pair_id" : "TrafficCtrl__TrafficCtrl_v2 -> TrafficCtrl_v3__disk:C:__disk:C:",
+  "repo" : "TrafficCtrl",
+  "file_path" : "TrafficCtrl_v2.ecore -> TrafficCtrl_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\TrafficCtrl\\metamodels\\TrafficCtrl_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\TrafficCtrl\\metamodels\\TrafficCtrl_v3.ecore",
+  "sha_v1" : "a99464466e2e4a92c40806bca71aeeb4b73b44803bbf8b96e0cc7bc869aa6f88",
+  "sha_v2" : "8e8c234d2f9db259f4d1e0f97823ce6e23a0452255fab97ef12b440b56493aef",
+  "size_v1" : 2677,
+  "size_v2" : 2790,
+  "timestamp" : "2026-03-19 14:54:41",
+  "identical" : false
+}

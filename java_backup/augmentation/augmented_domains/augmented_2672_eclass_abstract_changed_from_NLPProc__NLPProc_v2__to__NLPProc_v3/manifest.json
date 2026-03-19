@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2672_eclass_abstract_changed_from_NLPProc__NLPProc_v2__to__NLPProc_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\NLPProc__NLPProc_v2__to__NLPProc_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:08",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Customer",
+    "context" : "NLPProc",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Customer : false -> true"
+  }
+}

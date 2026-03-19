@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1809_eclass_added_from_domains__SmartCity_v1__to__SmartCity_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__SmartCity_v1__to__SmartCity_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:03",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "VirtualNode_559",
+    "context" : "SmartCity",
+    "old_value" : "",
+    "new_value" : "VirtualNode_559",
+    "description" : "Added EClass VirtualNode_559"
+  }
+}

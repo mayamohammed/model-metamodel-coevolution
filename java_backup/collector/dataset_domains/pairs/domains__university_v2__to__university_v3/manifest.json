@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__university_v2 -> university_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "university_v2.ecore -> university_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\university\\metamodels\\university_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\university\\metamodels\\university_v3.ecore",
+  "sha_v1" : "a56bb4701af31e26f5b5cba3f8e76dd3576d9914a6d9d53b954ca9f4662152ac",
+  "sha_v2" : "78436d01535b65d174e87b0c198994fec4b16979ad9b9816f6d84ff22902e2e2",
+  "size_v1" : 2674,
+  "size_v2" : 2787,
+  "timestamp" : "2026-03-19 14:54:34",
+  "identical" : false
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Tanger_28"
+>
+  <faculties name="Faculte_28">
+    <students name="Khadija" grade="12.0" year="4" credits="24"/>
+    <courses title="Philosophie" credits="4"/>
+  </faculties>
+</university:University>

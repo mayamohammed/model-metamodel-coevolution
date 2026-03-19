@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Casablanca_41"
+>
+  <faculties name="Faculte_41">
+    <students name="Khalid" grade="14.0" year="4" credits="19"/>
+    <courses title="Philosophie" credits="3"/>
+  </faculties>
+</university:University>

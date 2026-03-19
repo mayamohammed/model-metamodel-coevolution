@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0395_eclass_abstract_changed_from_DataWare__DataWare_v1__to__DataWare_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\DataWare__DataWare_v1__to__DataWare_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:55:54",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Customer",
+    "context" : "DataWare",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Customer : false -> true"
+  }
+}

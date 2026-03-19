@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0037_eclass_removed_from_AgriFarm__AgriFarm_v1__to__AgriFarm_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\AgriFarm__AgriFarm_v1__to__AgriFarm_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:55:52",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Product",
+    "context" : "AgriFarm",
+    "old_value" : "Product",
+    "new_value" : "",
+    "description" : "Removed EClass Product"
+  }
+}

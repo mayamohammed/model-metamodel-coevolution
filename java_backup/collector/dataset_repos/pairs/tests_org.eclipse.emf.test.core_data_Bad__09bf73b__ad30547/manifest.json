@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.core_data_Bad__09bf73b__ad30547",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.core/data/Bad.ecore",
+  "commit_before" : "09bf73b41dbfdfc9978834a6943ea2f314a11879",
+  "commit_after" : "ad30547573a5c9ba506ff1ea25ba38cf55954956",
+  "sha_v1" : "a0b3ef0a5a226593f805316b3ae81d327a9846387bf3029ee17bf55e2951c549",
+  "sha_v2" : "e90b0bc76894c297d1a492b1759953badcb0d5cedee0e1876de89a60c389e1ce",
+  "size_v1" : 54548,
+  "size_v2" : 54969,
+  "timestamp" : "2026-03-19 14:53:34",
+  "identical" : false
+}

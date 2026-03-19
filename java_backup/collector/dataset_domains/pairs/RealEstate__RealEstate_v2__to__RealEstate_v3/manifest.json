@@ -1,0 +1,13 @@
+{
+  "pair_id" : "RealEstate__RealEstate_v2 -> RealEstate_v3__disk:C:__disk:C:",
+  "repo" : "RealEstate",
+  "file_path" : "RealEstate_v2.ecore -> RealEstate_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\RealEstate\\metamodels\\RealEstate_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\RealEstate\\metamodels\\RealEstate_v3.ecore",
+  "sha_v1" : "390c10de6ef242b7e6d84875ed3882b5aaba29451d7d9f34fed2f36152404fec",
+  "sha_v2" : "389847cd5babdc531e2c7d789be186a46016b865911fa763ecaf54ed9b001175",
+  "size_v1" : 2674,
+  "size_v2" : 2787,
+  "timestamp" : "2026-03-19 14:54:39",
+  "identical" : false
+}

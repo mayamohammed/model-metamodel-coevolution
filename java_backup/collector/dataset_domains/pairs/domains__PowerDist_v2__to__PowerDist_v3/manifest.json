@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__PowerDist_v2 -> PowerDist_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "PowerDist_v2.ecore -> PowerDist_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\PowerDist\\metamodels\\PowerDist_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\PowerDist\\metamodels\\PowerDist_v3.ecore",
+  "sha_v1" : "8be152c1d8cf9b87eaf99f04cb58a038a2f389014565a0b8628db385a54951f3",
+  "sha_v2" : "63cf73e06f50cdff9c8a3f743bc67c36ffb23c8a3b1e1de5ee04e7f14522edc0",
+  "size_v1" : 2671,
+  "size_v2" : 2784,
+  "timestamp" : "2026-03-19 14:54:32",
+  "identical" : false
+}

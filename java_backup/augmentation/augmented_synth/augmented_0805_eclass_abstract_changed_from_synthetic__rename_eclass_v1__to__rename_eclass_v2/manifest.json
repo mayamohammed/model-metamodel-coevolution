@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0805_eclass_abstract_changed_from_synthetic__rename_eclass_v1__to__rename_eclass_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\synthetic__rename_eclass_v1__to__rename_eclass_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:16",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Worker",
+    "context" : "hr",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Worker : false -> true"
+  }
+}

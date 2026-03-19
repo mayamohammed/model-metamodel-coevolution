@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="BetaSolutions_5"
+    location="Meknes"
+>
+  <departments name="RessourcesHumaines">
+    <employees name="Soufiane" salary="3430.0" age="55" phone="+212673748217"/>
+  </departments>
+</company:Company>

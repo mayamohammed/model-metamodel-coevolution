@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.core_data_DateConversion__3a5a71c__7aca8f4",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.core/data/DateConversion.ecore",
+  "commit_before" : "3a5a71cf07e6d3f12e3fe1801e2bca178b97db1e",
+  "commit_after" : "7aca8f4d6f95b2f2cf6b5dbb2f72ba1b3305d140",
+  "sha_v1" : "0d7fff22ac339fe88962cce493945ed5d96a08589362ebfb4ef84de6d7878fad",
+  "sha_v2" : "dcd9e8e78432f398a4057af9f70d80fa13299725450017193cff11cffbca582a",
+  "size_v1" : 5594,
+  "size_v2" : 5594,
+  "timestamp" : "2026-03-19 14:53:36",
+  "identical" : false
+}

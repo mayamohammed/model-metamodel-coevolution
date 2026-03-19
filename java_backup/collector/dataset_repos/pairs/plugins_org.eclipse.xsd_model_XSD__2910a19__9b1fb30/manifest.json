@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__plugins_org.eclipse.xsd_model_XSD__2910a19__9b1fb30",
+  "repo" : "emf-repo",
+  "file_path" : "plugins/org.eclipse.xsd/model/XSD.ecore",
+  "commit_before" : "2910a19c45f31636837c4855d7a04507d439cbca",
+  "commit_after" : "9b1fb3037b4bb572464dd980d754f8f3207fa1f2",
+  "sha_v1" : "69df5a3e8978ac5cf2168fedabb60e16ff4d6b6f48ee253a19c61024e54c6e43",
+  "sha_v2" : "7c0c895695ddc082c827f8bf5037409a554e4a1b3f4de1b591f3d53a3bdea9fe",
+  "size_v1" : 47752,
+  "size_v2" : 47769,
+  "timestamp" : "2026-03-19 14:53:30",
+  "identical" : false
+}

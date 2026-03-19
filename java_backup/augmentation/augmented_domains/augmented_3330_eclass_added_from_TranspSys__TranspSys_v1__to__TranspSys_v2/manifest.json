@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3330_eclass_added_from_TranspSys__TranspSys_v1__to__TranspSys_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\TranspSys__TranspSys_v1__to__TranspSys_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:11",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "InjectedEntity_728",
+    "context" : "TranspSys",
+    "old_value" : "",
+    "new_value" : "InjectedEntity_728",
+    "description" : "Added EClass InjectedEntity_728"
+  }
+}

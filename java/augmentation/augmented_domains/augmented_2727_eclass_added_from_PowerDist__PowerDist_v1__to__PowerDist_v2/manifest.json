@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2727_eclass_added_from_PowerDist__PowerDist_v1__to__PowerDist_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\PowerDist__PowerDist_v1__to__PowerDist_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:08",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "AugmentedNode_661",
+    "context" : "PowerDist",
+    "old_value" : "",
+    "new_value" : "AugmentedNode_661",
+    "description" : "Added EClass AugmentedNode_661"
+  }
+}

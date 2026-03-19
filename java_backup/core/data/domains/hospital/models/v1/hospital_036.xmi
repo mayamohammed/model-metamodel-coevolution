@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueMarrakech_36"
+>
+  <wards name="Service_36">
+    <patients name="Mohammed" diagnosis="Covid" room="446" phone="+212637733259"/>
+    <doctors name="Dr_Khadija" specialty="Radiologie"/>
+  </wards>
+</hospital:Hospital>

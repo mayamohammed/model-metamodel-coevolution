@@ -1,0 +1,13 @@
+{
+  "pair_id" : "change_nsuri3__change_nsuri3_v1 -> change_nsuri3_v2__disk:C:__disk:C:",
+  "repo" : "change_nsuri3",
+  "file_path" : "change_nsuri3_v1.ecore -> change_nsuri3_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\change_nsuri3\\metamodels\\change_nsuri3_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\change_nsuri3\\metamodels\\change_nsuri3_v2.ecore",
+  "sha_v1" : "f8f79b13d4f987620edd822cf63e825badf58c95f9ccafb0f5fbb68709570a2e",
+  "sha_v2" : "055f032534bf998e180b6a6d7f45b0c9dd785012231a380eb8be3d2191366b31",
+  "size_v1" : 661,
+  "size_v2" : 668,
+  "timestamp" : "2026-03-19 14:54:46",
+  "identical" : false
+}

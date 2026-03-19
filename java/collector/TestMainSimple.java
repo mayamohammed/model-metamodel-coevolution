@@ -1,4 +1,4 @@
-package com.coevolution.collector.tests;
+﻿package com.coevolution.collector.tests;
 
 import com.coevolution.collector.git.GitRepositoryManager;
 import java.io.IOException;
@@ -8,6 +8,7 @@ public class TestMainSimple {
         GitRepositoryManager mgr = new GitRepositoryManager();
         mgr.scanAllRepos("../../data");
         mgr.close();
-        System.out.println("✅ TEST TERMINÉ ! Total Ecore: " + mgr.getTotalEcoreFiles());
+        System.out.println("âœ… TEST TERMINÃ‰ ! Total Ecore: " + mgr.getTotalEcoreFiles());
     }
 }
+

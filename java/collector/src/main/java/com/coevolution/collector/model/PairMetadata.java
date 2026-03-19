@@ -1,4 +1,4 @@
-package com.coevolution.collector.model;
+﻿package com.coevolution.collector.model;
 
 import java.io.File;
 import java.time.Instant;

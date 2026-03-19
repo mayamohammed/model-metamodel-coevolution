@@ -1,4 +1,4 @@
-package com.coevolution.augmentation.generator;
+﻿package com.coevolution.augmentation.generator;
 
 import com.coevolution.augmentation.mutation.MutationResult;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -32,7 +32,7 @@ public class PairGenerator {
         this.mapper       = new ObjectMapper()
                 .enable(SerializationFeature.INDENT_OUTPUT);
 
-        // ✅ enregistre XMI factory globalement (standalone EMF)
+        
         Resource.Factory.Registry.INSTANCE
                 .getExtensionToFactoryMap()
                 .put("ecore", new XMIResourceFactoryImpl());
@@ -61,7 +61,7 @@ public class PairGenerator {
     }
 
     private void generatePairsForFile(File v1File) throws Exception {
-        // ✅ FIX FINAL : passe File → original + clone dans ResourceSets séparés
+        
         List<EcoreMutationEngine.MutationCandidate> candidates =
                 engine.generateMutations(v1File);
 
@@ -77,7 +77,7 @@ public class PairGenerator {
             File pairDir = new File(outputDir, pairId);
             pairDir.mkdirs();
 
-            // ✅ originalPackage et mutatedPackage dans leurs propres RS
+            
             engine.saveEcore(c.originalPackage, new File(pairDir, "v1.ecore"));
             engine.saveEcore(c.mutatedPackage,  new File(pairDir, "v2.ecore"));
 
@@ -132,3 +132,4 @@ public class PairGenerator {
 
     public int getTotalGenerated() { return totalGenerated; }
 }
+

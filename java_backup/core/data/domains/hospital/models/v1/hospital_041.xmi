@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="HopitalRabat_41"
+>
+  <wards name="Service_41">
+    <patients name="Hamza" diagnosis="Asthme" room="494" phone="+212614005391"/>
+    <doctors name="Dr_Houda" specialty="Cardiologie"/>
+  </wards>
+</hospital:Hospital>

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2504_eattribute_added_from_Manufacturing__Manufacturing_v2__to__Manufacturing_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\Manufacturing__Manufacturing_v2__to__Manufacturing_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:07",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "syntheticProp_620",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EBoolean",
+    "description" : "Added EAttribute syntheticProp_620 to Customer"
+  }
+}

@@ -1,4 +1,4 @@
-package com.coevolution.core.emf;
+﻿package com.coevolution.core.emf;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
@@ -10,9 +10,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Loads XMI model instances (.xmi files) using EMF.
- */
 public class ModelLoader {
 
     private final ResourceSet resourceSet;
@@ -21,9 +18,7 @@ public class ModelLoader {
         this.resourceSet = ResourceSetConfig.createForXmi();
     }
 
-    /**
-     * Loads a single .xmi file.
-     */
+    
     public Resource load(String xmiPath, EPackage ePackage) {
         File file = new File(xmiPath);
 
@@ -59,14 +54,12 @@ public class ModelLoader {
         } catch (Exception e) {
             throw new RuntimeException(
                 "Failed to load : " + xmiPath
-                + " → " + e.getMessage(), e
+                + " â†’ " + e.getMessage(), e
             );
         }
     }
 
-    /**
-     * Loads all .xmi files from a directory.
-     */
+    
     public List<Resource> loadAll(String dirPath,
                                    EPackage ePackage) {
         List<Resource> resources = new ArrayList<>();
@@ -99,7 +92,7 @@ public class ModelLoader {
                 System.err.println(
                     "[ModelLoader] ERROR : "
                     + f.getName()
-                    + " → " + e.getMessage()
+                    + " â†’ " + e.getMessage()
                 );
             }
         }
@@ -111,9 +104,7 @@ public class ModelLoader {
         return resources;
     }
 
-    /**
-     * Returns all EObjects from a Resource.
-     */
+    
     public List<EObject> getObjects(Resource resource) {
         List<EObject> objects = new ArrayList<>();
         resource.getAllContents()

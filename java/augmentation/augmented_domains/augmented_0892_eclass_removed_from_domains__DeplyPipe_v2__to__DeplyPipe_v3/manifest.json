@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0892_eclass_removed_from_domains__DeplyPipe_v2__to__DeplyPipe_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__DeplyPipe_v2__to__DeplyPipe_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:55:58",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Category",
+    "context" : "DeplyPipe",
+    "old_value" : "Category",
+    "new_value" : "",
+    "description" : "Removed EClass Category"
+  }
+}

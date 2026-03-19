@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0058_eclass_abstract_changed_from_add_reference3__add_reference3_v1__to__add_reference3_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\add_reference3__add_reference3_v1__to__add_reference3_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:12",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Supplier",
+    "context" : "supplychain",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Supplier : false -> true"
+  }
+}

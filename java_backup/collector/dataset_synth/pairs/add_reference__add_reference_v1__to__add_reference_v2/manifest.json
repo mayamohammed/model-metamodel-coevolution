@@ -1,0 +1,13 @@
+{
+  "pair_id" : "add_reference__add_reference_v1 -> add_reference_v2__disk:C:__disk:C:",
+  "repo" : "add_reference",
+  "file_path" : "add_reference_v1.ecore -> add_reference_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\add_reference\\metamodels\\add_reference_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\add_reference\\metamodels\\add_reference_v2.ecore",
+  "sha_v1" : "68e3cb69c8e3ae1bfa02e2d91d317712b12366f055e9c625994f6018a384b006",
+  "sha_v2" : "6f1b074d4effffa5202ec46ccae422a203f7b1de9d0de2754bbe242fcdc85950",
+  "size_v1" : 726,
+  "size_v2" : 855,
+  "timestamp" : "2026-03-19 14:54:46",
+  "identical" : false
+}

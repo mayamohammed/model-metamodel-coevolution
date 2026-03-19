@@ -1,0 +1,13 @@
+{
+  "pair_id" : "occi-repo__clouddesigner_org.occiware.clouddesigner.occi.hypervisor_model_Hypervisor__38a87b0__d3d351e",
+  "repo" : "occi-repo",
+  "file_path" : "clouddesigner/org.occiware.clouddesigner.occi.hypervisor/model/Hypervisor.ecore",
+  "commit_before" : "38a87b07bed3aceefa463b961ac531c5244b162a",
+  "commit_after" : "d3d351e01f21927ca0f77c41ef70973610a40717",
+  "sha_v1" : "1d2dfb00273f11793b3e4146276838344744933ea19019cc53e6623474aacbf3",
+  "sha_v2" : "3fbef8618cc1fd1f86d0dacefd3786afd05564191105a03f3496d1041e02bd5b",
+  "size_v1" : 9059,
+  "size_v2" : 17291,
+  "timestamp" : "2026-03-19 14:53:55",
+  "identical" : false
+}

@@ -1,4 +1,4 @@
-package com.coevolution.augmentation.generator;
+﻿package com.coevolution.augmentation.generator;
 
 import com.coevolution.augmentation.mutation.*;
 import org.eclipse.emf.common.util.URI;
@@ -107,7 +107,7 @@ public class EcoreMutationEngine {
         Resource res = rs.createResource(URI.createFileURI(out.getAbsolutePath()));
         res.getContents().add(pkg);
 
-        // ✅ FIX FINAL : supprime silencieusement les dangling refs au save
+        
         Map<String, Object> options = new HashMap<>();
         options.put(XMIResource.OPTION_PROCESS_DANGLING_HREF,
                     XMIResource.OPTION_PROCESS_DANGLING_HREF_DISCARD);
@@ -141,3 +141,4 @@ public class EcoreMutationEngine {
         }
     }
 }
+

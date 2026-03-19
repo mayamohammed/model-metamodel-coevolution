@@ -1,10 +1,7 @@
-package com.coevolution.core.model;
+﻿package com.coevolution.core.model;
 
 import org.eclipse.emf.ecore.EPackage;
 
-/**
- * Represents a versioned metamodel (V1, V2 or V3).
- */
 public class MetamodelVersion {
 
     private final String   domain;

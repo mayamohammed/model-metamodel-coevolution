@@ -1,4 +1,4 @@
-package com.coevolution.core.util;
+﻿package com.coevolution.core.util;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -75,10 +75,10 @@ public class XmiGenerator {
     public static void main(String[] args) {
         String base = "data/domains";
 
-        System.out.println("╔══════════════════════════════════╗");
-        System.out.println("║   XMI Generator — Maroc          ║");
-        System.out.println("║   250 fichiers x 5 domaines      ║");
-        System.out.println("╚═══���══════════════════════════════╝");
+        System.out.println("â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—");
+        System.out.println("â•‘   XMI Generator â€” Maroc          â•‘");
+        System.out.println("â•‘   250 fichiers x 5 domaines      â•‘");
+        System.out.println("â•šâ•â•â•ï¿½ï¿½ï¿½â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
         System.out.println();
 
         long start = System.currentTimeMillis();
@@ -92,11 +92,11 @@ public class XmiGenerator {
         long end = System.currentTimeMillis();
 
         System.out.println();
-        System.out.println("──────────────────────────────────");
+        System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
         verify(base);
-        System.out.println("──────────────────────────────────");
+        System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
         System.out.println("Temps : " + (end - start) + " ms");
-        System.out.println("──────────────────────────────────");
+        System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
     }
 
     private static void generateDomain(String domain,
@@ -114,7 +114,7 @@ public class XmiGenerator {
         }
 
         System.out.printf(
-            "  %-12s → %d fichiers generés%n",
+            "  %-12s â†’ %d fichiers generÃ©s%n",
             domain, count
         );
     }
@@ -137,9 +137,9 @@ public class XmiGenerator {
             + "<company:Company\n"
             + attr("xmi:version", "2.0")
             + attr("xmlns:xmi",
-                   "http://www.omg.org/XMI")
+                   "http:
             + attr("xmlns:company",
-                   "http://www.coevolution.com/company/v1")
+                   "http:
             + attr("name",
                    pick(COMPANIES) + "_" + i)
             + attr("location", pick(CITIES))
@@ -165,9 +165,9 @@ public class XmiGenerator {
             + "<hospital:Hospital\n"
             + attr("xmi:version", "2.0")
             + attr("xmlns:xmi",
-                   "http://www.omg.org/XMI")
+                   "http:
             + attr("xmlns:hospital",
-                   "http://www.coevolution.com/hospital/v1")
+                   "http:
             + attr("name",
                    pick(HOSPITALS) + "_" + i)
             + ">\n"
@@ -196,9 +196,9 @@ public class XmiGenerator {
             + "<university:University\n"
             + attr("xmi:version", "2.0")
             + attr("xmlns:xmi",
-                   "http://www.omg.org/XMI")
+                   "http:
             + attr("xmlns:university",
-                   "http://www.coevolution.com/university/v1")
+                   "http:
             + attr("name",
                    "Universite_" + pick(CITIES) + "_" + i)
             + ">\n"
@@ -228,9 +228,9 @@ public class XmiGenerator {
             + "<ecommerce:Shop\n"
             + attr("xmi:version", "2.0")
             + attr("xmlns:xmi",
-                   "http://www.omg.org/XMI")
+                   "http:
             + attr("xmlns:ecommerce",
-                   "http://www.coevolution.com/ecommerce/v1")
+                   "http:
             + attr("name",
                    "Boutique_" + pick(CITIES) + "_" + i)
             + ">\n"
@@ -252,9 +252,9 @@ public class XmiGenerator {
             + "<bank:Bank\n"
             + attr("xmi:version", "2.0")
             + attr("xmlns:xmi",
-                   "http://www.omg.org/XMI")
+                   "http:
             + attr("xmlns:bank",
-                   "http://www.coevolution.com/bank/v1")
+                   "http:
             + attr("name", "BanqueMaroc_" + i)
             + ">\n"
             + "  <accounts"

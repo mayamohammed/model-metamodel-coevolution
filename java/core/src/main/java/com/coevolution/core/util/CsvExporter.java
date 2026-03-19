@@ -1,13 +1,10 @@
-
+﻿
 package com.coevolution.core.util;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Exports data to CSV files.
- */
 public class CsvExporter {
 
     private static final String SEP = ",";
@@ -42,7 +39,7 @@ public class CsvExporter {
             System.out.println(
                 "[CsvExporter] "
                 + rows.size()
-                + " rows → " + outputPath
+                + " rows â†’ " + outputPath
             );
         } catch (IOException e) {
             throw new RuntimeException(

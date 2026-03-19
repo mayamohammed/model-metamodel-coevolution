@@ -1,12 +1,9 @@
-package com.coevolution.core.util;
+﻿package com.coevolution.core.util;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Utility class for file operations.
- */
 public class FileUtils {
 
     public static List<File> listFiles(String dirPath,

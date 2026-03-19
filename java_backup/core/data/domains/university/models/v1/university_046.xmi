@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Kenitra_46"
+>
+  <faculties name="Faculte_46">
+    <students name="Amine" grade="18.0" year="3" credits="52"/>
+    <courses title="Economie" credits="3"/>
+  </faculties>
+</university:University>

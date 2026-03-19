@@ -1,4 +1,4 @@
-package com.coevolution.core.emf;
+﻿package com.coevolution.core.emf;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage;
@@ -9,9 +9,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Loads Ecore metamodels (.ecore files) using EMF.
- */
 public class MetamodelLoader {
 
     private final ResourceSet resourceSet;
@@ -20,9 +17,7 @@ public class MetamodelLoader {
         this.resourceSet = ResourceSetConfig.createForEcore();
     }
 
-    /**
-     * Loads a single .ecore file.
-     */
+    
     public EPackage load(String filePath) {
         File file = new File(filePath);
 
@@ -61,14 +56,12 @@ public class MetamodelLoader {
         } catch (Exception e) {
             throw new RuntimeException(
                 "Failed to load : " + filePath
-                + " → " + e.getMessage(), e
+                + " â†’ " + e.getMessage(), e
             );
         }
     }
 
-    /**
-     * Loads all .ecore files from a directory.
-     */
+    
     public List<EPackage> loadAll(String directoryPath) {
         List<EPackage> packages = new ArrayList<>();
         File dir = new File(directoryPath);
@@ -103,9 +96,7 @@ public class MetamodelLoader {
         return packages;
     }
 
-    /**
-     * Returns true if file is a valid .ecore.
-     */
+    
     public boolean isValid(String filePath) {
         try {
             load(filePath);

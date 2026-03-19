@@ -1,4 +1,4 @@
-package com.coevolution.collector.pipeline;
+﻿package com.coevolution.collector.pipeline;
 
 import com.coevolution.collector.git.GitRepositoryManager;
 import com.coevolution.collector.git.VersionExtractor;
@@ -49,7 +49,7 @@ public class CollectionPipeline {
         if (!pairsDir.exists()) pairsDir.mkdirs();
 
         Repository repo = null;
-        try { repo = gitManager.getRepository(); } catch (Exception e) { /* disque pur */ }
+        try { repo = gitManager.getRepository(); } catch (Exception e) {  }
 
         if (repo != null) {
             VersionExtractor extractor = new VersionExtractor(repo);
@@ -71,7 +71,7 @@ public class CollectionPipeline {
             }
 
         } else {
-            // ✅ FIX : utilise getReposRoot() au lieu de outputDir.getParentFile()
+            
             System.out.println("[CollectionPipeline] Mode DISQUE PUR (pas de Git)");
             File diskRoot = gitManager.getReposRoot();
             if (diskRoot != null && diskRoot.exists()) {
@@ -92,9 +92,9 @@ public class CollectionPipeline {
         printStats();
     }
 
-    // ══════════════════════════════════════════════════════════════════════════
-    // MODE DISQUE PUR
-    // ══════════════════════════════════════════════════════════════════════════
+    
+    
+    
 
     private void runModeDisk(File rootDir, File pairsDir) {
         System.out.println("[Pipeline-D] Scan disque : " + rootDir.getAbsolutePath());
@@ -116,9 +116,9 @@ public class CollectionPipeline {
         }
     }
 
-    // ══════════════════════════════════════════════════════════════════════════
-    // MODE A
-    // ══════════════════════════════════════════════════════════════════════════
+    
+    
+    
 
     private int countGitHistoryPairs(VersionExtractor extractor,
                                       List<String> ecoreFiles) throws Exception {
@@ -181,9 +181,9 @@ public class CollectionPipeline {
         }
     }
 
-    // ══════════════════════════════════════════════════════════════════════════
-    // MODE B
-    // ══════════════════════════════════════════════════════════════════════════
+    
+    
+    
 
     private void runModeB(List<String> ecoreFiles, String repoName,
                            File pairsDir) throws Exception {
@@ -260,9 +260,9 @@ public class CollectionPipeline {
         }
     }
 
-    // ══════════════════════════════════════════════════════════════════════════
-    // MODE C
-    // ══════════════════════════════════════════════════════════════════════════
+    
+    
+    
 
     private void runModeC(File reposRoot, File pairsDir) {
         File[] repos = reposRoot.listFiles(File::isDirectory);
@@ -386,7 +386,7 @@ public class CollectionPipeline {
                         processPairGit(extExtractor, repoName, ecoreFile,
                                 pair[0], pair[1], pairsDir);
                     }
-                } catch (Exception e) { /* ignorer par fichier */ }
+                } catch (Exception e) {  }
             }
         } catch (Exception e) {
             System.out.println("[Pipeline-C/A] Impossible d ouvrir : "
@@ -396,9 +396,9 @@ public class CollectionPipeline {
         }
     }
 
-    // ══════════════════════════════════════════════════════════════════════════
-    // Statistiques
-    // ══════════════════════════════════════════════════════════════════════════
+    
+    
+    
 
     public int getPairsCollected()  { return pairsCollected;  }
     public int getPairsSkipped()    { return pairsSkipped;    }
@@ -415,3 +415,4 @@ public class CollectionPipeline {
         System.out.println("=================================================");
     }
 }
+

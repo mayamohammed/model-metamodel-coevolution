@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Tanger_41"
+>
+  <products name="Disque_Dur_41" price="4888.99" weight="8.0" stock="425"/>
+</ecommerce:Shop>

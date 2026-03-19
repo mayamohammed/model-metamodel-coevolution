@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_creation_library.java_emf_library__6612a69__b0dbc4b",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.tools/data/ant.expected/models/5.0/creation/library.java/emf/library.ecore",
+  "commit_before" : "6612a6989a5fa3a8e342fc9c13f160a3ad85d9ce",
+  "commit_after" : "b0dbc4b0f0b21539a47a8fef9a8ae66f8b93a765",
+  "sha_v1" : "b71d256a3ea78f4bf9b6d22d3076677b69a3d648bcdeeacfe06ff7378b6aed2d",
+  "sha_v2" : "2a1a72240df07eb14a8c708cad1bd081a79de428df7aa00792919d9ef1609d36",
+  "size_v1" : 2067,
+  "size_v2" : 4896,
+  "timestamp" : "2026-03-19 14:53:47",
+  "identical" : false
+}

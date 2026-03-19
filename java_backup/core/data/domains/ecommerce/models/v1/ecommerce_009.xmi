@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Kenitra_9"
+>
+  <products name="Imprimante_9" price="3787.99" weight="13.0" stock="318"/>
+</ecommerce:Shop>

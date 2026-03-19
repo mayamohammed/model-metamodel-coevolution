@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0379_eattribute_type_changed_from_rename_eclass2__rename_eclass2_v1__to__rename_eclass2_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\rename_eclass2__rename_eclass2_v1__to__rename_eclass2_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:14",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_TYPE_CHANGED",
+    "element" : "login",
+    "context" : "Usr",
+    "old_value" : "EString",
+    "new_value" : "EInt",
+    "description" : "Changed type of login : EString -> EInt"
+  }
+}

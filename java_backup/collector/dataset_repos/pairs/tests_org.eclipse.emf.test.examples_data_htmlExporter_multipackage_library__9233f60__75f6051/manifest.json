@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.examples_data_htmlExporter_multipackage_library__9233f60__75f6051",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.examples/data/htmlExporter/multipackage_library.ecore",
+  "commit_before" : "9233f60c8fb10a174cf60b0c313d5029289401d2",
+  "commit_after" : "75f60514a81456feb5a702268d21df8288908f75",
+  "sha_v1" : "c58430fbb96e0ff16af26d4055e8ccc9cf28c68f2720e3360f8896d892093293",
+  "sha_v2" : "91c0d0e33f4ef05f11baf8bf0b39a73f930b49dc9aed24a5321638e45cbce6f3",
+  "size_v1" : 2663,
+  "size_v2" : 2953,
+  "timestamp" : "2026-03-19 14:53:38",
+  "identical" : false
+}

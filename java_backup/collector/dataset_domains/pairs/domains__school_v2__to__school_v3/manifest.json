@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__school_v2 -> school_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "school_v2.ecore -> school_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\school\\metamodels\\school_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\school\\metamodels\\school_v3.ecore",
+  "sha_v1" : "1eb0c6d257496159b172ed2db5d1a20972304a455cf1760dc43e4e394f57427b",
+  "sha_v2" : "ae8b624081bfb5dd10c81575480acb8fa2daa4347422cc916fa7fd6d2ebc2968",
+  "size_v1" : 2662,
+  "size_v2" : 2775,
+  "timestamp" : "2026-03-19 14:54:24",
+  "identical" : false
+}

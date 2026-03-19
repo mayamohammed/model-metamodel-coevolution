@@ -1,0 +1,13 @@
+{
+  "pair_id" : "org.eclipse.emf__examples_org.eclipse.emf.examples.library_model_extlibrary__f46585f__d010d63",
+  "repo" : "org.eclipse.emf",
+  "file_path" : "examples/org.eclipse.emf.examples.library/model/extlibrary.ecore",
+  "commit_before" : "f46585fb2d776f3c6c4e4699ab46cc416de02800",
+  "commit_after" : "d010d6317126de15e1a83d4fbec6cc73d9b76314",
+  "sha_v1" : "e5613cc92ab48f6ad833001ef342c129c49e046059c79f457adbe6e76e7d7ca2",
+  "sha_v2" : "13b84430f30b1125c8a92167258cb3f1ce8c5b47e0678c62532b33f35837f29d",
+  "size_v1" : 7422,
+  "size_v2" : 7541,
+  "timestamp" : "2026-03-19 14:54:03",
+  "identical" : false
+}

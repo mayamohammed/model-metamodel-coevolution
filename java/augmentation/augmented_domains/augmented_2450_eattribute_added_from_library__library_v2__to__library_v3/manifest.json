@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2450_eattribute_added_from_library__library_v2__to__library_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\library__library_v2__to__library_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:07",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "syntheticProp_614",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EBoolean",
+    "description" : "Added EAttribute syntheticProp_614 to Customer"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="AlphaGroup_15"
+    location="Agadir"
+>
+  <departments name="Operations">
+    <employees name="Youssef" salary="8532.0" age="37" phone="+212602934983"/>
+  </departments>
+</company:Company>

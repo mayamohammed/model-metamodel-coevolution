@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__CAD_CAM_v2 -> CAD_CAM_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "CAD_CAM_v2.ecore -> CAD_CAM_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\CAD_CAM\\metamodels\\CAD_CAM_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\CAD_CAM\\metamodels\\CAD_CAM_v3.ecore",
+  "sha_v1" : "135d33e9bf4bd0522d68807ea57bb9d6526c32c77d2ccefa22c0a186c43aa986",
+  "sha_v2" : "b1f5ce927ce0d1503c399beb0aa314a4f042a718f31832e22e31201981b5b5db",
+  "size_v1" : 2665,
+  "size_v2" : 2778,
+  "timestamp" : "2026-03-19 14:54:34",
+  "identical" : false
+}

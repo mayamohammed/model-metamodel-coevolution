@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Marrakech_34"
+>
+  <faculties name="Faculte_34">
+    <students name="Hassan" grade="11.0" year="1" credits="46"/>
+    <courses title="Physique" credits="4"/>
+  </faculties>
+</university:University>

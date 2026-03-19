@@ -1,0 +1,13 @@
+{
+  "pair_id" : "coevo-repo__it.univaq.disim.usecase.statemachine.model_model_statemachine__5ac4d09__bff1c91",
+  "repo" : "coevo-repo",
+  "file_path" : "it.univaq.disim.usecase.statemachine.model/model/statemachine.ecore",
+  "commit_before" : "5ac4d0999557d6eb94098badb4fe5684fb98d685",
+  "commit_after" : "bff1c9142a5be5215b5ff7caedb60c3933c474a2",
+  "sha_v1" : "13684acf2d6ddd7018f4332a1e6a503e11768eabc777bd61ef7ff04ebd7c00f0",
+  "sha_v2" : "6b38b08c9dba798d1a5ae19b357a8b1bba6179bd6b24d1a20bfe2c8500979f5e",
+  "size_v1" : 2106,
+  "size_v2" : 2318,
+  "timestamp" : "2026-03-19 14:53:00",
+  "identical" : false
+}

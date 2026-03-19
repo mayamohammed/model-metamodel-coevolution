@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_BeniMellal_21"
+>
+  <faculties name="Faculte_21">
+    <students name="Nadia" grade="18.0" year="4" credits="49"/>
+    <courses title="Informatique" credits="5"/>
+  </faculties>
+</university:University>

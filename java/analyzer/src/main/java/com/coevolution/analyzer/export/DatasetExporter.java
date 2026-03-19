@@ -1,4 +1,4 @@
-
+﻿
 package com.coevolution.analyzer.export;
 
 import com.coevolution.analyzer.features.FeatureExtractor;
@@ -7,11 +7,6 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-/**
- * DatasetExporter — parcourt tous les dossiers de paires
- * (pairs/ + augmented/), extrait les features de chaque paire,
- * et exporte un fichier features.csv pret pour Python ML.
- */
 public class DatasetExporter {
 
     private final File   datasetDir;
@@ -33,7 +28,7 @@ public class DatasetExporter {
 
         List<FeatureVector> vectors = new ArrayList<>();
 
-        // Scanner pairs/ et augmented/
+        
         String[] sources = {"pairs", "augmented"};
         for (String src : sources) {
             File srcDir = new File(datasetDir, src);
@@ -55,7 +50,7 @@ public class DatasetExporter {
             }
         }
 
-        // Exporter features.csv
+        
         File csvFile = new File(outputDir, "features.csv");
         try (PrintWriter pw = new PrintWriter(new OutputStreamWriter(
                 new FileOutputStream(csvFile), StandardCharsets.UTF_8))) {
@@ -65,7 +60,7 @@ public class DatasetExporter {
             }
         }
 
-        // Statistiques par label
+        
         Map<String, Integer> labelCount = new LinkedHashMap<>();
         for (FeatureVector fv : vectors) {
             labelCount.merge(fv.getLabel(), 1, Integer::sum);

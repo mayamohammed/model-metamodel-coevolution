@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0120_eattribute_removed_from_banking__banking_v2__to__banking_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\banking__banking_v2__to__banking_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:55:53",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "email",
+    "context" : "Customer",
+    "old_value" : "email",
+    "new_value" : "",
+    "description" : "Removed EAttribute email from Customer"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="AtlasCorp_40"
+    location="Fes"
+>
+  <departments name="Operations">
+    <employees name="Khalid" salary="4806.0" age="29" phone="+212616065842"/>
+  </departments>
+</company:Company>

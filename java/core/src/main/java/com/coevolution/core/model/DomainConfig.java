@@ -1,8 +1,5 @@
-package com.coevolution.core.model;
+﻿package com.coevolution.core.model;
 
-/**
- * Configuration for a domain.
- */
 public class DomainConfig {
 
     private final String name;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueFes_34"
+>
+  <wards name="Service_34">
+    <patients name="Tariq" diagnosis="Fracture" room="256" phone="+212623033543"/>
+    <doctors name="Dr_Khalid" specialty="Dermatologie"/>
+  </wards>
+</hospital:Hospital>

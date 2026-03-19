@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank:Bank
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:bank="http://www.coevolution.com/bank/v1"
+    name="BanqueMaroc_6"
+>
+  <accounts owner="Loubna_6" balance="54118.0" rate="2.0" status="EN_ATTENTE"/>
+</bank:Bank>

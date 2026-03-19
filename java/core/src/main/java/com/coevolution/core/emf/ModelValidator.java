@@ -1,4 +1,4 @@
-package com.coevolution.core.emf;
+﻿package com.coevolution.core.emf;
 
 import com.coevolution.core.model.ValidationResult;
 import org.eclipse.emf.common.util.Diagnostic;
@@ -10,14 +10,9 @@ import org.eclipse.emf.ecore.util.Diagnostician;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Validates XMI models against their metamodel.
- */
 public class ModelValidator {
 
-    /**
-     * Validates a single model resource.
-     */
+    
     public ValidationResult validate(Resource resource,
                                       EPackage ePackage) {
         List<String> errors   = new ArrayList<>();
@@ -61,7 +56,7 @@ public class ModelValidator {
         boolean isValid = errors.isEmpty();
         System.out.println(
             "[ModelValidator] "
-            + (isValid ? "✅ VALID" : "❌ INVALID")
+            + (isValid ? "âœ… VALID" : "âŒ INVALID")
             + " errors=" + errors.size()
         );
         return new ValidationResult(
@@ -69,9 +64,7 @@ public class ModelValidator {
         );
     }
 
-    /**
-     * Validates all models in a list.
-     */
+    
     public List<ValidationResult> validateAll(
             List<Resource> resources,
             EPackage ePackage) {
@@ -94,9 +87,7 @@ public class ModelValidator {
         return results;
     }
 
-    /**
-     * Quick check — returns true if valid.
-     */
+    
     public boolean isValid(Resource resource,
                             EPackage ePackage) {
         return validate(resource, ePackage).isValid();

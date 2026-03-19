@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0191_ereference_removed_from_change_multiplicity4__change_multiplicity4_v1__to__change_multiplicity4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\change_multiplicity4__change_multiplicity4_v1__to__change_multiplicity4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:13",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "items",
+    "context" : "Contract",
+    "old_value" : "items",
+    "new_value" : "",
+    "description" : "Removed EReference items from Contract"
+  }
+}

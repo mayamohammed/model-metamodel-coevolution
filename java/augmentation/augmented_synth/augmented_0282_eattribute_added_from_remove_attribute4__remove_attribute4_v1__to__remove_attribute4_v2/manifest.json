@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0282_eattribute_added_from_remove_attribute4__remove_attribute4_v1__to__remove_attribute4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\remove_attribute4__remove_attribute4_v1__to__remove_attribute4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:14",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "augmentedValue_769",
+    "context" : "Invoice",
+    "old_value" : "",
+    "new_value" : "EInt",
+    "description" : "Added EAttribute augmentedValue_769 to Invoice"
+  }
+}

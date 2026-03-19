@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="HopitalMeknes_42"
+>
+  <wards name="Service_42">
+    <patients name="Houda" diagnosis="Grippe" room="148" phone="+212641354907"/>
+    <doctors name="Dr_Samira" specialty="Pediatrie"/>
+  </wards>
+</hospital:Hospital>

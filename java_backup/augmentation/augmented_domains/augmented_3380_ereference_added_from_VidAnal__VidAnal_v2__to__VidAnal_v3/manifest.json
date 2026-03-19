@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3380_ereference_added_from_VidAnal__VidAnal_v2__to__VidAnal_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\VidAnal__VidAnal_v2__to__VidAnal_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:12",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_690",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "Order",
+    "description" : "Added EReference generatedRef_690 from Customer to Order"
+  }
+}

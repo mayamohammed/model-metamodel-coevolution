@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="SaharaCo_21"
+    location="BeniMellal"
+>
+  <departments name="Informatique">
+    <employees name="Khadija" salary="8904.0" age="55" phone="+212639046778"/>
+  </departments>
+</company:Company>

@@ -1,79 +1,77 @@
-package com.coevolution.collector.pipeline;
+﻿package com.coevolution.collector.pipeline;
 
 import com.coevolution.collector.git.GitRepositoryManager;
 import java.io.File;
-import java.io.IOException;
 
-/**
- * CollectorMain - TOTAL Ecore + collecte
- */
 public class CollectorMain {
+
+    
+    private static final String[][] SOURCES = {
+        
+        { "../../data/repogit",   "dataset_repos",   "500" },
+        { "../../data/domains",   "dataset_domains", "500" },
+        { "../../data/synthetic", "dataset_synth",   "500" }
+    };
 
     public static void main(String[] args) throws Exception {
 
-        if (args.length < 1) {
-            printUsage();
-            System.exit(1);
-        }
-
-        String repoPath  = args[0];
-        String outputDir = args.length > 1 ? args[1] : "dataset";
-        int    maxPairs  = args.length > 2 ? parseIntSafe(args[2], 100) : 100;
-
         System.out.println("=================================================");
-        System.out.println("[CollectorMain] Demarrage du Collector");
-        System.out.println("[CollectorMain] Repo     : " + repoPath);
-        System.out.println("[CollectorMain] Output   : " + outputDir);
-        System.out.println("[CollectorMain] MaxPairs : " + maxPairs);
+        System.out.println("  COLLECTOR MULTI-SOURCES");
         System.out.println("=================================================");
 
-        File repoDir = new File(repoPath);
-        if (!repoDir.exists() || !repoDir.isDirectory()) {
-            System.err.println("[CollectorMain] ERREUR : chemin invalide : " + repoPath);
-            System.exit(1);
+        int totalPaires = 0;
+
+        for (String[] source : SOURCES) {
+            String repoPath  = source[0];
+            String outputDir = source[1];
+            int    maxPairs  = Integer.parseInt(source[2]);
+
+            System.out.println("\nðŸ“‚ SOURCE : " + new File(repoPath).getAbsolutePath());
+            System.out.println("   Output  : " + outputDir);
+            System.out.println("   Max     : " + maxPairs);
+            System.out.println("-------------------------------------------------");
+
+            File repoDir = new File(repoPath);
+            if (!repoDir.exists() || !repoDir.isDirectory()) {
+                System.err.println("   âš ï¸  SKIP : dossier introuvable â†’ "
+                        + repoDir.getAbsolutePath());
+                continue;
+            }
+
+            GitRepositoryManager gitManager = new GitRepositoryManager();
+            try {
+                gitManager.scanAllRepos(repoPath);
+                System.out.println("   Ecore trouvÃ©s : "
+                        + gitManager.getTotalEcoreFiles());
+
+                File outDir = new File(outputDir);
+                CollectionPipeline pipeline =
+                        new CollectionPipeline(gitManager, outDir);
+                pipeline.setMaxPairs(maxPairs);
+                pipeline.run();
+
+                int collected = pipeline.getPairsCollected();
+                totalPaires += collected;
+
+                System.out.println("   âœ… Paires OK  : " + collected);
+                System.out.println("   Identiques    : " + pipeline.getPairsIdentical());
+                System.out.println("   Invalides     : " + pipeline.getPairsInvalid());
+                System.out.println("   Skip          : " + pipeline.getPairsSkipped());
+                System.out.println("   Dataset       : " + outDir.getAbsolutePath());
+
+            } catch (Exception e) {
+                System.err.println("   âŒ ERREUR : " + e.getMessage());
+                e.printStackTrace();
+            } finally {
+                gitManager.close();
+            }
         }
 
-        // 👇 TOTAL ECORES AVANT
-        GitRepositoryManager gitManager = new GitRepositoryManager();
-        gitManager.scanAllRepos(repoPath);
-        System.out.println("📊 TOTAL AVANT: " + gitManager.getTotalEcoreFiles() + " Ecore");
-        
-        try {
-            // Pipeline existant
-            File outDir = new File(outputDir);
-            CollectionPipeline pipeline = new CollectionPipeline(gitManager, outDir);
-            pipeline.setMaxPairs(maxPairs);
-            pipeline.run();
-
-            // Résumé FINAL
-            System.out.println("\n🎯 RÉSULTAT FINAL:");
-            System.out.println("   Ecore scannés : " + gitManager.getTotalEcoreFiles());
-            System.out.println("   Paires OK     : " + pipeline.getPairsCollected());
-            System.out.println("   Identiques    : " + pipeline.getPairsIdentical());
-            System.out.println("   Invalides     : " + pipeline.getPairsInvalid());
-            System.out.println("   Skip          : " + pipeline.getPairsSkipped());
-            System.out.println("   Dataset       : " + outDir.getAbsolutePath());
-            System.out.println("=================================================");
-
-        } catch (Exception e) {
-            System.err.println("[CollectorMain] ERREUR : " + e.getMessage());
-            e.printStackTrace();
-            System.exit(1);
-        } finally {
-            gitManager.close();
-        }
-    }
-
-    private static void printUsage() {
-        System.out.println("Usage : CollectorMain <repoPath> [outputDir] [maxPairs]");
-        System.out.println("Ex: CollectorMain ../../data dataset 500");
-    }
-
-    private static int parseIntSafe(String value, int defaultValue) {
-        try {
-            return Integer.parseInt(value);
-        } catch (NumberFormatException e) {
-            return defaultValue;
-        }
+        System.out.println("\n=================================================");
+        System.out.println("  RÃ‰SULTAT FINAL TOUTES SOURCES");
+        System.out.println("=================================================");
+        System.out.println("  TOTAL PAIRES COLLECTÃ‰ES : " + totalPaires);
+        System.out.println("=================================================");
     }
 }
+

@@ -1,13 +1,10 @@
-package com.coevolution.core.util;
+﻿package com.coevolution.core.util;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Exports data to JSON files.
- */
 public class JsonExporter {
 
     public static void export(Map<String, Object> data,
@@ -19,7 +16,7 @@ public class JsonExporter {
                  new FileWriter(outputPath)) {
             writer.write(toJson(data, 0));
             System.out.println(
-                "[JsonExporter] → " + outputPath
+                "[JsonExporter] â†’ " + outputPath
             );
         } catch (IOException e) {
             throw new RuntimeException(

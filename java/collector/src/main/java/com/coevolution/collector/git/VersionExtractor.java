@@ -1,4 +1,4 @@
-package com.coevolution.collector.git;
+﻿package com.coevolution.collector.git;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.diff.DiffEntry;
@@ -17,12 +17,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * VersionExtractor - utilitaires pour :
- *  - lister les commits qui touchent des fichiers .ecore
- *  - lister l historique d un fichier specifique
- *  - extraire le contenu d un fichier a un commit donne
- */
 public class VersionExtractor {
 
     private final Repository repository;
@@ -33,10 +27,7 @@ public class VersionExtractor {
         this.git = new Git(repository);
     }
 
-    /**
-     * Liste tous les commits qui modifient au moins un fichier .ecore.
-     * Les commits sont retournes du plus recent au plus ancien.
-     */
+    
     public List<RevCommit> listEcoreCommits() throws IOException {
         List<RevCommit> result = new ArrayList<>();
 
@@ -60,19 +51,16 @@ public class VersionExtractor {
         return result;
     }
 
-    /**
-     * Verifie si un commit modifie au moins un fichier .ecore
-     * en comparant avec son/ses parent(s).
-     */
+    
     private boolean commitTouchesEcore(RevCommit commit) throws IOException {
         RevCommit[] parents = commit.getParents();
 
-        // Commit initial : verifier si l arbre contient un .ecore
+        
         if (parents == null || parents.length == 0) {
             return treeContainsEcore(commit.getTree());
         }
 
-        // Comparer avec chaque parent
+        
         try (RevWalk revWalk = new RevWalk(repository)) {
             for (RevCommit parent : parents) {
                 revWalk.parseHeaders(parent);
@@ -93,9 +81,7 @@ public class VersionExtractor {
         return false;
     }
 
-    /**
-     * Verifie si un arbre Git contient au moins un fichier .ecore.
-     */
+    
     private boolean treeContainsEcore(RevTree tree) throws IOException {
         try (TreeWalk treeWalk = new TreeWalk(repository)) {
             treeWalk.addTree(tree);
@@ -109,12 +95,7 @@ public class VersionExtractor {
         return false;
     }
 
-    /**
-     * Liste l historique complet d un fichier specifique (git log -- path).
-     * Les commits sont retournes du plus recent au plus ancien.
-     *
-     * @param filePath chemin relatif du fichier dans le depot (ex: model/Company.ecore)
-     */
+    
     public List<RevCommit> listFileHistory(String filePath) throws Exception {
         List<RevCommit> result = new ArrayList<>();
         Iterable<RevCommit> logs = git.log()
@@ -127,13 +108,7 @@ public class VersionExtractor {
         return result;
     }
 
-    /**
-     * Extrait le contenu (String UTF-8) d un fichier a un commit donne.
-     * Retourne null si le fichier n existe pas dans ce commit.
-     *
-     * @param commit   le commit cible
-     * @param filePath chemin relatif du fichier dans le depot
-     */
+    
     public String extractFileContent(RevCommit commit, String filePath) throws IOException {
         RevTree tree = commit.getTree();
 
@@ -150,20 +125,13 @@ public class VersionExtractor {
         }
     }
 
-    /**
-     * Retourne les paires consecutives (commitN+1, commitN) pour un fichier donne.
-     * Chaque paire = {avant, apres} = {history[i+1], history[i]}
-     * La liste est ordonnee de la paire la plus recente a la plus ancienne.
-     *
-     * @param filePath chemin relatif du fichier .ecore dans le depot
-     * @return liste de tableaux [commitAvant, commitApres]
-     */
+    
     public List<RevCommit[]> listConsecutivePairs(String filePath) throws Exception {
         List<RevCommit> history = listFileHistory(filePath);
         List<RevCommit[]> pairs = new ArrayList<>();
 
-        // history[0] = le plus recent, history[n-1] = le plus ancien
-        // paire : avant = history[i+1], apres = history[i]
+        
+        
         for (int i = 0; i < history.size() - 1; i++) {
             RevCommit after  = history.get(i);
             RevCommit before = history.get(i + 1);
@@ -175,9 +143,7 @@ public class VersionExtractor {
         return pairs;
     }
 
-    /**
-     * Liste tous les chemins de fichiers .ecore presents dans HEAD.
-     */
+    
     public List<String> listEcoreFilesInHead() throws IOException {
         List<String> result = new ArrayList<>();
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="SigmaServices_44"
+    location="Meknes"
+>
+  <departments name="Juridique">
+    <employees name="Youssef" salary="10569.0" age="51" phone="+212651858633"/>
+  </departments>
+</company:Company>

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0525_eattribute_removed_from_synthetic__change_abstract4_v1__to__change_abstract4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\synthetic__change_abstract4_v1__to__change_abstract4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:15",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "model",
+    "context" : "Robot",
+    "old_value" : "model",
+    "new_value" : "",
+    "description" : "Removed EAttribute model from Robot"
+  }
+}

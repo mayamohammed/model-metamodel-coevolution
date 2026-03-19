@@ -1,4 +1,4 @@
-package com.coevolution.collector.git;
+﻿package com.coevolution.collector.git;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.Repository;
@@ -14,12 +14,12 @@ public class GitRepositoryManager {
     private List<Repository> repositories = new ArrayList<>();
     private List<Git>        gits         = new ArrayList<>();
     private int totalEcoreFiles = 0;
-    private File reposRoot = null; // FIX : pour getReposRoot()
+    private File reposRoot = null; 
 
     public GitRepositoryManager() {}
 
     public void scanAllRepos(String dataRootPath) throws IOException {
-        reposRoot = new File(dataRootPath); // FIX : sauvegarde root
+        reposRoot = new File(dataRootPath); 
         Path dataPath = Paths.get(dataRootPath);
 
         Files.walk(dataPath)
@@ -33,8 +33,8 @@ public class GitRepositoryManager {
             })
             .forEach(this::openRepo);
 
-        System.out.println("\n🎯 RÉSULTAT FINAL:");
-        System.out.println("   Ecore trouvés : " + totalEcoreFiles);
+        System.out.println("\nðŸŽ¯ RÃ‰SULTAT FINAL:");
+        System.out.println("   Ecore trouvÃ©s : " + totalEcoreFiles);
         System.out.println("   Repos Git     : " + repositories.size());
         System.out.println("====================");
     }
@@ -48,9 +48,9 @@ public class GitRepositoryManager {
             Git git = new Git(repo);
             repositories.add(repo);
             gits.add(git);
-            System.out.println("✅ " + repo.getDirectory().getParentFile().getName());
+            System.out.println("âœ… " + repo.getDirectory().getParentFile().getName());
         } catch (IOException e) {
-            System.err.println("❌ Skip " + gitDirPath.getParent() + " → " + e.getMessage());
+            System.err.println("âŒ Skip " + gitDirPath.getParent() + " â†’ " + e.getMessage());
         }
     }
 
@@ -58,20 +58,16 @@ public class GitRepositoryManager {
         scanAllRepos(repoPath);
     }
 
-    /**
-     * FIX : retourne 1er repo ou NULL (pas crash)
-     */
+    
     public Repository getRepository() {
         if (repositories.isEmpty()) {
             System.out.println("[GitRepositoryManager] Mode disque pur - pas de Git");
-            return null; // FIX : null au lieu de crash
+            return null; 
         }
         return repositories.get(0);
     }
 
-    /**
-     * FIX : retourne root pour Mode C
-     */
+    
     public File getReposRoot() {
         return reposRoot;
     }
@@ -81,7 +77,7 @@ public class GitRepositoryManager {
     }
 
     public Git getGit() {
-        if (gits.isEmpty()) return null; // FIX : null au lieu de crash
+        if (gits.isEmpty()) return null; 
         return gits.get(0);
     }
 
@@ -94,8 +90,9 @@ public class GitRepositoryManager {
     public void closeAll() {
         gits.forEach(Git::close);
         repositories.forEach(Repository::close);
-        System.out.println("🔒 Fermé " + repositories.size() + " repos");
+        System.out.println("ðŸ”’ FermÃ© " + repositories.size() + " repos");
         repositories.clear();
         gits.clear();
     }
 }
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueTanger_39"
+>
+  <wards name="Service_39">
+    <patients name="Houda" diagnosis="Migraine" room="322" phone="+212652016262"/>
+    <doctors name="Dr_Imane" specialty="Radiologie"/>
+  </wards>
+</hospital:Hospital>

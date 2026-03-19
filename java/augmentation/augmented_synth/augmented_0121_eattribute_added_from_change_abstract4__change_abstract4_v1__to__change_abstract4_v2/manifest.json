@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0121_eattribute_added_from_change_abstract4__change_abstract4_v1__to__change_abstract4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\change_abstract4__change_abstract4_v1__to__change_abstract4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:13",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "augmentedValue_745",
+    "context" : "Robot",
+    "old_value" : "",
+    "new_value" : "EInt",
+    "description" : "Added EAttribute augmentedValue_745 to Robot"
+  }
+}

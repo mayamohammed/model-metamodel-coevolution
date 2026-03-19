@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueMarrakech_11"
+>
+  <wards name="Service_11">
+    <patients name="Meriem" diagnosis="Fracture" room="275" phone="+212627916447"/>
+    <doctors name="Dr_Hassan" specialty="Cardiologie"/>
+  </wards>
+</hospital:Hospital>

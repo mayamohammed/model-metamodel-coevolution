@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0902_eattribute_added_from_domains__DocMgmt_v1__to__DocMgmt_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__DocMgmt_v1__to__DocMgmt_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:55:58",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "derivedAttr_442",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EFloat",
+    "description" : "Added EAttribute derivedAttr_442 to Customer"
+  }
+}

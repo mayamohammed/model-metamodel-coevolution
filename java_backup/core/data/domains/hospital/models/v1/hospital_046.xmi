@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueSafi_46"
+>
+  <wards name="Service_46">
+    <patients name="Youssef" diagnosis="Infection" room="361" phone="+212691556190"/>
+    <doctors name="Dr_Khadija" specialty="Neurologie"/>
+  </wards>
+</hospital:Hospital>

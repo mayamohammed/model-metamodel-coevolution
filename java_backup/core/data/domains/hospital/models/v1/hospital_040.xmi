@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueMarrakech_40"
+>
+  <wards name="Service_40">
+    <patients name="Omar" diagnosis="Diabete" room="237" phone="+212609935451"/>
+    <doctors name="Dr_Hamza" specialty="Orthopedie"/>
+  </wards>
+</hospital:Hospital>

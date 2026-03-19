@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueFes_16"
+>
+  <wards name="Service_16">
+    <patients name="Hamza" diagnosis="Infection" room="381" phone="+212631924467"/>
+    <doctors name="Dr_Houda" specialty="Cardiologie"/>
+  </wards>
+</hospital:Hospital>

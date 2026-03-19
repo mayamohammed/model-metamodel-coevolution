@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2958_ereference_removed_from_SalesForce__SalesForce_v2__to__SalesForce_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\SalesForce__SalesForce_v2__to__SalesForce_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:09",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "orders",
+    "context" : "Customer",
+    "old_value" : "orders",
+    "new_value" : "",
+    "description" : "Removed EReference orders from Customer"
+  }
+}

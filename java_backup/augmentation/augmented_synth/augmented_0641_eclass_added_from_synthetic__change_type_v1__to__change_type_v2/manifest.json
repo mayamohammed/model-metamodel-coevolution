@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0641_eclass_added_from_synthetic__change_type_v1__to__change_type_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\synthetic__change_type_v1__to__change_type_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 15:56:15",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "VirtualNode_839",
+    "context" : "sensor",
+    "old_value" : "",
+    "new_value" : "VirtualNode_839",
+    "description" : "Added EClass VirtualNode_839"
+  }
+}
