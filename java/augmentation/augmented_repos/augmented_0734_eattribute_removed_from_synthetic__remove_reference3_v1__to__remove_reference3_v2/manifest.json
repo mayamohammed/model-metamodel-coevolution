@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0734_eattribute_removed_from_synthetic__remove_reference3_v1__to__remove_reference3_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\synthetic__remove_reference3_v1__to__remove_reference3_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:24:03",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "title",
+    "context" : "Course",
+    "old_value" : "title",
+    "new_value" : "",
+    "description" : "Removed EAttribute title from Course"
+  }
+}

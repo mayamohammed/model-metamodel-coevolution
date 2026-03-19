@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2940_eattribute_type_changed_from_tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_creation_library.xsds_emf_library__0ed4d92__06e9590",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_creation_library.xsds_emf_library__0ed4d92__06e9590\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:58",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_TYPE_CHANGED",
+    "element" : "name",
+    "context" : "Library",
+    "old_value" : "String",
+    "new_value" : "EString",
+    "description" : "Changed type of name : String -> EString"
+  }
+}

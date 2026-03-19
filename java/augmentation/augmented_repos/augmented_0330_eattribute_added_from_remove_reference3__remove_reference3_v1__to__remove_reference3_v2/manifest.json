@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0330_eattribute_added_from_remove_reference3__remove_reference3_v1__to__remove_reference3_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\remove_reference3__remove_reference3_v1__to__remove_reference3_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:24:00",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "syntheticProp_50",
+    "context" : "Course",
+    "old_value" : "",
+    "new_value" : "EBoolean",
+    "description" : "Added EAttribute syntheticProp_50 to Course"
+  }
+}

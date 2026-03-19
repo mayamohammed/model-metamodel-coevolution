@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0288_eattribute_removed_from_clouddesigner_org.occiware.clouddesigner.occi_model_OCCI__4401611__bd1bfaf",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi_model_OCCI__4401611__bd1bfaf\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:24",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "title",
+    "context" : "Category",
+    "old_value" : "title",
+    "new_value" : "",
+    "description" : "Removed EAttribute title from Category"
+  }
+}

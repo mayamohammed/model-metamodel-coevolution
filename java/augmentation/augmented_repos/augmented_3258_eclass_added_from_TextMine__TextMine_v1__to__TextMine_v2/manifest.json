@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3258_eclass_added_from_TextMine__TextMine_v1__to__TextMine_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\TextMine__TextMine_v1__to__TextMine_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:43",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "SyntheticElement_362",
+    "context" : "TextMine",
+    "old_value" : "",
+    "new_value" : "SyntheticElement_362",
+    "description" : "Added EClass SyntheticElement_362"
+  }
+}

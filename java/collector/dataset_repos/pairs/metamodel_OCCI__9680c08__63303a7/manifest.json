@@ -1,0 +1,13 @@
+{
+  "pair_id" : "occi-repo__metamodel_OCCI__9680c08__63303a7",
+  "repo" : "occi-repo",
+  "file_path" : "metamodel/OCCI.ecore",
+  "commit_before" : "9680c08000a64bfd1d449ceb13518c22d23c0159",
+  "commit_after" : "63303a78027d8afbb1069520ab38ac018f6e9784",
+  "sha_v1" : "37525285ea25842b67fd5b0089163ed10966dbfa74fd6adb2000e27ab50aa81c",
+  "sha_v2" : "5937bcb0e903ce69e07a68a2d8f4d37305ed0462751ed17962dd366c733bd528",
+  "size_v1" : 12927,
+  "size_v2" : 13257,
+  "timestamp" : "2026-03-18 23:12:56",
+  "identical" : false
+}

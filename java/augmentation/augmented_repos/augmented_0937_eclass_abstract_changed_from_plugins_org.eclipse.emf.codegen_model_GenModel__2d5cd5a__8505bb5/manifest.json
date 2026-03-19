@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0937_eclass_abstract_changed_from_plugins_org.eclipse.emf.codegen_model_GenModel__2d5cd5a__8505bb5",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__2d5cd5a__8505bb5\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:32",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "GenModel",
+    "context" : "genmodel",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of GenModel : false -> true"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "occi-repo__clouddesigner_org.occiware.clouddesigner.occi_model_OCCI__d52fba9__d62caf5",
+  "repo" : "occi-repo",
+  "file_path" : "clouddesigner/org.occiware.clouddesigner.occi/model/OCCI.ecore",
+  "commit_before" : "d52fba91fa28df93cf2a50aa7e0a30428ead3d23",
+  "commit_after" : "d62caf59fbd0cdd17d828fead2bc120b28289f29",
+  "sha_v1" : "9fb774d6c81b53bad1672e8a5cd015a2f55e0b1b3d94988c3c9b88375bfca04f",
+  "sha_v2" : "5127fce581dbd74be17d918030be9a75e4ec920ee7a5c2fa404a377a9983c6e1",
+  "size_v1" : 7616,
+  "size_v2" : 13339,
+  "timestamp" : "2026-03-18 23:12:56",
+  "identical" : false
+}

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1844_ereference_removed_from_plugins_org.eclipse.emf.gwt_model_Ecore__74d4cb3__e6cf65c",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.gwt_model_Ecore__74d4cb3__e6cf65c\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:45",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "eAttributeType",
+    "context" : "EAttribute",
+    "old_value" : "eAttributeType",
+    "new_value" : "",
+    "description" : "Removed EReference eAttributeType from EAttribute"
+  }
+}

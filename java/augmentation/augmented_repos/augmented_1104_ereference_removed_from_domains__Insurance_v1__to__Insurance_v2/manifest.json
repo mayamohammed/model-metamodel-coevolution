@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1104_ereference_removed_from_domains__Insurance_v1__to__Insurance_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__Insurance_v1__to__Insurance_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:29",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "orders",
+    "context" : "Customer",
+    "old_value" : "orders",
+    "new_value" : "",
+    "description" : "Removed EReference orders from Customer"
+  }
+}

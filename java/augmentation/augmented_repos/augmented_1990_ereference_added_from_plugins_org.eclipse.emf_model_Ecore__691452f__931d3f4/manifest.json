@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1990_ereference_added_from_plugins_org.eclipse.emf_model_Ecore__691452f__931d3f4",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf_model_Ecore__691452f__931d3f4\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:47",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_212",
+    "context" : "EAttribute",
+    "old_value" : "",
+    "new_value" : "EAnnotation",
+    "description" : "Added EReference generatedRef_212 from EAttribute to EAnnotation"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "LegalDoc__LegalDoc_v1 -> LegalDoc_v2__disk:C:__disk:C:",
+  "repo" : "LegalDoc",
+  "file_path" : "LegalDoc_v1.ecore -> LegalDoc_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\LegalDoc\\metamodels\\LegalDoc_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\LegalDoc\\metamodels\\LegalDoc_v2.ecore",
+  "sha_v1" : "8cdb0bef2954db4f6fdb2e708744ad8cf7fa0776d6344bf1284f0f3ea83eec5a",
+  "sha_v2" : "a1c0d7da47034be98f99e334dbe194f9ed5d0b56ee4f2e2a5eefdb10076d1678",
+  "size_v1" : 2076,
+  "size_v2" : 2668,
+  "timestamp" : "2026-03-18 23:35:26",
+  "identical" : false
+}

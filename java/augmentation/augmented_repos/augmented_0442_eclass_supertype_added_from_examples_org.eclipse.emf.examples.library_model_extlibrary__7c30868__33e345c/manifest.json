@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0442_eclass_supertype_added_from_examples_org.eclipse.emf.examples.library_model_extlibrary__7c30868__33e345c",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\examples_org.eclipse.emf.examples.library_model_extlibrary__7c30868__33e345c\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:26",
+  "ground_truth" : {
+    "change_type" : "ECLASS_SUPERTYPE_ADDED",
+    "element" : "Item",
+    "context" : "Book",
+    "old_value" : "",
+    "new_value" : "Item",
+    "description" : "Book now extends Item"
+  }
+}

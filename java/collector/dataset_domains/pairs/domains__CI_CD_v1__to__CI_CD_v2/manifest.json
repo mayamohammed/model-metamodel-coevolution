@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__CI_CD_v1 -> CI_CD_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "CI_CD_v1.ecore -> CI_CD_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\CI_CD\\metamodels\\CI_CD_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\CI_CD\\metamodels\\CI_CD_v2.ecore",
+  "sha_v1" : "3e9221c81a4e46f42c916cfaa04dd2f1e3c11af55c43a177eb487eca73940e3f",
+  "sha_v2" : "d69c008e4af3aaa1af871bf72c3b55505257a1f613eb136df99ee276de3e3000",
+  "size_v1" : 2067,
+  "size_v2" : 2659,
+  "timestamp" : "2026-03-18 23:35:23",
+  "identical" : false
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.examples_data_htmlExporter_GenericsGoCrazy__f404e05__bed2cb8",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.examples/data/htmlExporter/GenericsGoCrazy.ecore",
+  "commit_before" : "f404e05b54b6799951e11889a2ae6f913c1b1da2",
+  "commit_after" : "bed2cb8e818adb45ffbd0691ad445ed3bdecbd41",
+  "sha_v1" : "61bfad49dd74b08e6838e6db77da21ad4d33dc107d6b9f9654efa5375d5298f4",
+  "sha_v2" : "1d92fdbbfecd29b8a6f09d0c5bb75736b44b162d4913386404ed43bdda9fab77",
+  "size_v1" : 7560,
+  "size_v2" : 7552,
+  "timestamp" : "2026-03-18 23:12:46",
+  "identical" : false
+}

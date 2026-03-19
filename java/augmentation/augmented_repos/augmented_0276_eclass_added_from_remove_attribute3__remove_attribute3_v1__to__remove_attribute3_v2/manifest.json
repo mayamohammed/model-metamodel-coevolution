@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0276_eclass_added_from_remove_attribute3__remove_attribute3_v1__to__remove_attribute3_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\remove_attribute3__remove_attribute3_v1__to__remove_attribute3_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:23:59",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "SyntheticElement_42",
+    "context" : "crm",
+    "old_value" : "",
+    "new_value" : "SyntheticElement_42",
+    "description" : "Added EClass SyntheticElement_42"
+  }
+}

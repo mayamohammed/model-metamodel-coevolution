@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1141_eclass_added_from_tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_creation_library.java_emf_library__b0dbc4b__eaa95b9",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_creation_library.java_emf_library__b0dbc4b__eaa95b9\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:21",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "InjectedEntity_328",
+    "context" : "library",
+    "old_value" : "",
+    "new_value" : "InjectedEntity_328",
+    "description" : "Added EClass InjectedEntity_328"
+  }
+}

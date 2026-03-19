@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2200_eclass_added_from_plugins_org.eclipse.xsd_model_XSD__e76f281__2910a19",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.xsd_model_XSD__e76f281__2910a19\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:50",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "NewConcept_235",
+    "context" : "xsd",
+    "old_value" : "",
+    "new_value" : "NewConcept_235",
+    "description" : "Added EClass NewConcept_235"
+  }
+}

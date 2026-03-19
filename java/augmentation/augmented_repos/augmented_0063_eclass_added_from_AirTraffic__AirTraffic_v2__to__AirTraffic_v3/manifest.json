@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0063_eclass_added_from_AirTraffic__AirTraffic_v2__to__AirTraffic_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\AirTraffic__AirTraffic_v2__to__AirTraffic_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:20",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "ComputedClass_7",
+    "context" : "AirTraffic",
+    "old_value" : "",
+    "new_value" : "ComputedClass_7",
+    "description" : "Added EClass ComputedClass_7"
+  }
+}

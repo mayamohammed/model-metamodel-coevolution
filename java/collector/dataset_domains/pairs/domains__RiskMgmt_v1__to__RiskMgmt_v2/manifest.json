@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__RiskMgmt_v1 -> RiskMgmt_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "RiskMgmt_v1.ecore -> RiskMgmt_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\RiskMgmt\\metamodels\\RiskMgmt_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\RiskMgmt\\metamodels\\RiskMgmt_v2.ecore",
+  "sha_v1" : "d6a76a4ad45e9d66bc385b876f0882373edecfba215a7c4fc61259ef4441ab1a",
+  "sha_v2" : "352eaef6120170febbb21b3e6ba682a2cff5ee308f2c9aa7bbfd0d8867c42da2",
+  "size_v1" : 2076,
+  "size_v2" : 2668,
+  "timestamp" : "2026-03-18 23:35:21",
+  "identical" : false
+}

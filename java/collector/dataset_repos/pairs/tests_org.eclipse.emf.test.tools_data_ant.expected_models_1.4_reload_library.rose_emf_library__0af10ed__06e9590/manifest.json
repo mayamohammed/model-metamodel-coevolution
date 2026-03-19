@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.tools_data_ant.expected_models_1.4_reload_library.rose_emf_library__0af10ed__06e9590",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.tools/data/ant.expected/models/1.4/reload/library.rose/emf/library.ecore",
+  "commit_before" : "0af10eda4cbc82d5e70ee9e1b1a56f567ddd3bf7",
+  "commit_after" : "06e9590a8111653a1db4b7bddd8e5a42528b0b46",
+  "sha_v1" : "fcdc06c8430db6ca24e28d5ef489c7e061cac7d88f4da478090978c2acc8aa6f",
+  "sha_v2" : "fcdc06c8430db6ca24e28d5ef489c7e061cac7d88f4da478090978c2acc8aa6f",
+  "size_v1" : 2201,
+  "size_v2" : 2201,
+  "timestamp" : "2026-03-18 23:12:48",
+  "identical" : true
+}

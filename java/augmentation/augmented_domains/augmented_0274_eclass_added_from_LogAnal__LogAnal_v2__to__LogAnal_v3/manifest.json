@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0274_eclass_added_from_LogAnal__LogAnal_v2__to__LogAnal_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\LogAnal__LogAnal_v2__to__LogAnal_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 01:08:28",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "ExtendedObject_274",
+    "context" : "LogAnal",
+    "old_value" : "",
+    "new_value" : "ExtendedObject_274",
+    "description" : "Added EClass ExtendedObject_274"
+  }
+}

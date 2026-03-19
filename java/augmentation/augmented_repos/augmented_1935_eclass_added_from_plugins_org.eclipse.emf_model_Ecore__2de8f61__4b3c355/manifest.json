@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1935_eclass_added_from_plugins_org.eclipse.emf_model_Ecore__2de8f61__4b3c355",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf_model_Ecore__2de8f61__4b3c355\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:46",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "ComputedClass_207",
+    "context" : "ecore",
+    "old_value" : "",
+    "new_value" : "ComputedClass_207",
+    "description" : "Added EClass ComputedClass_207"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0680_ereference_multiplicity_changed_from_metamodel_OCCI__b739407__54766a1",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\metamodel_OCCI__b739407__54766a1\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:29",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_MULTIPLICITY_CHANGED",
+    "element" : "attributes",
+    "context" : "Category",
+    "old_value" : "[0..*]",
+    "new_value" : "[1..1]",
+    "description" : "Changed multiplicity of attributes"
+  }
+}

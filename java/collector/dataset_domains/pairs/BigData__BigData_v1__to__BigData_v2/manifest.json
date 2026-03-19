@@ -1,0 +1,13 @@
+{
+  "pair_id" : "BigData__BigData_v1 -> BigData_v2__disk:C:__disk:C:",
+  "repo" : "BigData",
+  "file_path" : "BigData_v1.ecore -> BigData_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\BigData\\metamodels\\BigData_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\BigData\\metamodels\\BigData_v2.ecore",
+  "sha_v1" : "7dbe431947ba541abc3d48cabd5df86f6a085dee8886bc042e443811da7601d9",
+  "sha_v2" : "1de4b4d7cf1a053fd63804bb4a10025805eec93221247d0a3d899079aac3ce3e",
+  "size_v1" : 2073,
+  "size_v2" : 2665,
+  "timestamp" : "2026-03-18 23:35:24",
+  "identical" : false
+}

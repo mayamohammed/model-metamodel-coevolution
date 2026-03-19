@@ -1,0 +1,13 @@
+{
+  "pair_id" : "org.eclipse.emf__examples_org.eclipse.emf.java_model_Java__318773f__d53e88b",
+  "repo" : "org.eclipse.emf",
+  "file_path" : "examples/org.eclipse.emf.java/model/Java.ecore",
+  "commit_before" : "318773f10d949a1dfd1ec59c02e8a9f8684b9bc3",
+  "commit_after" : "d53e88b2dab25974ebaed434d2707cbeb0c03892",
+  "sha_v1" : "8122346074902d60647ae8334cc4b525c67ac418ca75b25302219d5d4b13ad9f",
+  "sha_v2" : "772e4d6e01029654bc7e74b1a7cf627d6910e7645a590852f91ee914c8e519a4",
+  "size_v1" : 9506,
+  "size_v2" : 9800,
+  "timestamp" : "2026-03-18 23:12:58",
+  "identical" : false
+}

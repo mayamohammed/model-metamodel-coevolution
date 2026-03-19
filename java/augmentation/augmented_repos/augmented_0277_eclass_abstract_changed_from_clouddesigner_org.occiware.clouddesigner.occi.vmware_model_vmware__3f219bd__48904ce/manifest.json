@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0277_eclass_abstract_changed_from_clouddesigner_org.occiware.clouddesigner.occi.vmware_model_vmware__3f219bd__48904ce",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.vmware_model_vmware__3f219bd__48904ce\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:24",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Datastore",
+    "context" : "vmware",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Datastore : false -> true"
+  }
+}

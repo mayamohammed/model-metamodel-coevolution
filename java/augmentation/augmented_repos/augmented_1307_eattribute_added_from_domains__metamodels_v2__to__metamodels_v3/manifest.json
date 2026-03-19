@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1307_eattribute_added_from_domains__metamodels_v2__to__metamodels_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__metamodels_v2__to__metamodels_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:30",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "augmentedValue_145",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EInt",
+    "description" : "Added EAttribute augmentedValue_145 to Customer"
+  }
+}

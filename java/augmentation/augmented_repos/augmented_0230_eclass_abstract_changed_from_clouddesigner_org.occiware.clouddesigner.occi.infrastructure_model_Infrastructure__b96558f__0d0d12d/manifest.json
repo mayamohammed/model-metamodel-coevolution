@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0230_eclass_abstract_changed_from_clouddesigner_org.occiware.clouddesigner.occi.infrastructure_model_Infrastructure__b96558f__0d0d12d",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.infrastructure_model_Infrastructure__b96558f__0d0d12d\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:23",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Network",
+    "context" : "infrastructure",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Network : false -> true"
+  }
+}

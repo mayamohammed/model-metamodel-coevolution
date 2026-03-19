@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1232_ereference_removed_from_tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_reload_library.xsds_emf_library__0af10ed__0ed4d92",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_reload_library.xsds_emf_library__0af10ed__0ed4d92\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:22",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "writers",
+    "context" : "Library",
+    "old_value" : "writers",
+    "new_value" : "",
+    "description" : "Removed EReference writers from Library"
+  }
+}

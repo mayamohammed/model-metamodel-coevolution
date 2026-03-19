@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0240_eattribute_added_from_clouddesigner_org.occiware.clouddesigner.occi.linkeddata_model_linkeddata__c76b8ba__fc447a9",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.linkeddata_model_linkeddata__c76b8ba__fc447a9\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:23",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "derivedAttr_34",
+    "context" : "Ldproject",
+    "old_value" : "",
+    "new_value" : "EFloat",
+    "description" : "Added EAttribute derivedAttr_34 to Ldproject"
+  }
+}

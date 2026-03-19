@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2235_eclass_supertype_added_from_tests_org.eclipse.emf.test.common_models_MovieDB_customer__b51a32b__b28615e",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.common_models_MovieDB_customer__b51a32b__b28615e\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:50",
+  "ground_truth" : {
+    "change_type" : "ECLASS_SUPERTYPE_ADDED",
+    "element" : "AddressType",
+    "context" : "CreditInfo",
+    "old_value" : "",
+    "new_value" : "AddressType",
+    "description" : "CreditInfo now extends AddressType"
+  }
+}

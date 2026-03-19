@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0711_eclass_added_from_domains__ChatBot_v2__to__ChatBot_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__ChatBot_v2__to__ChatBot_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:26",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "VirtualNode_79",
+    "context" : "ChatBot",
+    "old_value" : "",
+    "new_value" : "VirtualNode_79",
+    "description" : "Added EClass VirtualNode_79"
+  }
+}

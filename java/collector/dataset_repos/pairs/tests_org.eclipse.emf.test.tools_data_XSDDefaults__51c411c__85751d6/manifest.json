@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.tools_data_XSDDefaults__51c411c__85751d6",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.tools/data/XSDDefaults.ecore",
+  "commit_before" : "51c411ce0f181b3995f74c124b7f413d03e25526",
+  "commit_after" : "85751d6368033f16be8f36aa10a76127b6720626",
+  "sha_v1" : "ab9013403fcebaaabacda4d8b316628fde18c06029773e5faec29fceadd15451",
+  "sha_v2" : "2813ae24b24b62852187499315ce83808bbdac4f5ba073300e357565a1946a3e",
+  "size_v1" : 15020,
+  "size_v2" : 15042,
+  "timestamp" : "2026-03-18 23:12:47",
+  "identical" : false
+}

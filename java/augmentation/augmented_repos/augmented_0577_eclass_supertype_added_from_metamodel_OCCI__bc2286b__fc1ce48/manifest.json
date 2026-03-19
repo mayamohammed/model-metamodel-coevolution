@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0577_eclass_supertype_added_from_metamodel_OCCI__bc2286b__fc1ce48",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\metamodel_OCCI__bc2286b__fc1ce48\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:04",
+  "ground_truth" : {
+    "change_type" : "ECLASS_SUPERTYPE_ADDED",
+    "element" : "Category",
+    "context" : "Attribute",
+    "old_value" : "",
+    "new_value" : "Category",
+    "description" : "Attribute now extends Category"
+  }
+}

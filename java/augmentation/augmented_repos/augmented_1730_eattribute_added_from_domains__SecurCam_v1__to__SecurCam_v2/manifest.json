@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1730_eattribute_added_from_domains__SecurCam_v1__to__SecurCam_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__SecurCam_v1__to__SecurCam_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:33",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "generatedField_192",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EString",
+    "description" : "Added EAttribute generatedField_192 to Customer"
+  }
+}

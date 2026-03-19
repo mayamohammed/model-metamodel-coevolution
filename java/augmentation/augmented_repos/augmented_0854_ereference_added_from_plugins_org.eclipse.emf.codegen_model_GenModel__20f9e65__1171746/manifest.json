@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0854_ereference_added_from_plugins_org.eclipse.emf.codegen_model_GenModel__20f9e65__1171746",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__20f9e65__1171746\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:31",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_98",
+    "context" : "GenModel",
+    "old_value" : "",
+    "new_value" : "GenPackage",
+    "description" : "Added EReference generatedRef_98 from GenModel to GenPackage"
+  }
+}

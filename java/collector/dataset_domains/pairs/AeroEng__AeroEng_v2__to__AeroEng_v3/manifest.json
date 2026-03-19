@@ -1,0 +1,13 @@
+{
+  "pair_id" : "AeroEng__AeroEng_v2 -> AeroEng_v3__disk:C:__disk:C:",
+  "repo" : "AeroEng",
+  "file_path" : "AeroEng_v2.ecore -> AeroEng_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\AeroEng\\metamodels\\AeroEng_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\AeroEng\\metamodels\\AeroEng_v3.ecore",
+  "sha_v1" : "1ca94b44913f03b429262bc44c8b5a3ae6a2898e3962386c4852b80abe5eb149",
+  "sha_v2" : "4b9b9e5c2ffe1a444a733bca5761814138117e28798940fdfac60167c512a846",
+  "size_v1" : 2665,
+  "size_v2" : 2778,
+  "timestamp" : "2026-03-18 23:35:24",
+  "identical" : false
+}

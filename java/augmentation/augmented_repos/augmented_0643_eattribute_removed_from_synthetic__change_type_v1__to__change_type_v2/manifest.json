@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0643_eattribute_removed_from_synthetic__change_type_v1__to__change_type_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\synthetic__change_type_v1__to__change_type_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:24:02",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "active",
+    "context" : "Sensor",
+    "old_value" : "active",
+    "new_value" : "",
+    "description" : "Removed EAttribute active from Sensor"
+  }
+}

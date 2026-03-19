@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1766_ereference_multiplicity_changed_from_plugins_org.eclipse.emf.codegen_model_GenModel__f90ec39__9382691",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__f90ec39__9382691\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:44",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_MULTIPLICITY_CHANGED",
+    "element" : "genPackages",
+    "context" : "GenModel",
+    "old_value" : "[0..*]",
+    "new_value" : "[1..1]",
+    "description" : "Changed multiplicity of genPackages"
+  }
+}

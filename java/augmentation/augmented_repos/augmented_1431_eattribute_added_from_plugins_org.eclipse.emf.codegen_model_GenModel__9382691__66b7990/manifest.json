@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1431_eattribute_added_from_plugins_org.eclipse.emf.codegen_model_GenModel__9382691__66b7990",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__9382691__66b7990\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:39",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "generatedField_156",
+    "context" : "GenModel",
+    "old_value" : "",
+    "new_value" : "EString",
+    "description" : "Added EAttribute generatedField_156 to GenModel"
+  }
+}

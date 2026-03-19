@@ -1,0 +1,13 @@
+{
+  "pair_id" : "WasteMgmt__WasteMgmt_v1 -> WasteMgmt_v2__disk:C:__disk:C:",
+  "repo" : "WasteMgmt",
+  "file_path" : "WasteMgmt_v1.ecore -> WasteMgmt_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\WasteMgmt\\metamodels\\WasteMgmt_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\WasteMgmt\\metamodels\\WasteMgmt_v2.ecore",
+  "sha_v1" : "dae899543831850ef583344d42525562bc3b0c87f1a2c3c681f0b3ca60b8e09a",
+  "sha_v2" : "6ca69844bdf92ed1b145cdef9b3e935b95db95b3560557b44d75c4e60266a2f4",
+  "size_v1" : 2079,
+  "size_v2" : 2671,
+  "timestamp" : "2026-03-18 23:35:29",
+  "identical" : false
+}

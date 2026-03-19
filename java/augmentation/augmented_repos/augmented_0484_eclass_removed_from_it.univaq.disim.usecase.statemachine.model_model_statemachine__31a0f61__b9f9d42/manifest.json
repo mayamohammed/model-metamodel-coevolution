@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0484_eclass_removed_from_it.univaq.disim.usecase.statemachine.model_model_statemachine__31a0f61__b9f9d42",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\it.univaq.disim.usecase.statemachine.model_model_statemachine__31a0f61__b9f9d42\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:26",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Reset",
+    "context" : "statemachine",
+    "old_value" : "Reset",
+    "new_value" : "",
+    "description" : "Removed EClass Reset"
+  }
+}

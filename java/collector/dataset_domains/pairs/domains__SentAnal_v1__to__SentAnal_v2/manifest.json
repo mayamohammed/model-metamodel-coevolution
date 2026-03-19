@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__SentAnal_v1 -> SentAnal_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "SentAnal_v1.ecore -> SentAnal_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\SentAnal\\metamodels\\SentAnal_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\SentAnal\\metamodels\\SentAnal_v2.ecore",
+  "sha_v1" : "e0528e5fc05edb8873b22d4b2700991fd81ed2b9885132120cfa493e3eeb5551",
+  "sha_v2" : "b25013116149638e327f0519ff2bdb35d5ae35910800c09ea9414dcff320adb5",
+  "size_v1" : 2076,
+  "size_v2" : 2668,
+  "timestamp" : "2026-03-18 23:35:19",
+  "identical" : false
+}

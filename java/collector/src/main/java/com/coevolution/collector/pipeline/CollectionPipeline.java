@@ -15,12 +15,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.*;
 
-/**
- * CollectionPipeline - orchestrateur principal.
- * Mode A : historique Git
- * Mode B : noms _v1/_v2/_v3 dans le repo Git principal
- * Mode C : fichiers .ecore sur disque dans un repo clone externe
- */
 public class CollectionPipeline {
 
     private final GitRepositoryManager gitManager;
@@ -54,31 +48,42 @@ public class CollectionPipeline {
         File pairsDir = new File(outputDir, "pairs");
         if (!pairsDir.exists()) pairsDir.mkdirs();
 
-        VersionExtractor extractor = new VersionExtractor(gitManager.getRepository());
-        String repoName = gitManager.getRepository()
-                .getDirectory().getParentFile().getName();
+        Repository repo = null;
+        try { repo = gitManager.getRepository(); } catch (Exception e) { /* disque pur */ }
 
-        // ── Mode A : historique Git ───────────────────────────────────────────
-        List<String> ecoreFiles = extractor.listEcoreFilesInHead();
-        System.out.println("[CollectionPipeline] Fichiers .ecore trouves : " + ecoreFiles.size());
+        if (repo != null) {
+            VersionExtractor extractor = new VersionExtractor(repo);
+            String repoName = repo.getDirectory().getParentFile().getName();
 
-        int gitPairs = countGitHistoryPairs(extractor, ecoreFiles);
-        System.out.println("[CollectionPipeline] Mode A (Git history) : " + gitPairs + " paires potentielles");
+            List<String> ecoreFiles = extractor.listEcoreFilesInHead();
+            System.out.println("[CollectionPipeline] Fichiers .ecore trouves : " + ecoreFiles.size());
 
-        if (gitPairs > 0) {
-            runModeA(extractor, ecoreFiles, repoName, pairsDir);
+            int gitPairs = countGitHistoryPairs(extractor, ecoreFiles);
+            System.out.println("[CollectionPipeline] Mode A (Git history) : " + gitPairs + " paires potentielles");
+
+            if (gitPairs > 0) {
+                runModeA(extractor, ecoreFiles, repoName, pairsDir);
+            }
+
+            if (pairsCollected < maxPairs) {
+                System.out.println("\n[CollectionPipeline] Mode B (noms _vN) : detection des paires...");
+                runModeB(ecoreFiles, repoName, pairsDir);
+            }
+
+        } else {
+            // ✅ FIX : utilise getReposRoot() au lieu de outputDir.getParentFile()
+            System.out.println("[CollectionPipeline] Mode DISQUE PUR (pas de Git)");
+            File diskRoot = gitManager.getReposRoot();
+            if (diskRoot != null && diskRoot.exists()) {
+                runModeDisk(diskRoot, pairsDir);
+            } else {
+                System.out.println("[Pipeline-D] ERREUR : rootDir null !");
+            }
         }
 
-        // ── Mode B : noms _vN dans HEAD ───────────────────────────────────────
         if (pairsCollected < maxPairs) {
-            System.out.println("\n[CollectionPipeline] Mode B (noms _vN) : detection des paires...");
-            runModeB(ecoreFiles, repoName, pairsDir);
-        }
-
-        // ── Mode C : fichiers sur disque dans repos externes ──────────────────
-        if (pairsCollected < maxPairs) {
-            File reposRoot = new File("C:\\emf-repos");
-            if (reposRoot.exists() && reposRoot.isDirectory()) {
+            File reposRoot = gitManager.getReposRoot();
+            if (reposRoot != null && reposRoot.exists()) {
                 System.out.println("\n[CollectionPipeline] Mode C (repos externes sur disque)...");
                 runModeC(reposRoot, pairsDir);
             }
@@ -88,7 +93,31 @@ public class CollectionPipeline {
     }
 
     // ══════════════════════════════════════════════════════════════════════════
-    // MODE A — Historique Git
+    // MODE DISQUE PUR
+    // ══════════════════════════════════════════════════════════════════════════
+
+    private void runModeDisk(File rootDir, File pairsDir) {
+        System.out.println("[Pipeline-D] Scan disque : " + rootDir.getAbsolutePath());
+        List<File> ecoreFiles = findEcoreFiles(rootDir);
+        System.out.println("[Pipeline-D] Ecore trouves : " + ecoreFiles.size());
+
+        Map<String, List<File>> groups = groupFilesByPrefix(ecoreFiles);
+        System.out.println("[Pipeline-D] Groupes _vN : " + groups.size());
+
+        for (Map.Entry<String, List<File>> entry : groups.entrySet()) {
+            if (pairsCollected >= maxPairs) break;
+            List<File> versions = entry.getValue();
+            Collections.sort(versions, Comparator.comparing(File::getName));
+            for (int i = 0; i < versions.size() - 1; i++) {
+                if (pairsCollected >= maxPairs) break;
+                processPairFromDisk(rootDir.getName(),
+                        versions.get(i), versions.get(i + 1), pairsDir);
+            }
+        }
+    }
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // MODE A
     // ══════════════════════════════════════════════════════════════════════════
 
     private int countGitHistoryPairs(VersionExtractor extractor,
@@ -117,8 +146,8 @@ public class CollectionPipeline {
                                   String repoName, String ecoreFile,
                                   RevCommit commitBefore, RevCommit commitAfter,
                                   File pairsDir) {
-        String before7  = commitBefore.getName().substring(0, 7);
-        String after7   = commitAfter.getName().substring(0, 7);
+        String before7   = commitBefore.getName().substring(0, 7);
+        String after7    = commitAfter.getName().substring(0, 7);
         String pairLabel = ecoreFile.replace("/", "_").replace(".ecore", "")
                 + "__" + before7 + "__" + after7;
         try {
@@ -153,15 +182,13 @@ public class CollectionPipeline {
     }
 
     // ══════════════════════════════════════════════════════════════════════════
-    // MODE B — Paires par noms _v1/_v2/_v3
+    // MODE B
     // ══════════════════════════════════════════════════════════════════════════
 
-    private void runModeB(List<String> ecoreFiles, String repoName, File pairsDir) throws Exception {
+    private void runModeB(List<String> ecoreFiles, String repoName,
+                           File pairsDir) throws Exception {
         Map<String, List<String>> groups = groupByPrefix(ecoreFiles);
         System.out.println("[Pipeline-B] Groupes detectes : " + groups.size());
-        for (Map.Entry<String, List<String>> entry : groups.entrySet()) {
-            System.out.println("  " + entry.getKey() + " -> " + entry.getValue());
-        }
         Repository repo = gitManager.getRepository();
         for (Map.Entry<String, List<String>> entry : groups.entrySet()) {
             if (pairsCollected >= maxPairs) break;
@@ -169,7 +196,8 @@ public class CollectionPipeline {
             Collections.sort(versions);
             for (int i = 0; i < versions.size() - 1; i++) {
                 if (pairsCollected >= maxPairs) break;
-                processPairByName(repo, repoName, versions.get(i), versions.get(i + 1), pairsDir);
+                processPairByName(repo, repoName,
+                        versions.get(i), versions.get(i + 1), pairsDir);
             }
         }
     }
@@ -177,8 +205,8 @@ public class CollectionPipeline {
     private Map<String, List<String>> groupByPrefix(List<String> ecoreFiles) {
         Map<String, List<String>> groups = new HashMap<>();
         for (String path : ecoreFiles) {
-            String name = path.substring(path.lastIndexOf("/") + 1);
-            String dir  = path.contains("/") ? path.substring(0, path.lastIndexOf("/")) : "";
+            String name   = path.substring(path.lastIndexOf("/") + 1);
+            String dir    = path.contains("/") ? path.substring(0, path.lastIndexOf("/")) : "";
             String prefix = name.replaceAll("_v\\d+\\.ecore$", "");
             if (prefix.equals(name.replace(".ecore", ""))) continue;
             String groupKey = dir + "/" + prefix;
@@ -199,15 +227,13 @@ public class CollectionPipeline {
 
             File pairDir = new File(pairsDir, label);
             pairDir.mkdirs();
-            File rawV1 = new File(pairDir, "v1_raw.ecore");
-            File rawV2 = new File(pairDir, "v2_raw.ecore");
-            Files.write(rawV1.toPath(), cv1.getBytes(StandardCharsets.UTF_8));
-            Files.write(rawV2.toPath(), cv2.getBytes(StandardCharsets.UTF_8));
+            Files.write(new File(pairDir, "v1_raw.ecore").toPath(), cv1.getBytes(StandardCharsets.UTF_8));
+            Files.write(new File(pairDir, "v2_raw.ecore").toPath(), cv2.getBytes(StandardCharsets.UTF_8));
 
             File normV1 = new File(pairDir, "v1.ecore");
             File normV2 = new File(pairDir, "v2.ecore");
-            normalizer.normalize(rawV1, normV1);
-            normalizer.normalize(rawV2, normV2);
+            normalizer.normalize(new File(pairDir, "v1_raw.ecore"), normV1);
+            normalizer.normalize(new File(pairDir, "v2_raw.ecore"), normV2);
 
             manifestGenerator.generate(repoName, pathV1 + " -> " + pathV2,
                     "HEAD:" + pathV1, "HEAD:" + pathV2, normV1, normV2, pairDir);
@@ -235,7 +261,7 @@ public class CollectionPipeline {
     }
 
     // ══════════════════════════════════════════════════════════════════════════
-    // MODE C — Repos externes sur disque (C:\emf-repos\*)
+    // MODE C
     // ══════════════════════════════════════════════════════════════════════════
 
     private void runModeC(File reposRoot, File pairsDir) {
@@ -246,17 +272,13 @@ public class CollectionPipeline {
             if (pairsCollected >= maxPairs) break;
             System.out.println("\n[Pipeline-C] Scan repo : " + repoDir.getName());
 
-            // Trouver tous les .ecore dans ce repo
             List<File> ecoreFiles = findEcoreFiles(repoDir);
             System.out.println("[Pipeline-C] Fichiers .ecore trouves : " + ecoreFiles.size());
-
             if (ecoreFiles.isEmpty()) continue;
 
-            // Grouper par prefixe _vN
             Map<String, List<File>> groups = groupFilesByPrefix(ecoreFiles);
             System.out.println("[Pipeline-C] Groupes _vN detectes : " + groups.size());
 
-            // Traiter les paires par noms _vN
             for (Map.Entry<String, List<File>> entry : groups.entrySet()) {
                 if (pairsCollected >= maxPairs) break;
                 List<File> versions = entry.getValue();
@@ -268,16 +290,12 @@ public class CollectionPipeline {
                 }
             }
 
-            // Aussi Mode A : paires via historique Git du repo clone
             if (pairsCollected < maxPairs) {
                 runModeAOnExternalRepo(repoDir, pairsDir);
             }
         }
     }
 
-    /**
-     * Trouve recursivement tous les fichiers .ecore dans un dossier.
-     */
     private List<File> findEcoreFiles(File dir) {
         List<File> result = new ArrayList<>();
         File[] files = dir.listFiles();
@@ -292,14 +310,10 @@ public class CollectionPipeline {
         return result;
     }
 
-    /**
-     * Groupe les fichiers .ecore par prefixe _vN.
-     * Ex: coffee_v1.ecore, coffee_v2.ecore -> groupe "coffee"
-     */
     private Map<String, List<File>> groupFilesByPrefix(List<File> files) {
         Map<String, List<File>> groups = new HashMap<>();
         for (File f : files) {
-            String name = f.getName();
+            String name   = f.getName();
             String prefix = name.replaceAll("_v\\d+\\.ecore$", "");
             if (prefix.equals(name.replace(".ecore", ""))) continue;
             String key = f.getParent() + "/" + prefix;
@@ -308,10 +322,8 @@ public class CollectionPipeline {
         return groups;
     }
 
-    /**
-     * Traite une paire de fichiers .ecore lus directement depuis le disque.
-     */
-    private void processPairFromDisk(String repoName, File fileV1, File fileV2, File pairsDir) {
+    private void processPairFromDisk(String repoName, File fileV1,
+                                      File fileV2, File pairsDir) {
         String label = repoName + "__"
                 + fileV1.getName().replace(".ecore", "")
                 + "__to__"
@@ -319,7 +331,6 @@ public class CollectionPipeline {
         try {
             String cv1 = new String(Files.readAllBytes(fileV1.toPath()), StandardCharsets.UTF_8);
             String cv2 = new String(Files.readAllBytes(fileV2.toPath()), StandardCharsets.UTF_8);
-
             if (cv1.equals(cv2)) { pairsIdentical++; return; }
 
             File pairDir = new File(pairsDir, label);
@@ -331,18 +342,13 @@ public class CollectionPipeline {
 
             File normV1 = new File(pairDir, "v1.ecore");
             File normV2 = new File(pairDir, "v2.ecore");
-
             try {
                 normalizer.normalize(rawV1, normV1);
                 normalizer.normalize(rawV2, normV2);
-            } catch (Exception e) {
-                pairsInvalid++;
-                return;
-            }
+            } catch (Exception e) { pairsInvalid++; return; }
 
             if (!normalizer.isValidEcore(normV1) || !normalizer.isValidEcore(normV2)) {
-                pairsInvalid++;
-                return;
+                pairsInvalid++; return;
             }
 
             manifestGenerator.generate(repoName,
@@ -352,17 +358,14 @@ public class CollectionPipeline {
                     normV1, normV2, pairDir);
 
             pairsCollected++;
-            System.out.println("[Pipeline-C] Paire OK (" + pairsCollected + ") : " + label);
+            System.out.println("[Pipeline-C/D] Paire OK (" + pairsCollected + ") : " + label);
 
         } catch (Exception e) {
-            System.out.println("[Pipeline-C] ERREUR : " + label + " -> " + e.getMessage());
+            System.out.println("[Pipeline-C/D] ERREUR : " + label + " -> " + e.getMessage());
             pairsInvalid++;
         }
     }
 
-    /**
-     * Lance le Mode A (historique Git) sur un repo externe clone.
-     */
     private void runModeAOnExternalRepo(File repoDir, File pairsDir) {
         GitRepositoryManager extGit = new GitRepositoryManager();
         try {
@@ -383,9 +386,7 @@ public class CollectionPipeline {
                         processPairGit(extExtractor, repoName, ecoreFile,
                                 pair[0], pair[1], pairsDir);
                     }
-                } catch (Exception e) {
-                    // ignorer les erreurs par fichier
-                }
+                } catch (Exception e) { /* ignorer par fichier */ }
             }
         } catch (Exception e) {
             System.out.println("[Pipeline-C/A] Impossible d ouvrir : "

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__BusIntel_v1 -> BusIntel_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "BusIntel_v1.ecore -> BusIntel_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\BusIntel\\metamodels\\BusIntel_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\BusIntel\\metamodels\\BusIntel_v2.ecore",
+  "sha_v1" : "bf68806f3b2cb2782b37fef9b8c2b309bdea982af21e8649aabedbb89049b9a1",
+  "sha_v2" : "8ee66d06aba38603dad5e476674d77887a457de6494052eac84c2c9d5f19b615",
+  "size_v1" : 2076,
+  "size_v2" : 2668,
+  "timestamp" : "2026-03-18 23:35:21",
+  "identical" : false
+}

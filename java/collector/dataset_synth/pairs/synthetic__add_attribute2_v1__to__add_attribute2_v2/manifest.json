@@ -1,0 +1,13 @@
+{
+  "pair_id" : "synthetic__add_attribute2_v1 -> add_attribute2_v2__disk:C:__disk:C:",
+  "repo" : "synthetic",
+  "file_path" : "add_attribute2_v1.ecore -> add_attribute2_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\add_attribute2\\metamodels\\add_attribute2_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\add_attribute2\\metamodels\\add_attribute2_v2.ecore",
+  "sha_v1" : "52bda82faa6e5556b7a66ca3eec623b6dafc082607997ba172769e65ec398992",
+  "sha_v2" : "4d85ecbdc78d02336a5128fa1169872d20bd199766f36751623101691e17a301",
+  "size_v1" : 503,
+  "size_v2" : 936,
+  "timestamp" : "2026-03-18 23:34:54",
+  "identical" : false
+}

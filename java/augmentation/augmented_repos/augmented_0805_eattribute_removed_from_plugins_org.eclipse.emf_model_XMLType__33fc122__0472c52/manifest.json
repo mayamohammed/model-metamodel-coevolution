@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0805_eattribute_removed_from_plugins_org.eclipse.emf_model_XMLType__33fc122__0472c52",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf_model_XMLType__33fc122__0472c52\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:15",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "anyAttribute",
+    "context" : "AnyType",
+    "old_value" : "anyAttribute",
+    "new_value" : "",
+    "description" : "Removed EAttribute anyAttribute from AnyType"
+  }
+}

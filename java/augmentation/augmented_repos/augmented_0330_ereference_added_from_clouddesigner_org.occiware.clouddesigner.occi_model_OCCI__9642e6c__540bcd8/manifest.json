@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0330_ereference_added_from_clouddesigner_org.occiware.clouddesigner.occi_model_OCCI__9642e6c__540bcd8",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi_model_OCCI__9642e6c__540bcd8\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:25",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_45",
+    "context" : "Category",
+    "old_value" : "",
+    "new_value" : "Attribute",
+    "description" : "Added EReference generatedRef_45 from Category to Attribute"
+  }
+}

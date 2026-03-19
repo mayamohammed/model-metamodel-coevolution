@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0058_eattribute_added_from_clouddesigner_org.occiware.clouddesigner.occi.docker_model_Docker__4b46dd5__8093aa8",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.docker_model_Docker__4b46dd5__8093aa8\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:20",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "syntheticProp_8",
+    "context" : "Container",
+    "old_value" : "",
+    "new_value" : "EBoolean",
+    "description" : "Added EAttribute syntheticProp_8 to Container"
+  }
+}

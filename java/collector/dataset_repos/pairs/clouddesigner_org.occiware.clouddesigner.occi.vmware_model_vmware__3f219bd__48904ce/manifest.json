@@ -1,0 +1,13 @@
+{
+  "pair_id" : "occi-repo__clouddesigner_org.occiware.clouddesigner.occi.vmware_model_vmware__3f219bd__48904ce",
+  "repo" : "occi-repo",
+  "file_path" : "clouddesigner/org.occiware.clouddesigner.occi.vmware/model/vmware.ecore",
+  "commit_before" : "3f219bd794bdb4fa8ba97f89f5a646e81d64eb4b",
+  "commit_after" : "48904ce0a466f6cefc645676b62214efbf0d0c0f",
+  "sha_v1" : "20506324f800301ae196b784f52f65ef81b9872e6853571c29a9c3d169642ec2",
+  "sha_v2" : "14f70c6ddcb49da62e6ecf2b8d9906693b943816c870124b7b2f1e06c941ffde",
+  "size_v1" : 82940,
+  "size_v2" : 85879,
+  "timestamp" : "2026-03-18 23:12:55",
+  "identical" : false
+}

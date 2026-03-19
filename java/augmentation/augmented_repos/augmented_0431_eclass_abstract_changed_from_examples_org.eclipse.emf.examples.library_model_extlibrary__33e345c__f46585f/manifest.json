@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0431_eclass_abstract_changed_from_examples_org.eclipse.emf.examples.library_model_extlibrary__33e345c__f46585f",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\examples_org.eclipse.emf.examples.library_model_extlibrary__33e345c__f46585f\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:26",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Book",
+    "context" : "extlibrary",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of Book : false -> true"
+  }
+}

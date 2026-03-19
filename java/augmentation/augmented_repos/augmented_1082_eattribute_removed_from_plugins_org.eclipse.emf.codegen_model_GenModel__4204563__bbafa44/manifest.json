@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1082_eattribute_removed_from_plugins_org.eclipse.emf.codegen_model_GenModel__4204563__bbafa44",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__4204563__bbafa44\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:34",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "bundleManifest",
+    "context" : "GenModel",
+    "old_value" : "bundleManifest",
+    "new_value" : "",
+    "description" : "Removed EAttribute bundleManifest from GenModel"
+  }
+}

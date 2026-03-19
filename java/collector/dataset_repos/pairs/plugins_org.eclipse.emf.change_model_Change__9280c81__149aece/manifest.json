@@ -1,0 +1,13 @@
+{
+  "pair_id" : "org.eclipse.emf__plugins_org.eclipse.emf.change_model_Change__9280c81__149aece",
+  "repo" : "org.eclipse.emf",
+  "file_path" : "plugins/org.eclipse.emf.ecore.change/model/Change.ecore",
+  "commit_before" : "9280c817687f4d4c43a3f0b7f694346d6047c8e2",
+  "commit_after" : "149aeced779eae97030ff151544349b74fba5d62",
+  "sha_v1" : "2140096e193d407f7e2efd0fe8e0edd854d74b6171d216b39df5a594a804e4af",
+  "sha_v2" : "375948ca3ddf04d40940be542df379947db3b7d72a86b8cdbdd2e1e1fec07ae6",
+  "size_v1" : 7323,
+  "size_v2" : 7818,
+  "timestamp" : "2026-03-18 23:12:59",
+  "identical" : false
+}

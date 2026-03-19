@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__TrainPlat_v1 -> TrainPlat_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "TrainPlat_v1.ecore -> TrainPlat_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\TrainPlat\\metamodels\\TrainPlat_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\TrainPlat\\metamodels\\TrainPlat_v2.ecore",
+  "sha_v1" : "3d5226d245c90b329c5b9cf901b24af87aaaf14db2daeeb413898842ed60ac19",
+  "sha_v2" : "67a34936cdb1c7d326568e088312fb7f083575b961ededa106623e96c2fa9fed",
+  "size_v1" : 2079,
+  "size_v2" : 2671,
+  "timestamp" : "2026-03-18 23:35:17",
+  "identical" : false
+}

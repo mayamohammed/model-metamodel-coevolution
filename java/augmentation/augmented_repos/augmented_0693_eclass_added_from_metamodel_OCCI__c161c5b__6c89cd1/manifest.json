@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0693_eclass_added_from_metamodel_OCCI__c161c5b__6c89cd1",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\metamodel_OCCI__c161c5b__6c89cd1\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:29",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "SyntheticElement_82",
+    "context" : "OCCI",
+    "old_value" : "",
+    "new_value" : "SyntheticElement_82",
+    "description" : "Added EClass SyntheticElement_82"
+  }
+}

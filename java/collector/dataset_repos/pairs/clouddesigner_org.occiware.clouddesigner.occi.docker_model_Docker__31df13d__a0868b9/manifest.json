@@ -1,0 +1,13 @@
+{
+  "pair_id" : "occi-repo__clouddesigner_org.occiware.clouddesigner.occi.docker_model_Docker__31df13d__a0868b9",
+  "repo" : "occi-repo",
+  "file_path" : "clouddesigner/org.occiware.clouddesigner.occi.docker/model/Docker.ecore",
+  "commit_before" : "31df13d0988f57decda8b49639e8ba5416f766c4",
+  "commit_after" : "a0868b90cc03b5a121773b8f4f5c94abaa008813",
+  "sha_v1" : "4283e9bfecbb5b117b4eec9bd3c94c4ff0c7ba0edf734b81f0050297a3837f39",
+  "sha_v2" : "eb2afbe5f52e40c01e6bdbefd37a4c4e9db50d7e65216fdc048dffefa6c2ea1f",
+  "size_v1" : 68923,
+  "size_v2" : 69285,
+  "timestamp" : "2026-03-18 23:12:54",
+  "identical" : false
+}

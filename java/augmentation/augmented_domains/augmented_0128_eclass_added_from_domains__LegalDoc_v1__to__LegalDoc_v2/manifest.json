@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0128_eclass_added_from_domains__LegalDoc_v1__to__LegalDoc_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__LegalDoc_v1__to__LegalDoc_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 01:08:21",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "InjectedEntity_128",
+    "context" : "LegalDoc",
+    "old_value" : "",
+    "new_value" : "InjectedEntity_128",
+    "description" : "Added EClass InjectedEntity_128"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.core_src_org_eclipse_emf_test_core_featuremap_com.example.supplier__14fc609__f9be1d0",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.core/src/org/eclipse/emf/test/core/featuremap/com.example.supplier.ecore",
+  "commit_before" : "14fc6094efaee3dc9bfebd9beba995bb3862db68",
+  "commit_after" : "f9be1d080d8b60f93c8a92f1c72d6c6a093df4e9",
+  "sha_v1" : "ac6b5e1626fbd548c3d8694a6ea3e5784698a2a5e05c0eed5bebc2e9e02da9c9",
+  "sha_v2" : "d970441ed4a13142ccb33160db537abc6dda70b41ca4eaf25a1084f4c594c38c",
+  "size_v1" : 3120,
+  "size_v2" : 3072,
+  "timestamp" : "2026-03-18 23:12:46",
+  "identical" : false
+}

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2298_eclass_removed_from_tests_org.eclipse.emf.test.databinding_model_EMFDB__2d8db22__d248dba",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.databinding_model_EMFDB__2d8db22__d248dba\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:52",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "C",
+    "context" : "emfdb",
+    "old_value" : "C",
+    "new_value" : "",
+    "description" : "Removed EClass C"
+  }
+}

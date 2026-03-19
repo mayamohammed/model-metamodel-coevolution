@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1822_eattribute_removed_from_plugins_org.eclipse.emf.gwt.change_model_Change__feb42e7__35cd748",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.gwt.change_model_Change__feb42e7__35cd748\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:45",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "value",
+    "context" : "FeatureChange",
+    "old_value" : "value",
+    "new_value" : "",
+    "description" : "Removed EAttribute value from FeatureChange"
+  }
+}

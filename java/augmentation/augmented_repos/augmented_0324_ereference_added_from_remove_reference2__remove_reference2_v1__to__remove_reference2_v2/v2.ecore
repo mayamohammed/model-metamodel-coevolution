@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cms" nsURI="http://cms/1.0" nsPrefix="cms">
+  <eClassifiers xsi:type="ecore:EClass" name="Page">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="widgets" upperBound="-1" eType="//Widget" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="legacyLinks" upperBound="-1" eType="//Widget"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="generatedRef_27" upperBound="-1" eType="//Widget" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Widget">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

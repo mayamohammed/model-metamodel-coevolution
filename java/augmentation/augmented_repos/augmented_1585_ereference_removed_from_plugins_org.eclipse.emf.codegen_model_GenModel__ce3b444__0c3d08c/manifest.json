@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1585_ereference_removed_from_plugins_org.eclipse.emf.codegen_model_GenModel__ce3b444__0c3d08c",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__ce3b444__0c3d08c\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:41",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "genPackages",
+    "context" : "GenModel",
+    "old_value" : "genPackages",
+    "new_value" : "",
+    "description" : "Removed EReference genPackages from GenModel"
+  }
+}

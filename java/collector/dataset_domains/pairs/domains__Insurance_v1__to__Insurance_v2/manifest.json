@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__Insurance_v1 -> Insurance_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "Insurance_v1.ecore -> Insurance_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\Insurance\\metamodels\\Insurance_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\Insurance\\metamodels\\Insurance_v2.ecore",
+  "sha_v1" : "161fd46c2aabcb994498144f1e5a10dc4239254a974bf83b20d00e09f9e8ccb8",
+  "sha_v2" : "2f2a16611a3ce1c672ec8ffef3b8b04dda92cce366ae58684e2fdc06d352ee47",
+  "size_v1" : 2079,
+  "size_v2" : 2671,
+  "timestamp" : "2026-03-18 23:35:21",
+  "identical" : false
+}

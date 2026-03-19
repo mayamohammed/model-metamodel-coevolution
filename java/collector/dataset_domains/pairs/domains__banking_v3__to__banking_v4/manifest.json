@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__banking_v3 -> banking_v4__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "banking_v3.ecore -> banking_v4.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\banking\\metamodels\\banking_v3.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\banking\\metamodels\\banking_v4.ecore",
+  "sha_v1" : "16035b0eee6e7d54f689d7e334feb01d6f94cf41d24f6d781f1ea05c383ef018",
+  "sha_v2" : "cc25645f9e9ea67f033cca7aa81c1c01512777a04aa827e4e738daf23c4a4a3f",
+  "size_v1" : 2778,
+  "size_v2" : 3503,
+  "timestamp" : "2026-03-18 23:35:23",
+  "identical" : false
+}

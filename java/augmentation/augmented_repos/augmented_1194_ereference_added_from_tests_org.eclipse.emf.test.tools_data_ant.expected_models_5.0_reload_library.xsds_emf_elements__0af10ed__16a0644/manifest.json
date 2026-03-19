@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1194_ereference_added_from_tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_reload_library.xsds_emf_elements__0af10ed__16a0644",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.tools_data_ant.expected_models_5.0_reload_library.xsds_emf_elements__0af10ed__16a0644\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:22",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_306",
+    "context" : "Book",
+    "old_value" : "",
+    "new_value" : "Writer",
+    "description" : "Added EReference generatedRef_306 from Book to Writer"
+  }
+}

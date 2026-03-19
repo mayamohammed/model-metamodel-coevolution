@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3089_eattribute_added_from_SmartCity__SmartCity_v2__to__SmartCity_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\SmartCity__SmartCity_v2__to__SmartCity_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:42",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "augmentedValue_343",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EInt",
+    "description" : "Added EAttribute augmentedValue_343 to Customer"
+  }
+}

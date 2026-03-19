@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0235_eattribute_removed_from_change_type4__change_type4_v1__to__change_type4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\change_type4__change_type4_v1__to__change_type4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:23:59",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "count",
+    "context" : "Sample",
+    "old_value" : "count",
+    "new_value" : "",
+    "description" : "Removed EAttribute count from Sample"
+  }
+}

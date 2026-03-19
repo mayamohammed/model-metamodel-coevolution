@@ -1,0 +1,13 @@
+{
+  "pair_id" : "org.eclipse.emf__plugins_org.eclipse.emf.codegen_model_GenModel__0155acd__7fbed87",
+  "repo" : "org.eclipse.emf",
+  "file_path" : "plugins/org.eclipse.emf.codegen.ecore/model/GenModel.ecore",
+  "commit_before" : "0155acdf17f990e56c00348e10cfed2cc0a3f541",
+  "commit_after" : "7fbed8789087a7e5f8ca4f82d0495fde258b541c",
+  "sha_v1" : "4c366ca7970b6cc97c1bbeddebdff1abe4b9690870a9085dc1275998beeef2f4",
+  "sha_v2" : "1e2033523d2fd295230f916fc20eff9fe4a3f90b60823c016b2bbbef5061f0f2",
+  "size_v1" : 37929,
+  "size_v2" : 38603,
+  "timestamp" : "2026-03-18 23:12:58",
+  "identical" : false
+}

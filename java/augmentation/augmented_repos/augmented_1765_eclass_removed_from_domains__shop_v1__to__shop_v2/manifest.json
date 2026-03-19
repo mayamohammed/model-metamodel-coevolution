@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1765_eclass_removed_from_domains__shop_v1__to__shop_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__shop_v1__to__shop_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:33",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Product",
+    "context" : "shop",
+    "old_value" : "Product",
+    "new_value" : "",
+    "description" : "Removed EClass Product"
+  }
+}

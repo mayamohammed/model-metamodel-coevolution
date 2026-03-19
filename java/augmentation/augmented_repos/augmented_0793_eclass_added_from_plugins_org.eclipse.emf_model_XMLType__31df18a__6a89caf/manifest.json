@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0793_eclass_added_from_plugins_org.eclipse.emf_model_XMLType__31df18a__6a89caf",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf_model_XMLType__31df18a__6a89caf\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:15",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "GeneratedEntity_230",
+    "context" : "type",
+    "old_value" : "",
+    "new_value" : "GeneratedEntity_230",
+    "description" : "Added EClass GeneratedEntity_230"
+  }
+}

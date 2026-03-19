@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0511_eclass_abstract_changed_from_it.univaq.disim.usecase.statemachine.model_model_statemachine__5ac4d09__bff1c91",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\it.univaq.disim.usecase.statemachine.model_model_statemachine__5ac4d09__bff1c91\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:26",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "StateMachine",
+    "context" : "statemachine",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of StateMachine : false -> true"
+  }
+}

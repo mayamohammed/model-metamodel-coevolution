@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1903_eclass_abstract_changed_from_plugins_org.eclipse.emf_model_Ecore__0b8f22d__691452f",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf_model_Ecore__0b8f22d__691452f\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:46",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "EAttribute",
+    "context" : "ecore",
+    "old_value" : "false",
+    "new_value" : "true",
+    "description" : "Changed abstract of EAttribute : false -> true"
+  }
+}

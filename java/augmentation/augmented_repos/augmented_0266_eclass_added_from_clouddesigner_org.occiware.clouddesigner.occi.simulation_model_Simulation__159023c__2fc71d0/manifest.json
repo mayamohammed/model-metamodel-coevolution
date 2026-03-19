@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0266_eclass_added_from_clouddesigner_org.occiware.clouddesigner.occi.simulation_model_Simulation__159023c__2fc71d0",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.simulation_model_Simulation__159023c__2fc71d0\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:24",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "InjectedEntity_38",
+    "context" : "simulation",
+    "old_value" : "",
+    "new_value" : "InjectedEntity_38",
+    "description" : "Added EClass InjectedEntity_38"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__plugins_org.eclipse.emf_model_XMLNamespace__318773f__4011cf6",
+  "repo" : "emf-repo",
+  "file_path" : "plugins/org.eclipse.emf.ecore/model/XMLNamespace.ecore",
+  "commit_before" : "318773f10d949a1dfd1ec59c02e8a9f8684b9bc3",
+  "commit_after" : "4011cf6aa4749ee5962f45c1fffe05098f06353c",
+  "sha_v1" : "2f8469cd7c2a33a966bc0f33fc3ee3f39b33980115e12fafc3fa7982a8485474",
+  "sha_v2" : "dc3ff2fa857803fadeaf95bbc098a46348aff9a81d74e660d4a3bf08e784ded6",
+  "size_v1" : 4469,
+  "size_v2" : 5230,
+  "timestamp" : "2026-03-18 23:12:40",
+  "identical" : false
+}

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0065_eattribute_added_from_AirTraffic__AirTraffic_v2__to__AirTraffic_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\AirTraffic__AirTraffic_v2__to__AirTraffic_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:20",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "augmentedValue_7",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EInt",
+    "description" : "Added EAttribute augmentedValue_7 to Customer"
+  }
+}

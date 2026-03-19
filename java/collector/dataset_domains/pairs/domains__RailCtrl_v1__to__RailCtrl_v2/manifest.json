@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__RailCtrl_v1 -> RailCtrl_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "RailCtrl_v1.ecore -> RailCtrl_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\RailCtrl\\metamodels\\RailCtrl_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\RailCtrl\\metamodels\\RailCtrl_v2.ecore",
+  "sha_v1" : "67dfdc1e09b491490417802c9b56e1a754a7e2d91f1e2468441a76d5a2327672",
+  "sha_v2" : "dce420a52fd9b9c9c70f3b3463da57d2dfddd94e11a554d8e6ecbaf1d8114608",
+  "size_v1" : 2076,
+  "size_v2" : 2668,
+  "timestamp" : "2026-03-18 23:35:21",
+  "identical" : false
+}

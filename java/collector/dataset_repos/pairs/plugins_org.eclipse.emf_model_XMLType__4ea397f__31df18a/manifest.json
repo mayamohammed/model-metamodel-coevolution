@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__plugins_org.eclipse.emf_model_XMLType__4ea397f__31df18a",
+  "repo" : "emf-repo",
+  "file_path" : "plugins/org.eclipse.emf.ecore/model/XMLType.ecore",
+  "commit_before" : "4ea397ffe46fb6527469103824a399ef5e215772",
+  "commit_after" : "31df18aee9b9aee1f9eccf94031296d92de9a9e2",
+  "sha_v1" : "1af581e25012e19d43fbd23c68ec239f9a72502efb32278d8acb532f2ff34405",
+  "sha_v2" : "ac8fb38af553e29a573cc41098fb047ffed7030b760f7cb941a8d9d9d534aa13",
+  "size_v1" : 28050,
+  "size_v2" : 27940,
+  "timestamp" : "2026-03-18 23:12:40",
+  "identical" : false
+}

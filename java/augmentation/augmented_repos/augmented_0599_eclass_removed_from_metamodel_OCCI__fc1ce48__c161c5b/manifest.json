@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0599_eclass_removed_from_metamodel_OCCI__fc1ce48__c161c5b",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\metamodel_OCCI__fc1ce48__c161c5b\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:04",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Configuration",
+    "context" : "OCCI",
+    "old_value" : "Configuration",
+    "new_value" : "",
+    "description" : "Removed EClass Configuration"
+  }
+}

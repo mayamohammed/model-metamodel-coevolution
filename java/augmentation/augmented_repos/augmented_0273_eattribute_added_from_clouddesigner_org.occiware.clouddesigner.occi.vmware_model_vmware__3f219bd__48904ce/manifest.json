@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0273_eattribute_added_from_clouddesigner_org.occiware.clouddesigner.occi.vmware_model_vmware__3f219bd__48904ce",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.vmware_model_vmware__3f219bd__48904ce\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:24",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "computedField_39",
+    "context" : "Datastore",
+    "old_value" : "",
+    "new_value" : "EDouble",
+    "description" : "Added EAttribute computedField_39 to Datastore"
+  }
+}

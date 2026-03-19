@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.tools_data_ant.expected_models_1.4_5.0_creation_library.xsds_emf_elements__dcad32f__16a0644",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.tools/data/ant.expected/models/1.4_5.0/creation/library.xsds/emf/elements.ecore",
+  "commit_before" : "dcad32f542acbfa55474cb003480bcd64acc4f94",
+  "commit_after" : "16a0644b1527a3386d59af363b56a9b5ec21bfa4",
+  "sha_v1" : "973dbf7e23ee7b6f6ac0132fcf903aca2c6ec764d2f06272df24cc8af0eccab8",
+  "sha_v2" : "738d65caf6c4bc456da0bec5658fca9969a46a22b69d8642b1c1d91cc4198c4f",
+  "size_v1" : 4040,
+  "size_v2" : 3953,
+  "timestamp" : "2026-03-18 23:12:49",
+  "identical" : false
+}

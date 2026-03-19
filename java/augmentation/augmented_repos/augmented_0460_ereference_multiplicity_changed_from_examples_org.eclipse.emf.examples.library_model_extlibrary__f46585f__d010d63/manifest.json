@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0460_ereference_multiplicity_changed_from_examples_org.eclipse.emf.examples.library_model_extlibrary__f46585f__d010d63",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\examples_org.eclipse.emf.examples.library_model_extlibrary__f46585f__d010d63\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:26",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_MULTIPLICITY_CHANGED",
+    "element" : "author",
+    "context" : "Book",
+    "old_value" : "[1..1]",
+    "new_value" : "[0..*]",
+    "description" : "Changed multiplicity of author"
+  }
+}

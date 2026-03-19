@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0002_eclass_added_from_AeroEng__AeroEng_v1__to__AeroEng_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\AeroEng__AeroEng_v1__to__AeroEng_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 01:08:13",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "SyntheticElement_2",
+    "context" : "AeroEng",
+    "old_value" : "",
+    "new_value" : "SyntheticElement_2",
+    "description" : "Added EClass SyntheticElement_2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "synthetic__rename_eclass4_v1 -> rename_eclass4_v2__disk:C:__disk:C:",
+  "repo" : "synthetic",
+  "file_path" : "rename_eclass4_v1.ecore -> rename_eclass4_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\rename_eclass4\\metamodels\\rename_eclass4_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\rename_eclass4\\metamodels\\rename_eclass4_v2.ecore",
+  "sha_v1" : "9d1131f4389e34180d4f2ec93e9fcd4842175bbce6f74945c608761f68e487a7",
+  "sha_v2" : "553f4ba585e0bf311301bd026d6ac7d3c23eb77516788213edb804ca8dbaa434",
+  "size_v1" : 875,
+  "size_v2" : 885,
+  "timestamp" : "2026-03-18 23:34:51",
+  "identical" : false
+}

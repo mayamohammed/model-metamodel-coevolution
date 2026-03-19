@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2574_eclass_added_from_metamodels__metamodels_v2__to__metamodels_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\metamodels__metamodels_v2__to__metamodels_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:39",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "AddedType_286",
+    "context" : "metamodels",
+    "old_value" : "",
+    "new_value" : "AddedType_286",
+    "description" : "Added EClass AddedType_286"
+  }
+}

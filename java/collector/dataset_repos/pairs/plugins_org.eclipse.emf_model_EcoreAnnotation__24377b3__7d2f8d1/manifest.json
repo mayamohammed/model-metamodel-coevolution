@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__plugins_org.eclipse.emf_model_EcoreAnnotation__24377b3__7d2f8d1",
+  "repo" : "emf-repo",
+  "file_path" : "plugins/org.eclipse.emf.ecore/model/EcoreAnnotation.ecore",
+  "commit_before" : "24377b31e8e2012234ed018626102a5a460eaa8b",
+  "commit_after" : "7d2f8d14b326bb821a5eb0147a074d7a4bf351f9",
+  "sha_v1" : "4c31ab9f40e3e02a1b23cecbd71dbe617b42dec41a6df1ac06db3202cb85885f",
+  "sha_v2" : "a6021667f7ba885989dece11c8f9cead7ca5bf52d7746b37db37da6ae6aee0c3",
+  "size_v1" : 1871,
+  "size_v2" : 1999,
+  "timestamp" : "2026-03-18 23:12:40",
+  "identical" : false
+}

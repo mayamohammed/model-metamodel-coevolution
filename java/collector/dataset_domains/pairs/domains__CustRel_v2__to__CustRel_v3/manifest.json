@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__CustRel_v2 -> CustRel_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "CustRel_v2.ecore -> CustRel_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\CustRel\\metamodels\\CustRel_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\CustRel\\metamodels\\CustRel_v3.ecore",
+  "sha_v1" : "7cc356df95f105d8cf119ff769aae7b439cc46ce0e015f27a75823702a18fe43",
+  "sha_v2" : "92a345dc621d7346dd7391c0d8c5cc71e7a10aed3e34c00368562fda760bb729",
+  "size_v1" : 2665,
+  "size_v2" : 2778,
+  "timestamp" : "2026-03-18 23:35:20",
+  "identical" : false
+}

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1857_eclass_supertype_added_from_plugins_org.eclipse.emf.gwt_model_Ecore__e6cf65c__12aa920",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.gwt_model_Ecore__e6cf65c__12aa920\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:45",
+  "ground_truth" : {
+    "change_type" : "ECLASS_SUPERTYPE_ADDED",
+    "element" : "EClassifier",
+    "context" : "EAttribute",
+    "old_value" : "",
+    "new_value" : "EClassifier",
+    "description" : "EAttribute now extends EClassifier"
+  }
+}

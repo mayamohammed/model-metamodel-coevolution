@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1865_ereference_multiplicity_changed_from_plugins_org.eclipse.emf.xcore_model_Xcore__2e763ae__62ee729",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.xcore_model_Xcore__2e763ae__62ee729\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:45",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_MULTIPLICITY_CHANGED",
+    "element" : "source",
+    "context" : "XAnnotation",
+    "old_value" : "[0..1]",
+    "new_value" : "[0..*]",
+    "description" : "Changed multiplicity of source"
+  }
+}

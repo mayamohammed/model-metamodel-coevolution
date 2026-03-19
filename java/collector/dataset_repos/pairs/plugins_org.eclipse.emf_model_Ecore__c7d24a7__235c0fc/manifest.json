@@ -1,0 +1,13 @@
+{
+  "pair_id" : "org.eclipse.emf__plugins_org.eclipse.emf_model_Ecore__c7d24a7__235c0fc",
+  "repo" : "org.eclipse.emf",
+  "file_path" : "plugins/org.eclipse.emf.ecore/model/Ecore.ecore",
+  "commit_before" : "c7d24a7731b2292f1ed46ae85079d1e06dce6cd0",
+  "commit_after" : "235c0fc68b0ab928d8546ec979760c0e908b95f8",
+  "sha_v1" : "26230379ac85e902cea5a42c865d5325eee5539fb28f70e18684f2c0f0dad53e",
+  "sha_v2" : "94ff94f6371e59614edeea1aca0f9813ff8e347e75d4069a91adb84e229a5da3",
+  "size_v1" : 33364,
+  "size_v2" : 33521,
+  "timestamp" : "2026-03-18 23:13:00",
+  "identical" : false
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "ProjMgmt__ProjMgmt_v2 -> ProjMgmt_v3__disk:C:__disk:C:",
+  "repo" : "ProjMgmt",
+  "file_path" : "ProjMgmt_v2.ecore -> ProjMgmt_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\ProjMgmt\\metamodels\\ProjMgmt_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\ProjMgmt\\metamodels\\ProjMgmt_v3.ecore",
+  "sha_v1" : "dace39bef0b66bd893f1ccba9ebfde80898c1376a557d951403a16630342cb78",
+  "sha_v2" : "691a722f62f115e5a259296efd494c56eefc208df388641a47f5cec70de79d47",
+  "size_v1" : 2668,
+  "size_v2" : 2781,
+  "timestamp" : "2026-03-18 23:35:27",
+  "identical" : false
+}

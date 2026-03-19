@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0877_eattribute_removed_from_tests_org.eclipse.emf.test.core_src_org_eclipse_emf_test_core_featuremap_com.example.supplier__14fc609__f9be1d0",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.core_src_org_eclipse_emf_test_core_featuremap_com.example.supplier__14fc609__f9be1d0\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:17",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "id",
+    "context" : "PurchaseOrder",
+    "old_value" : "id",
+    "new_value" : "",
+    "description" : "Removed EAttribute id from PurchaseOrder"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0466_eclass_abstract_changed_from_metamodel_OCCI__4ee4a59__9680c08",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\metamodel_OCCI__4ee4a59__9680c08\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:02",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ABSTRACT_CHANGED",
+    "element" : "Category",
+    "context" : "OCCI",
+    "old_value" : "true",
+    "new_value" : "false",
+    "description" : "Changed abstract of Category : true -> false"
+  }
+}

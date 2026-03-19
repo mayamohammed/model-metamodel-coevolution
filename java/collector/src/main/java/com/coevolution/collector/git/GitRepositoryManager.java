@@ -3,81 +3,99 @@ package com.coevolution.collector.git;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
-
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.*;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * GitRepositoryManager - ouvre et ferme un depot Git local.
- */
 public class GitRepositoryManager {
 
-    private Repository repository;
-    private Git git;
+    private List<Repository> repositories = new ArrayList<>();
+    private List<Git>        gits         = new ArrayList<>();
+    private int totalEcoreFiles = 0;
+    private File reposRoot = null; // FIX : pour getReposRoot()
 
     public GitRepositoryManager() {}
 
-    /**
-     * Ouvre un depot Git local depuis son chemin absolu.
-     *
-     * @param repoPath chemin absolu vers la racine du depot Git
-     * @throws IOException si le depot ne peut pas etre ouvert
-     */
+    public void scanAllRepos(String dataRootPath) throws IOException {
+        reposRoot = new File(dataRootPath); // FIX : sauvegarde root
+        Path dataPath = Paths.get(dataRootPath);
+
+        Files.walk(dataPath)
+            .filter(p -> {
+                String fileName = p.getFileName().toString();
+                if (fileName.endsWith(".ecore")) {
+                    totalEcoreFiles++;
+                    return false;
+                }
+                return Files.isDirectory(p) && fileName.equals(".git");
+            })
+            .forEach(this::openRepo);
+
+        System.out.println("\n🎯 RÉSULTAT FINAL:");
+        System.out.println("   Ecore trouvés : " + totalEcoreFiles);
+        System.out.println("   Repos Git     : " + repositories.size());
+        System.out.println("====================");
+    }
+
+    private void openRepo(Path gitDirPath) {
+        try {
+            FileRepositoryBuilder builder = new FileRepositoryBuilder()
+                    .setMustExist(true)
+                    .setGitDir(gitDirPath.toFile());
+            Repository repo = builder.build();
+            Git git = new Git(repo);
+            repositories.add(repo);
+            gits.add(git);
+            System.out.println("✅ " + repo.getDirectory().getParentFile().getName());
+        } catch (IOException e) {
+            System.err.println("❌ Skip " + gitDirPath.getParent() + " → " + e.getMessage());
+        }
+    }
+
     public void openLocal(String repoPath) throws IOException {
-        File repoDir = new File(repoPath);
-
-        if (!repoDir.exists() || !repoDir.isDirectory()) {
-            throw new IOException("[GitRepositoryManager] Chemin invalide : " + repoPath);
-        }
-
-        // Chercher le .git dans repoPath directement
-        File gitDir = new File(repoDir, ".git");
-
-        FileRepositoryBuilder builder = new FileRepositoryBuilder();
-        builder.setMustExist(true);
-
-        if (gitDir.exists() && gitDir.isDirectory()) {
-            builder.setGitDir(gitDir);
-        } else {
-            // Chercher dans les parents
-            builder.findGitDir(repoDir);
-        }
-
-        this.repository = builder.build();
-        this.git = new Git(this.repository);
-
-        System.out.println("[GitRepositoryManager] Depot ouvert : "
-                + this.repository.getDirectory().getAbsolutePath());
+        scanAllRepos(repoPath);
     }
 
     /**
-     * Retourne le Repository JGit ouvert.
+     * FIX : retourne 1er repo ou NULL (pas crash)
      */
     public Repository getRepository() {
-        if (repository == null) {
-            throw new IllegalStateException(
-                    "[GitRepositoryManager] Aucun depot ouvert. Appelez openLocal() d abord.");
+        if (repositories.isEmpty()) {
+            System.out.println("[GitRepositoryManager] Mode disque pur - pas de Git");
+            return null; // FIX : null au lieu de crash
         }
-        return repository;
+        return repositories.get(0);
     }
 
     /**
-     * Retourne l objet Git JGit.
+     * FIX : retourne root pour Mode C
      */
+    public File getReposRoot() {
+        return reposRoot;
+    }
+
+    public List<Repository> getAllRepositories() {
+        return repositories;
+    }
+
     public Git getGit() {
-        return git;
+        if (gits.isEmpty()) return null; // FIX : null au lieu de crash
+        return gits.get(0);
     }
 
-    /**
-     * Ferme le depot et libere les ressources.
-     */
-    public void close() {
-        if (git != null) {
-            git.close();
-        }
-        if (repository != null) {
-            repository.close();
-        }
-        System.out.println("[GitRepositoryManager] Ressources fermees.");
+    public int getTotalEcoreFiles() {
+        return totalEcoreFiles;
+    }
+
+    public void close() { closeAll(); }
+
+    public void closeAll() {
+        gits.forEach(Git::close);
+        repositories.forEach(Repository::close);
+        System.out.println("🔒 Fermé " + repositories.size() + " repos");
+        repositories.clear();
+        gits.clear();
     }
 }

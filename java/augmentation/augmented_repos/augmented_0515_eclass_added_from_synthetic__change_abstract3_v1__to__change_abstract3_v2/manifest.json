@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0515_eclass_added_from_synthetic__change_abstract3_v1__to__change_abstract3_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\synthetic__change_abstract3_v1__to__change_abstract3_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 02:24:01",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "VirtualNode_79",
+    "context" : "workflow",
+    "old_value" : "",
+    "new_value" : "VirtualNode_79",
+    "description" : "Added EClass VirtualNode_79"
+  }
+}

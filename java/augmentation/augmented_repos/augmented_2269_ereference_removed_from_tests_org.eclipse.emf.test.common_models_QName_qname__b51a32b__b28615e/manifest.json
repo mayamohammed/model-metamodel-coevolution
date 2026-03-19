@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2269_ereference_removed_from_tests_org.eclipse.emf.test.common_models_QName_qname__b51a32b__b28615e",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.common_models_QName_qname__b51a32b__b28615e\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:51",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_REMOVED",
+    "element" : "xMLNSPrefixMap",
+    "context" : "DocumentRoot",
+    "old_value" : "xMLNSPrefixMap",
+    "new_value" : "",
+    "description" : "Removed EReference xMLNSPrefixMap from DocumentRoot"
+  }
+}

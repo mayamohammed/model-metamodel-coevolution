@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3103_eattribute_added_from_tests_org.eclipse.emf.test.tools_data_Defaults__51c411c__cd6a7e2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.tools_data_Defaults__51c411c__cd6a7e2\\v1.ecore",
+  "timestamp" : "2026-03-19 01:48:00",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "derivedAttr_340",
+    "context" : "BigClass",
+    "old_value" : "",
+    "new_value" : "EFloat",
+    "description" : "Added EAttribute derivedAttr_340 to BigClass"
+  }
+}

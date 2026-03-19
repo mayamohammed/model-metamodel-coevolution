@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0710_eclass_added_from_plugins_org.eclipse.emf.codegen_model_GenModel__eccdb06__39dcfbb",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf.codegen_model_GenModel__eccdb06__39dcfbb\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:12",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "ComputedClass_187",
+    "context" : "genmodel",
+    "old_value" : "",
+    "new_value" : "ComputedClass_187",
+    "description" : "Added EClass ComputedClass_187"
+  }
+}

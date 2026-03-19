@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0757_eattribute_type_changed_from_plugins_org.eclipse.emf_model_XMLNamespace__318773f__4011cf6",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\plugins_org.eclipse.emf_model_XMLNamespace__318773f__4011cf6\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:15",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_TYPE_CHANGED",
+    "element" : "mixed",
+    "context" : "XMLNamespaceDocumentRoot",
+    "old_value" : "EFeatureMapEntry",
+    "new_value" : "EString",
+    "description" : "Changed type of mixed : EFeatureMapEntry -> EString"
+  }
+}

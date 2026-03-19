@@ -1,0 +1,13 @@
+{
+  "pair_id" : "emf-repo__tests_org.eclipse.emf.test.common_models_ItemDB_dbprice__b51a32b__b28615e",
+  "repo" : "emf-repo",
+  "file_path" : "tests/org.eclipse.emf.test.common/models/ItemDB/dbprice.ecore",
+  "commit_before" : "b51a32b44471902fd78357acba350f146e12b067",
+  "commit_after" : "b28615ee5689ba82ab2d16b11e7c1a90faec76a9",
+  "sha_v1" : "6622414884d393f8ca90e28d04b27cc9b6b7fd72019f9b03ecb7f70121dd2317",
+  "sha_v2" : "82b78c59d3d385e534521dd3577cf902a3b34b866f870256e33532d48427d76e",
+  "size_v1" : 1786,
+  "size_v2" : 1756,
+  "timestamp" : "2026-03-18 23:12:42",
+  "identical" : false
+}

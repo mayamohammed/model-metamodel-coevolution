@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_2295_ereference_multiplicity_changed_from_tests_org.eclipse.emf.test.core_src_org_eclipse_emf_test_core_featuremap_com.example.supplier__14fc609__f9be1d0",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\tests_org.eclipse.emf.test.core_src_org_eclipse_emf_test_core_featuremap_com.example.supplier__14fc609__f9be1d0\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:52",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_MULTIPLICITY_CHANGED",
+    "element" : "preferredOrders",
+    "context" : "Supplier",
+    "old_value" : "[0..*]",
+    "new_value" : "[1..1]",
+    "description" : "Changed multiplicity of preferredOrders"
+  }
+}

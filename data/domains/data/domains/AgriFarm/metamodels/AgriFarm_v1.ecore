@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" 
+  name="AgriFarm" nsURI="http://AgriFarm/AgriFarm.ecore" nsPrefix="nd">
+  
+  <!-- Classes métier -->
+  <eClassifiers xsi:type="ecore:EClass" name="Account">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accountId" eType="//EString" changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="balance" eType="//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="//EEnumLiteral"/>
+  </eClassifiers>
+  
+  <eClassifiers xsi:type="ecore:EClass" name="Customer">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerId" eType="//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accounts" eType="//Account" upperBound="-1" containment="true"/>
+  </eClassifiers>
+  
+  <eClassifiers xsi:type="ecore:EClass" name="Transaction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="txId" eType="//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="amount" eType="//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fromAccount" eType="//Account"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toAccount" eType="//Account"/>
+  </eClassifiers>
+  
+  <!-- Évolutions v2/v3 -->
+  <eClassifiers xsi:type="ecore:EClass" name="Loan">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="loanId" eType="//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="principal" eType="//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" eType="//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customer" eType="//Customer"/>
+  </eClassifiers>
+  
+</ecore:EPackage>

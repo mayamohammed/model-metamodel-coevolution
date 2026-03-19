@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0253_eclass_removed_from_clouddesigner_org.occiware.clouddesigner.occi.platform_model_platform__0e1ae8b__71a2fd0",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\clouddesigner_org.occiware.clouddesigner.occi.platform_model_platform__0e1ae8b__71a2fd0\\v1.ecore",
+  "timestamp" : "2026-03-19 01:47:23",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Componentlink",
+    "context" : "platform",
+    "old_value" : "Componentlink",
+    "new_value" : "",
+    "description" : "Removed EClass Componentlink"
+  }
+}

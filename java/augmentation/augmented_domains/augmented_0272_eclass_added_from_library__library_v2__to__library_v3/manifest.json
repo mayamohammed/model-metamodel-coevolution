@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0272_eclass_added_from_library__library_v2__to__library_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\library__library_v2__to__library_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 01:08:28",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "SyntheticElement_272",
+    "context" : "library",
+    "old_value" : "",
+    "new_value" : "SyntheticElement_272",
+    "description" : "Added EClass SyntheticElement_272"
+  }
+}

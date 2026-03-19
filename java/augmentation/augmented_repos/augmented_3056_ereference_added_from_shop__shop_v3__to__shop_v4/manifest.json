@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3056_ereference_added_from_shop__shop_v3__to__shop_v4",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\shop__shop_v3__to__shop_v4\\v1.ecore",
+  "timestamp" : "2026-03-19 02:22:42",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_339",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "Order",
+    "description" : "Added EReference generatedRef_339 from Customer to Order"
+  }
+}

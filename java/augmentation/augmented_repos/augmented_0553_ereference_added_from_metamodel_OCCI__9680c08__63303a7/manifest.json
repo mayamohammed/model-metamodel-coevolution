@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0553_ereference_added_from_metamodel_OCCI__9680c08__63303a7",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_repos\\pairs\\metamodel_OCCI__9680c08__63303a7\\v1.ecore",
+  "timestamp" : "2026-03-19 01:38:03",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_ADDED",
+    "element" : "generatedRef_79",
+    "context" : "Category",
+    "old_value" : "",
+    "new_value" : "Attribute",
+    "description" : "Added EReference generatedRef_79 from Category to Attribute"
+  }
+}

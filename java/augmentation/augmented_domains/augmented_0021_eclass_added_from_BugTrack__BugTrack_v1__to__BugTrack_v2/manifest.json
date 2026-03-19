@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0021_eclass_added_from_BugTrack__BugTrack_v1__to__BugTrack_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\BugTrack__BugTrack_v1__to__BugTrack_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 01:08:15",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "AugmentedNode_21",
+    "context" : "BugTrack",
+    "old_value" : "",
+    "new_value" : "AugmentedNode_21",
+    "description" : "Added EClass AugmentedNode_21"
+  }
+}
