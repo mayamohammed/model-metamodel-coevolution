@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0263_eattribute_added_from_ChemLab__ChemLab_v1__to__ChemLab_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\ChemLab__ChemLab_v1__to__ChemLab_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:16:55",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "injectedValue_29",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "ELong",
+    "description" : "Added EAttribute injectedValue_29 to Customer"
+  }
+}

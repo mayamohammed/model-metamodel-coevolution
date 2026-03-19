@@ -1,0 +1,13 @@
+{
+  "pair_id" : "synthetic__remove_eclass3_v1 -> remove_eclass3_v2__disk:C:__disk:C:",
+  "repo" : "synthetic",
+  "file_path" : "remove_eclass3_v1.ecore -> remove_eclass3_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\remove_eclass3\\metamodels\\remove_eclass3_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\remove_eclass3\\metamodels\\remove_eclass3_v2.ecore",
+  "sha_v1" : "cf326cb5a3f0e37e620b34befca1c9b33be9d0adc7da63e32418f0b1eae42a1e",
+  "sha_v2" : "4625f1678ea0ac68c022e8f10741aa57869823c8f0b911f672f5b43c9ab31d1d",
+  "size_v1" : 1119,
+  "size_v2" : 889,
+  "timestamp" : "2026-03-19 21:12:39",
+  "identical" : false
+}

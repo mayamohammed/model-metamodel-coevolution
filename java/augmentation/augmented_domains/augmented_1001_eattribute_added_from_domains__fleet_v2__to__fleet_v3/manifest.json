@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1001_eattribute_added_from_domains__fleet_v2__to__fleet_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__fleet_v2__to__fleet_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 22:16:58",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "computedField_111",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EDouble",
+    "description" : "Added EAttribute computedField_111 to Customer"
+  }
+}

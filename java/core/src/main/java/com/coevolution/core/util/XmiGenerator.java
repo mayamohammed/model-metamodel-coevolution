@@ -72,13 +72,17 @@ public class XmiGenerator {
         "ACTIF","INACTIF","EN_ATTENTE","FERME"
     };
 
+    // ✅ URLs complètes restaurées
+    private static final String XMI_NS  = "http://www.omg.org/XMI";
+    private static final String BASE_NS = "http://www.example.org/";
+
     public static void main(String[] args) {
         String base = "data/domains";
 
-        System.out.println("â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—");
-        System.out.println("â•‘   XMI Generator â€” Maroc          â•‘");
-        System.out.println("â•‘   250 fichiers x 5 domaines      â•‘");
-        System.out.println("â•šâ•â•â•ï¿½ï¿½ï¿½â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+        System.out.println("==================================");
+        System.out.println("   XMI Generator - Maroc");
+        System.out.println("   250 fichiers x 5 domaines");
+        System.out.println("==================================");
         System.out.println();
 
         long start = System.currentTimeMillis();
@@ -92,11 +96,11 @@ public class XmiGenerator {
         long end = System.currentTimeMillis();
 
         System.out.println();
-        System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
+        System.out.println("----------------------------------");
         verify(base);
-        System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
+        System.out.println("----------------------------------");
         System.out.println("Temps : " + (end - start) + " ms");
-        System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
+        System.out.println("----------------------------------");
     }
 
     private static void generateDomain(String domain,
@@ -107,16 +111,12 @@ public class XmiGenerator {
 
         for (int i = 1; i <= count; i++) {
             String path = String.format(
-                "%s/%s_%03d.xmi", dir, domain, i
-            );
+                "%s/%s_%03d.xmi", dir, domain, i);
             String xml = buildXml(domain, i);
             write(path, xml);
         }
 
-        System.out.printf(
-            "  %-12s â†’ %d fichiers generÃ©s%n",
-            domain, count
-        );
+        System.out.printf("  %-12s -> %d fichiers generes%n", domain, count);
     }
 
     private static String buildXml(String domain, int i) {
@@ -127,8 +127,7 @@ public class XmiGenerator {
             case "ecommerce":  return buildEcommerce(i);
             case "bank":       return buildBank(i);
             default: throw new IllegalArgumentException(
-                "Unknown domain: " + domain
-            );
+                "Unknown domain: " + domain);
         }
     }
 
@@ -136,12 +135,9 @@ public class XmiGenerator {
         return xmlHeader()
             + "<company:Company\n"
             + attr("xmi:version", "2.0")
-            + attr("xmlns:xmi",
-                   "http:
-            + attr("xmlns:company",
-                   "http:
-            + attr("name",
-                   pick(COMPANIES) + "_" + i)
+            + attr("xmlns:xmi",     XMI_NS)
+            + attr("xmlns:company", BASE_NS + "company")
+            + attr("name",     pick(COMPANIES) + "_" + i)
             + attr("location", pick(CITIES))
             + ">\n"
             + "  <departments"
@@ -149,12 +145,9 @@ public class XmiGenerator {
             + ">\n"
             + "    <employees"
             + inlineAttr("name",   pick(NAMES))
-            + inlineAttr("salary",
-                         (3000 + RNG.nextInt(8000)) + ".0")
-            + inlineAttr("age",
-                         String.valueOf(22 + RNG.nextInt(38)))
-            + inlineAttr("phone",
-                         "+2126" + rndPhone())
+            + inlineAttr("salary", (3000 + RNG.nextInt(8000)) + ".0")
+            + inlineAttr("age",    String.valueOf(22 + RNG.nextInt(38)))
+            + inlineAttr("phone",  "+2126" + rndPhone())
             + "/>\n"
             + "  </departments>\n"
             + "</company:Company>\n";
@@ -164,12 +157,9 @@ public class XmiGenerator {
         return xmlHeader()
             + "<hospital:Hospital\n"
             + attr("xmi:version", "2.0")
-            + attr("xmlns:xmi",
-                   "http:
-            + attr("xmlns:hospital",
-                   "http:
-            + attr("name",
-                   pick(HOSPITALS) + "_" + i)
+            + attr("xmlns:xmi",      XMI_NS)
+            + attr("xmlns:hospital", BASE_NS + "hospital")
+            + attr("name", pick(HOSPITALS) + "_" + i)
             + ">\n"
             + "  <wards"
             + inlineAttr("name", "Service_" + i)
@@ -177,14 +167,11 @@ public class XmiGenerator {
             + "    <patients"
             + inlineAttr("name",      pick(NAMES))
             + inlineAttr("diagnosis", pick(DIAGNOSES))
-            + inlineAttr("room",
-                         String.valueOf(100 + RNG.nextInt(400)))
-            + inlineAttr("phone",
-                         "+2126" + rndPhone())
+            + inlineAttr("room",      String.valueOf(100 + RNG.nextInt(400)))
+            + inlineAttr("phone",     "+2126" + rndPhone())
             + "/>\n"
             + "    <doctors"
-            + inlineAttr("name",
-                         "Dr_" + pick(NAMES))
+            + inlineAttr("name",      "Dr_" + pick(NAMES))
             + inlineAttr("specialty", pick(SPECIALTIES))
             + "/>\n"
             + "  </wards>\n"
@@ -195,29 +182,22 @@ public class XmiGenerator {
         return xmlHeader()
             + "<university:University\n"
             + attr("xmi:version", "2.0")
-            + attr("xmlns:xmi",
-                   "http:
-            + attr("xmlns:university",
-                   "http:
-            + attr("name",
-                   "Universite_" + pick(CITIES) + "_" + i)
+            + attr("xmlns:xmi",         XMI_NS)
+            + attr("xmlns:university",  BASE_NS + "university")
+            + attr("name", "Universite_" + pick(CITIES) + "_" + i)
             + ">\n"
             + "  <faculties"
             + inlineAttr("name", "Faculte_" + i)
             + ">\n"
             + "    <students"
             + inlineAttr("name",    pick(NAMES))
-            + inlineAttr("grade",
-                         (10 + RNG.nextInt(10)) + ".0")
-            + inlineAttr("year",
-                         String.valueOf(1 + RNG.nextInt(4)))
-            + inlineAttr("credits",
-                         String.valueOf(10 + RNG.nextInt(50)))
+            + inlineAttr("grade",   (10 + RNG.nextInt(10)) + ".0")
+            + inlineAttr("year",    String.valueOf(1 + RNG.nextInt(4)))
+            + inlineAttr("credits", String.valueOf(10 + RNG.nextInt(50)))
             + "/>\n"
             + "    <courses"
             + inlineAttr("title",   pick(COURSES))
-            + inlineAttr("credits",
-                         String.valueOf(2 + RNG.nextInt(4)))
+            + inlineAttr("credits", String.valueOf(2 + RNG.nextInt(4)))
             + "/>\n"
             + "  </faculties>\n"
             + "</university:University>\n";
@@ -227,22 +207,15 @@ public class XmiGenerator {
         return xmlHeader()
             + "<ecommerce:Shop\n"
             + attr("xmi:version", "2.0")
-            + attr("xmlns:xmi",
-                   "http:
-            + attr("xmlns:ecommerce",
-                   "http:
-            + attr("name",
-                   "Boutique_" + pick(CITIES) + "_" + i)
+            + attr("xmlns:xmi",        XMI_NS)
+            + attr("xmlns:ecommerce",  BASE_NS + "ecommerce")
+            + attr("name", "Boutique_" + pick(CITIES) + "_" + i)
             + ">\n"
             + "  <products"
-            + inlineAttr("name",
-                         pick(PRODUCTS) + "_" + i)
-            + inlineAttr("price",
-                         (50 + RNG.nextInt(5000)) + ".99")
-            + inlineAttr("weight",
-                         (1 + RNG.nextInt(20)) + ".0")
-            + inlineAttr("stock",
-                         String.valueOf(RNG.nextInt(500)))
+            + inlineAttr("name",   pick(PRODUCTS) + "_" + i)
+            + inlineAttr("price",  (50 + RNG.nextInt(5000)) + ".99")
+            + inlineAttr("weight", (1 + RNG.nextInt(20)) + ".0")
+            + inlineAttr("stock",  String.valueOf(RNG.nextInt(500)))
             + "/>\n"
             + "</ecommerce:Shop>\n";
     }
@@ -251,20 +224,15 @@ public class XmiGenerator {
         return xmlHeader()
             + "<bank:Bank\n"
             + attr("xmi:version", "2.0")
-            + attr("xmlns:xmi",
-                   "http:
-            + attr("xmlns:bank",
-                   "http:
+            + attr("xmlns:xmi",  XMI_NS)
+            + attr("xmlns:bank", BASE_NS + "bank")
             + attr("name", "BanqueMaroc_" + i)
             + ">\n"
             + "  <accounts"
-            + inlineAttr("owner",
-                         pick(NAMES) + "_" + i)
-            + inlineAttr("balance",
-                         (1000 + RNG.nextInt(100000)) + ".0")
-            + inlineAttr("rate",
-                         (1 + RNG.nextInt(5)) + ".0")
-            + inlineAttr("status", pick(STATUSES))
+            + inlineAttr("owner",   pick(NAMES) + "_" + i)
+            + inlineAttr("balance", (1000 + RNG.nextInt(100000)) + ".0")
+            + inlineAttr("rate",    (1 + RNG.nextInt(5)) + ".0")
+            + inlineAttr("status",  pick(STATUSES))
             + "/>\n"
             + "</bank:Bank>\n";
     }
@@ -272,50 +240,36 @@ public class XmiGenerator {
     private static void verify(String base) {
         System.out.println("Verification :");
         String[] domains = {
-            "company","hospital",
-            "university","ecommerce","bank"
+            "company","hospital","university","ecommerce","bank"
         };
         int total = 0;
         for (String d : domains) {
-            File dir = new File(
-                base + "/" + d + "/models/v1"
-            );
-            File[] files = dir.listFiles(
-                (f, n) -> n.endsWith(".xmi")
-            );
+            File dir = new File(base + "/" + d + "/models/v1");
+            File[] files = dir.listFiles((f, n) -> n.endsWith(".xmi"));
             int count = files != null ? files.length : 0;
             total += count;
-            System.out.printf(
-                "  %-12s : %d/50 %s%n",
-                d, count,
-                count == 50 ? "OK" : "KO"
-            );
+            System.out.printf("  %-12s : %d/50 %s%n",
+                    d, count, count == 50 ? "OK" : "KO");
         }
         System.out.println();
-        System.out.println(
-            "  TOTAL : " + total + "/250 "
-            + (total == 250 ? "OK" : "KO")
-        );
+        System.out.println("  TOTAL : " + total + "/250 "
+                + (total == 250 ? "OK" : "KO"));
     }
 
     private static String xmlHeader() {
-        return "<?xml version=\"1.0\""
-             + " encoding=\"UTF-8\"?>\n";
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
     }
 
     private static String attr(String key, String value) {
         return "    " + key + "=\"" + value + "\"\n";
     }
 
-    private static String inlineAttr(String key,
-                                      String value) {
+    private static String inlineAttr(String key, String value) {
         return " " + key + "=\"" + value + "\"";
     }
 
     private static String rndPhone() {
-        return String.format(
-            "%08d", RNG.nextInt(100000000)
-        );
+        return String.format("%08d", RNG.nextInt(100000000));
     }
 
     private static String pick(String[] arr) {
@@ -326,15 +280,11 @@ public class XmiGenerator {
         new File(path).mkdirs();
     }
 
-    private static void write(String path,
-                               String content) {
+    private static void write(String path, String content) {
         try (FileWriter fw = new FileWriter(path)) {
             fw.write(content);
         } catch (IOException e) {
-            System.err.println(
-                "ERROR : " + path
-                + " -> " + e.getMessage()
-            );
+            System.err.println("ERROR : " + path + " -> " + e.getMessage());
         }
     }
 }

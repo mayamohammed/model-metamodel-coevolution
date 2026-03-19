@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1235_eattribute_added_from_domains__Manufacturing_v2__to__Manufacturing_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__Manufacturing_v2__to__Manufacturing_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 22:16:59",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "injectedValue_137",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "ELong",
+    "description" : "Added EAttribute injectedValue_137 to Customer"
+  }
+}

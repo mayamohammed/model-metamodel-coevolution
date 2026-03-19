@@ -1,0 +1,13 @@
+{
+  "pair_id" : "GraphDB__GraphDB_v1 -> GraphDB_v2__disk:C:__disk:C:",
+  "repo" : "GraphDB",
+  "file_path" : "GraphDB_v1.ecore -> GraphDB_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\GraphDB\\metamodels\\GraphDB_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\GraphDB\\metamodels\\GraphDB_v2.ecore",
+  "sha_v1" : "73379a3af9f36af7fbe5b15fb91385abab90bc8e470dad38a7f9bb62f4a9d949",
+  "sha_v2" : "7852836af5e87cb5f8fe11adbb24face1dc1880b939996f4fca9bf3993fd6783",
+  "size_v1" : 2073,
+  "size_v2" : 2665,
+  "timestamp" : "2026-03-19 21:12:34",
+  "identical" : false
+}

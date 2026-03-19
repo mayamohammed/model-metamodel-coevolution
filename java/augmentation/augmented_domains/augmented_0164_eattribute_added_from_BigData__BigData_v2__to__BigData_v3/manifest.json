@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0164_eattribute_added_from_BigData__BigData_v2__to__BigData_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\BigData__BigData_v2__to__BigData_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 22:16:55",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_ADDED",
+    "element" : "generatedField_18",
+    "context" : "Customer",
+    "old_value" : "",
+    "new_value" : "EString",
+    "description" : "Added EAttribute generatedField_18 to Customer"
+  }
+}

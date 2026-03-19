@@ -1,0 +1,13 @@
+{
+  "pair_id" : "change_containment__change_containment_v1 -> change_containment_v2__disk:C:__disk:C:",
+  "repo" : "change_containment",
+  "file_path" : "change_containment_v1.ecore -> change_containment_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\change_containment\\metamodels\\change_containment_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\change_containment\\metamodels\\change_containment_v2.ecore",
+  "sha_v1" : "d77e9f4a7e1501313e676b125d75052dfd07f8b3881b67cfe59fe74c6e3dac40",
+  "sha_v2" : "c32c809b9b2b5acffd764e6ff65b8b4cb6fc23de83311c94eef5bce40cf8589a",
+  "size_v1" : 620,
+  "size_v2" : 639,
+  "timestamp" : "2026-03-19 21:12:41",
+  "identical" : false
+}

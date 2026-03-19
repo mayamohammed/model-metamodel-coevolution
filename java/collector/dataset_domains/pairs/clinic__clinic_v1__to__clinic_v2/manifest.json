@@ -1,0 +1,13 @@
+{
+  "pair_id" : "clinic__clinic_v1 -> clinic_v2__disk:C:__disk:C:",
+  "repo" : "clinic",
+  "file_path" : "clinic_v1.ecore -> clinic_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\clinic\\metamodels\\clinic_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\clinic\\metamodels\\clinic_v2.ecore",
+  "sha_v1" : "849756e6fda31006c0318d298f777b3c8671b3d3e5dbe003d5b5b193611160f7",
+  "sha_v2" : "1ec19778db92c23c99cf9d4d02b57cf1c15582b5582f39a9fd52c6e3eab8048f",
+  "size_v1" : 2070,
+  "size_v2" : 2662,
+  "timestamp" : "2026-03-19 21:12:34",
+  "identical" : false
+}

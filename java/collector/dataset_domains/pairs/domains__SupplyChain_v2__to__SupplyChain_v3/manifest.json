@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__SupplyChain_v2 -> SupplyChain_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "SupplyChain_v2.ecore -> SupplyChain_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\SupplyChain\\metamodels\\SupplyChain_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\SupplyChain\\metamodels\\SupplyChain_v3.ecore",
+  "sha_v1" : "727bc8b74bdd46200a424a092e3dc5bee530154f7470a5ffb8f03add02e198af",
+  "sha_v2" : "b7b7351323cdde1528895c48c2d5da8ba04b60b476a33000b61497d72cfc706b",
+  "size_v1" : 2677,
+  "size_v2" : 2790,
+  "timestamp" : "2026-03-19 21:12:29",
+  "identical" : false
+}

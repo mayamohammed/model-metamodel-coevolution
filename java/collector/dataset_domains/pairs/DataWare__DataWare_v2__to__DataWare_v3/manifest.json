@@ -1,0 +1,13 @@
+{
+  "pair_id" : "DataWare__DataWare_v2 -> DataWare_v3__disk:C:__disk:C:",
+  "repo" : "DataWare",
+  "file_path" : "DataWare_v2.ecore -> DataWare_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\DataWare\\metamodels\\DataWare_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\DataWare\\metamodels\\DataWare_v3.ecore",
+  "sha_v1" : "205137becfae259727c5197e6e32ed2643a99e15bac4be5e54e60c1066d54dfe",
+  "sha_v2" : "0c3ec9e0da05478302edd251acb947e4e9c36613ee192182f4c871e53502e67d",
+  "size_v1" : 2668,
+  "size_v2" : 2781,
+  "timestamp" : "2026-03-19 21:12:34",
+  "identical" : false
+}

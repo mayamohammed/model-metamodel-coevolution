@@ -1,0 +1,13 @@
+{
+  "pair_id" : "remove_reference3__remove_reference3_v1 -> remove_reference3_v2__disk:C:__disk:C:",
+  "repo" : "remove_reference3",
+  "file_path" : "remove_reference3_v1.ecore -> remove_reference3_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\remove_reference3\\metamodels\\remove_reference3_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\remove_reference3\\metamodels\\remove_reference3_v2.ecore",
+  "sha_v1" : "bacbd61b828f36aaab3d39433b3e617927be4750684df00143a3aab2346d0baa",
+  "sha_v2" : "b250d39464f7dfd816505a33314743b2266a82c2486c4523bdcef63fbef551f8",
+  "size_v1" : 992,
+  "size_v2" : 872,
+  "timestamp" : "2026-03-19 21:12:41",
+  "identical" : false
+}

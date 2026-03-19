@@ -1,0 +1,13 @@
+{
+  "pair_id" : "mixed2__mixed2_v1 -> mixed2_v2__disk:C:__disk:C:",
+  "repo" : "mixed2",
+  "file_path" : "mixed2_v1.ecore -> mixed2_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\mixed2\\metamodels\\mixed2_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\mixed2\\metamodels\\mixed2_v2.ecore",
+  "sha_v1" : "7026a28ec763090828240c8328773ae0bd4ddc0d6a50316361369b7ba944b849",
+  "sha_v2" : "df7c06a472e1abd6875a06845009eddb1ead31eecbe807c1ec2e5d35deff674e",
+  "size_v1" : 887,
+  "size_v2" : 1678,
+  "timestamp" : "2026-03-19 21:12:41",
+  "identical" : false
+}

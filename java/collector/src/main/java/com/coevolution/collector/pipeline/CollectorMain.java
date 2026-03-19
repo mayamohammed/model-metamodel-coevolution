@@ -5,9 +5,7 @@ import java.io.File;
 
 public class CollectorMain {
 
-    
     private static final String[][] SOURCES = {
-        
         { "../../data/repogit",   "dataset_repos",   "500" },
         { "../../data/domains",   "dataset_domains", "500" },
         { "../../data/synthetic", "dataset_synth",   "500" }
@@ -26,14 +24,14 @@ public class CollectorMain {
             String outputDir = source[1];
             int    maxPairs  = Integer.parseInt(source[2]);
 
-            System.out.println("\nðŸ“‚ SOURCE : " + new File(repoPath).getAbsolutePath());
+            System.out.println("\n[SOURCE] " + new File(repoPath).getAbsolutePath());
             System.out.println("   Output  : " + outputDir);
             System.out.println("   Max     : " + maxPairs);
             System.out.println("-------------------------------------------------");
 
             File repoDir = new File(repoPath);
             if (!repoDir.exists() || !repoDir.isDirectory()) {
-                System.err.println("   âš ï¸  SKIP : dossier introuvable â†’ "
+                System.err.println("   [SKIP] dossier introuvable : "
                         + repoDir.getAbsolutePath());
                 continue;
             }
@@ -41,7 +39,7 @@ public class CollectorMain {
             GitRepositoryManager gitManager = new GitRepositoryManager();
             try {
                 gitManager.scanAllRepos(repoPath);
-                System.out.println("   Ecore trouvÃ©s : "
+                System.out.println("   Ecore trouves : "
                         + gitManager.getTotalEcoreFiles());
 
                 File outDir = new File(outputDir);
@@ -53,14 +51,14 @@ public class CollectorMain {
                 int collected = pipeline.getPairsCollected();
                 totalPaires += collected;
 
-                System.out.println("   âœ… Paires OK  : " + collected);
-                System.out.println("   Identiques    : " + pipeline.getPairsIdentical());
-                System.out.println("   Invalides     : " + pipeline.getPairsInvalid());
-                System.out.println("   Skip          : " + pipeline.getPairsSkipped());
-                System.out.println("   Dataset       : " + outDir.getAbsolutePath());
+                System.out.println("   [OK] Paires    : " + collected);
+                System.out.println("   Identiques     : " + pipeline.getPairsIdentical());
+                System.out.println("   Invalides      : " + pipeline.getPairsInvalid());
+                System.out.println("   Skip           : " + pipeline.getPairsSkipped());
+                System.out.println("   Dataset        : " + outDir.getAbsolutePath());
 
             } catch (Exception e) {
-                System.err.println("   âŒ ERREUR : " + e.getMessage());
+                System.err.println("   [ERREUR] " + e.getMessage());
                 e.printStackTrace();
             } finally {
                 gitManager.close();
@@ -68,10 +66,9 @@ public class CollectorMain {
         }
 
         System.out.println("\n=================================================");
-        System.out.println("  RÃ‰SULTAT FINAL TOUTES SOURCES");
+        System.out.println("  RESULTAT FINAL TOUTES SOURCES");
         System.out.println("=================================================");
-        System.out.println("  TOTAL PAIRES COLLECTÃ‰ES : " + totalPaires);
+        System.out.println("  TOTAL PAIRES COLLECTEES : " + totalPaires);
         System.out.println("=================================================");
     }
 }
-

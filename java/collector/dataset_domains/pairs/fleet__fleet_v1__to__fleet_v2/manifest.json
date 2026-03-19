@@ -1,0 +1,13 @@
+{
+  "pair_id" : "fleet__fleet_v1 -> fleet_v2__disk:C:__disk:C:",
+  "repo" : "fleet",
+  "file_path" : "fleet_v1.ecore -> fleet_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\fleet\\metamodels\\fleet_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\fleet\\metamodels\\fleet_v2.ecore",
+  "sha_v1" : "2b856c4fa8d478279f694a8edbd177b8a0d4dbf93ea88bd2e74e17514cb064eb",
+  "sha_v2" : "493a6dbefc7a3fe701ae6be5024966f550b05e2634e353e4a74a65cb7f5bb269",
+  "size_v1" : 2067,
+  "size_v2" : 2659,
+  "timestamp" : "2026-03-19 21:12:34",
+  "identical" : false
+}

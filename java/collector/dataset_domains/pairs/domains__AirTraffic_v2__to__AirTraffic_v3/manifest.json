@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__AirTraffic_v2 -> AirTraffic_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "AirTraffic_v2.ecore -> AirTraffic_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\AirTraffic\\metamodels\\AirTraffic_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\AirTraffic\\metamodels\\AirTraffic_v3.ecore",
+  "sha_v1" : "a59082eaa767b74bccddc4db314e41c74f330a2ca5b697a9231de72d3189491e",
+  "sha_v2" : "eae69bab836a2d88eb8d563e603afcb62d06c4e44bb3757d72f290455d3309e2",
+  "size_v1" : 2674,
+  "size_v2" : 2787,
+  "timestamp" : "2026-03-19 21:12:27",
+  "identical" : false
+}

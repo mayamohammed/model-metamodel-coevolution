@@ -1,0 +1,13 @@
+{
+  "pair_id" : "synthetic__change_multiplicity3_v1 -> change_multiplicity3_v2__disk:C:__disk:C:",
+  "repo" : "synthetic",
+  "file_path" : "change_multiplicity3_v1.ecore -> change_multiplicity3_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\change_multiplicity3\\metamodels\\change_multiplicity3_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\synthetic\\change_multiplicity3\\metamodels\\change_multiplicity3_v2.ecore",
+  "sha_v1" : "410c522aea9080c9fb2bcd90864aeb11ce533743a44a270293f074d2fbaca592",
+  "sha_v2" : "42973e9b0e4628eb1780d1cb388b2def690644f5da421756fca39d2538c4d99e",
+  "size_v1" : 833,
+  "size_v2" : 849,
+  "timestamp" : "2026-03-19 21:12:40",
+  "identical" : false
+}

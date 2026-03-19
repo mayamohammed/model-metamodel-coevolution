@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0135_eclass_added_from_bank__bank_v1__to__bank_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\bank__bank_v1__to__bank_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:16:54",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "NewConcept_15",
+    "context" : "bank",
+    "old_value" : "",
+    "new_value" : "NewConcept_15",
+    "description" : "Added EClass NewConcept_15"
+  }
+}

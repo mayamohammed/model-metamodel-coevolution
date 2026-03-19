@@ -1,5 +1,4 @@
-﻿
-package com.coevolution.analyzer.features;
+﻿package com.coevolution.analyzer.features;
 
 import com.coevolution.analyzer.diff.EcoreDiff;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -11,7 +10,6 @@ public class FeatureExtractor {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
-    
     public FeatureVector extract(File pairDir) throws Exception {
         File v1File       = new File(pairDir, "v1.ecore");
         File v2File       = new File(pairDir, "v2.ecore");
@@ -23,19 +21,17 @@ public class FeatureExtractor {
                     + pairDir.getName());
         }
 
-        
         EPackage v1 = EcoreDiff.load(v1File);
         EPackage v2 = EcoreDiff.load(v2File);
 
-        
         double[] values = new double[FeatureVector.size()];
 
-        int nbClassV1  = EcoreDiff.getClasses(v1).size();
-        int nbClassV2  = EcoreDiff.getClasses(v2).size();
-        int nbAttrV1   = EcoreDiff.countAttributes(v1);
-        int nbAttrV2   = EcoreDiff.countAttributes(v2);
-        int nbRefV1    = EcoreDiff.countReferences(v1);
-        int nbRefV2    = EcoreDiff.countReferences(v2);
+        int nbClassV1 = EcoreDiff.getClasses(v1).size();
+        int nbClassV2 = EcoreDiff.getClasses(v2).size();
+        int nbAttrV1  = EcoreDiff.countAttributes(v1);
+        int nbAttrV2  = EcoreDiff.countAttributes(v2);
+        int nbRefV1   = EcoreDiff.countReferences(v1);
+        int nbRefV2   = EcoreDiff.countReferences(v2);
 
         values[0]  = nbClassV1;
         values[1]  = nbClassV2;
@@ -59,22 +55,31 @@ public class FeatureExtractor {
         values[19] = EcoreDiff.countSuperTypeChanges(v1, v2);
         values[20] = EcoreDiff.nsUriChanged(v1, v2);
 
-        
+        // ✅ Lecture label depuis manifest.json
         String label = "UNKNOWN";
         if (manifestFile.exists()) {
-            JsonNode root = mapper.readTree(manifestFile);
-            
-            if (root.has("ground_truth")) {
-                label = root.get("ground_truth")
-                            .get("change_type").asText("UNKNOWN");
-            }
-            
-            else if (root.has("change_type")) {
-                label = root.get("change_type").asText("UNKNOWN");
-            }
-            
-            else {
-                label = "MIXED";
+            try {
+                JsonNode root = mapper.readTree(manifestFile);
+
+                if (root.has("ground_truth")
+                        && root.get("ground_truth").has("change_type")) {
+                    label = root.get("ground_truth")
+                                .get("change_type").asText("UNKNOWN");
+
+                } else if (root.has("change_type")) {
+                    label = root.get("change_type").asText("UNKNOWN");
+
+                } else {
+                    label = "MIXED";
+                }
+
+                // ✅ Normalise le label en MAJUSCULES
+                label = label.toUpperCase().trim();
+
+            } catch (Exception e) {
+                System.err.println("  [WARN] manifest illisible : "
+                        + pairDir.getName() + " → " + e.getMessage());
+                label = "UNKNOWN";
             }
         }
 

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1926_eclass_added_from_domains__SurveilSys_v2__to__SurveilSys_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__SurveilSys_v2__to__SurveilSys_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:02",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "ExtendedObject_214",
+    "context" : "SurveilSys",
+    "old_value" : "",
+    "new_value" : "ExtendedObject_214",
+    "description" : "Added EClass ExtendedObject_214"
+  }
+}

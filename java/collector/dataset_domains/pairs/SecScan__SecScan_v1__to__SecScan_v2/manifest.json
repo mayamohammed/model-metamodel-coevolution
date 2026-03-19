@@ -1,0 +1,13 @@
+{
+  "pair_id" : "SecScan__SecScan_v1 -> SecScan_v2__disk:C:__disk:C:",
+  "repo" : "SecScan",
+  "file_path" : "SecScan_v1.ecore -> SecScan_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\SecScan\\metamodels\\SecScan_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\SecScan\\metamodels\\SecScan_v2.ecore",
+  "sha_v1" : "4606cb2f62639aeb1d6fa280b0c895d837c2741acff04a0094d55643c2815558",
+  "sha_v2" : "83935f889fdb671622c61f3ff2f65d09ede26d8524056f6dab8d454186a0dd56",
+  "size_v1" : 2073,
+  "size_v2" : 2665,
+  "timestamp" : "2026-03-19 21:12:36",
+  "identical" : false
+}

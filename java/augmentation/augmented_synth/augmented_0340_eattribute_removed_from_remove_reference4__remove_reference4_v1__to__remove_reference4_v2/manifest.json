@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0340_eattribute_removed_from_remove_reference4__remove_reference4_v1__to__remove_reference4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\remove_reference4__remove_reference4_v1__to__remove_reference4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:08",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "floors",
+    "context" : "Building",
+    "old_value" : "floors",
+    "new_value" : "",
+    "description" : "Removed EAttribute floors from Building"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__shop_v2 -> shop_v3__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "shop_v2.ecore -> shop_v3.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\shop\\metamodels\\shop_v2.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\shop\\metamodels\\shop_v3.ecore",
+  "sha_v1" : "69954f4fab2c582a9f4ca3dc08018d4ef95f55db9c193af0da846c4fb611b79d",
+  "sha_v2" : "8f97d9143c34595988027285428a067b27b939c66472c5c17146882cf7dbaf22",
+  "size_v1" : 2656,
+  "size_v2" : 2769,
+  "timestamp" : "2026-03-19 21:12:23",
+  "identical" : false
+}

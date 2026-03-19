@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0015_eclass_added_from_add_attribute__add_attribute_v1__to__add_attribute_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\add_attribute__add_attribute_v1__to__add_attribute_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:07",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "ComputedClass_387",
+    "context" : "vehicle",
+    "old_value" : "",
+    "new_value" : "ComputedClass_387",
+    "description" : "Added EClass ComputedClass_387"
+  }
+}

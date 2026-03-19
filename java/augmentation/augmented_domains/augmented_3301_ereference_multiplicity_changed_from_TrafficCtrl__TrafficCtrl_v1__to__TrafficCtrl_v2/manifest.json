@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3301_ereference_multiplicity_changed_from_TrafficCtrl__TrafficCtrl_v1__to__TrafficCtrl_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\TrafficCtrl__TrafficCtrl_v1__to__TrafficCtrl_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:07",
+  "ground_truth" : {
+    "change_type" : "EREFERENCE_MULTIPLICITY_CHANGED",
+    "element" : "orders",
+    "context" : "Customer",
+    "old_value" : "[0..*]",
+    "new_value" : "[1..1]",
+    "description" : "Changed multiplicity of orders"
+  }
+}

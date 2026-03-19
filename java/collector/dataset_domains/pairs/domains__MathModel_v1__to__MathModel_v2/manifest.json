@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__MathModel_v1 -> MathModel_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "MathModel_v1.ecore -> MathModel_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\MathModel\\metamodels\\MathModel_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\MathModel\\metamodels\\MathModel_v2.ecore",
+  "sha_v1" : "97d7936d8a2e658366568d6f8b012ca5d319f67dd66b1eab99429af12d2bbdf8",
+  "sha_v2" : "c54b54515e13cfcdc046fbf7e54a955c0aa805159fac6f059b7e539dfc267ec5",
+  "size_v1" : 2079,
+  "size_v2" : 2671,
+  "timestamp" : "2026-03-19 21:12:23",
+  "identical" : false
+}

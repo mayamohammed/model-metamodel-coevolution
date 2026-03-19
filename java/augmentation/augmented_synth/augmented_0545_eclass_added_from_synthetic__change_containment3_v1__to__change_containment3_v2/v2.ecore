@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="warehouse" nsURI="http://warehouse/1.0" nsPrefix="warehouse">
+  <eClassifiers xsi:type="ecore:EClass" name="Shelf">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="code">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1" eType="//StockItem"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StockItem">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sku">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComputedClass_467">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_1441_eclass_removed_from_domains__PhysSim_v1__to__PhysSim_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__PhysSim_v1__to__PhysSim_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:00",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Product",
+    "context" : "PhysSim",
+    "old_value" : "Product",
+    "new_value" : "",
+    "description" : "Removed EClass Product"
+  }
+}

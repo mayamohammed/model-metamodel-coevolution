@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_3240_eclass_added_from_TestAuto__TestAuto_v1__to__TestAuto_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\TestAuto__TestAuto_v1__to__TestAuto_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:06",
+  "ground_truth" : {
+    "change_type" : "ECLASS_ADDED",
+    "element" : "GeneratedEntity_360",
+    "context" : "TestAuto",
+    "old_value" : "",
+    "new_value" : "GeneratedEntity_360",
+    "description" : "Added EClass GeneratedEntity_360"
+  }
+}

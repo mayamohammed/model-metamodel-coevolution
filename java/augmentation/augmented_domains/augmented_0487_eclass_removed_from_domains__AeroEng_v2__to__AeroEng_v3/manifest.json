@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0487_eclass_removed_from_domains__AeroEng_v2__to__AeroEng_v3",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_domains\\pairs\\domains__AeroEng_v2__to__AeroEng_v3\\v1.ecore",
+  "timestamp" : "2026-03-19 22:16:56",
+  "ground_truth" : {
+    "change_type" : "ECLASS_REMOVED",
+    "element" : "Category",
+    "context" : "AeroEng",
+    "old_value" : "Category",
+    "new_value" : "",
+    "description" : "Removed EClass Category"
+  }
+}

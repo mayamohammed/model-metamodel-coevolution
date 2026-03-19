@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__LogAnal_v1 -> LogAnal_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "LogAnal_v1.ecore -> LogAnal_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\LogAnal\\metamodels\\LogAnal_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\LogAnal\\metamodels\\LogAnal_v2.ecore",
+  "sha_v1" : "e19110701a1c8400bb8c700ee10025f662b8576550ee5739e3dba76322f06c35",
+  "sha_v2" : "ded0490b9e88ab03de42e6877d6a087c211a4c3d4b3403068b1bd690b4013faf",
+  "size_v1" : 2073,
+  "size_v2" : 2665,
+  "timestamp" : "2026-03-19 21:12:30",
+  "identical" : false
+}

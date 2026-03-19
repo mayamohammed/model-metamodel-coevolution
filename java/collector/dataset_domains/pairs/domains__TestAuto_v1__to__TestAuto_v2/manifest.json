@@ -1,0 +1,13 @@
+{
+  "pair_id" : "domains__TestAuto_v1 -> TestAuto_v2__disk:C:__disk:C:",
+  "repo" : "domains",
+  "file_path" : "TestAuto_v1.ecore -> TestAuto_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\TestAuto\\metamodels\\TestAuto_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\TestAuto\\metamodels\\TestAuto_v2.ecore",
+  "sha_v1" : "6ac6875ec6b31827a21e74b0a98cfefac3b33b0c9ac414ab04f6738716d3d4fb",
+  "sha_v2" : "8d23b3d9ac56d6c2640cef3f60b1a1bbbffa4955ee9e492f5243e0cb88de2a69",
+  "size_v1" : 2076,
+  "size_v2" : 2668,
+  "timestamp" : "2026-03-19 21:12:29",
+  "identical" : false
+}

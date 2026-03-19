@@ -1,0 +1,16 @@
+{
+  "pair_id" : "augmented_0260_eattribute_removed_from_mixed4__mixed4_v1__to__mixed4_v2",
+  "source" : "augmented",
+  "v1" : "v1.ecore",
+  "v2" : "v2.ecore",
+  "origin_file" : "C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\augmentation\\..\\collector\\dataset_synth\\pairs\\mixed4__mixed4_v1__to__mixed4_v2\\v1.ecore",
+  "timestamp" : "2026-03-19 22:17:08",
+  "ground_truth" : {
+    "change_type" : "EATTRIBUTE_REMOVED",
+    "element" : "area",
+    "context" : "Field",
+    "old_value" : "area",
+    "new_value" : "",
+    "description" : "Removed EAttribute area from Field"
+  }
+}

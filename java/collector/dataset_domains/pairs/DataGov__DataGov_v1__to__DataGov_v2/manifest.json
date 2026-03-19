@@ -1,0 +1,13 @@
+{
+  "pair_id" : "DataGov__DataGov_v1 -> DataGov_v2__disk:C:__disk:C:",
+  "repo" : "DataGov",
+  "file_path" : "DataGov_v1.ecore -> DataGov_v2.ecore",
+  "commit_before" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\DataGov\\metamodels\\DataGov_v1.ecore",
+  "commit_after" : "disk:C:\\Users\\maya mohammed\\ecli\\model-metamodel-coevolution5\\java\\collector\\..\\..\\data\\domains\\DataGov\\metamodels\\DataGov_v2.ecore",
+  "sha_v1" : "bbc37809f5abf2888cf8a2cbb6c23ae30dc4a6dde6d4e200867f8601543075d8",
+  "sha_v2" : "e745e18bd21547c84b5360ff1cd920b887fe85b5fbc80efbcc22919f5d9e9d56",
+  "size_v1" : 2073,
+  "size_v2" : 2665,
+  "timestamp" : "2026-03-19 21:12:34",
+  "identical" : false
+}
