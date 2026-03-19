@@ -22,12 +22,11 @@ public class AnalyzerMain {
         { "../augmentation/augmented_synth",    "ml_augmented_synth"   }
     };
 
-    // ✅ Dossier final dans data/ à la racine du projet
-    private static final String BASE_OUTPUT   = "../../data/ml_final";
-    private static final String MERGED_CSV    = BASE_OUTPUT + "/features_all.csv";
-    private static final String TRAIN_CSV     = BASE_OUTPUT + "/train.csv";
-    private static final String VAL_CSV       = BASE_OUTPUT + "/val.csv";
-    private static final double TRAIN_RATIO   = 0.8;
+    private static final String BASE_OUTPUT = "../../data/ml_final";
+    private static final String MERGED_CSV  = BASE_OUTPUT + "/features_all.csv";
+    private static final String TRAIN_CSV   = BASE_OUTPUT + "/train.csv";
+    private static final String VAL_CSV     = BASE_OUTPUT + "/val.csv";
+    private static final double TRAIN_RATIO = 0.8;
 
     public static void main(String[] args) throws Exception {
 
@@ -78,7 +77,6 @@ public class AnalyzerMain {
         System.out.println("  Features exportes : " + totalExported);
         System.out.println("=================================================");
 
-        // Merge + split train/val
         String[] allOutputs = {
             "ml_repos", "ml_domains", "ml_synth",
             "ml_augmented_repos", "ml_augmented_domains", "ml_augmented_synth"
@@ -92,45 +90,53 @@ public class AnalyzerMain {
         File mergedFile = new File(mergedPath);
         mergedFile.getParentFile().mkdirs();
 
-        try (PrintWriter pw = new PrintWriter(new OutputStreamWriter(
-                new FileOutputStream(mergedFile), StandardCharsets.UTF_8))) {
+        try (FileOutputStream fos = new FileOutputStream(mergedFile)) {
+            // ✅ BOM UTF-8
+            fos.write(new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF});
 
-            boolean headerWritten = false;
-            int totalLines = 0;
+            try (PrintWriter pw = new PrintWriter(
+                    new OutputStreamWriter(fos, StandardCharsets.UTF_8))) {
 
-            for (String dir : outputDirs) {
-                File csv = new File(dir + "/features.csv");
-                if (!csv.exists()) {
-                    System.out.println("[MERGE] SKIP (absent) : " + csv.getPath());
-                    continue;
-                }
+                // ✅ Force séparateur virgule pour Excel
+                pw.println("sep=,");
 
-                List<String> lines = Files.readAllLines(
-                        csv.toPath(), StandardCharsets.UTF_8);
-                if (lines.isEmpty()) continue;
+                boolean headerWritten = false;
+                int totalLines = 0;
 
-                if (!headerWritten) {
-                    pw.println(lines.get(0));
-                    headerWritten = true;
-                }
-
-                int count = 0;
-                for (int i = 1; i < lines.size(); i++) {
-                    if (!lines.get(i).trim().isEmpty()) {
-                        pw.println(lines.get(i));
-                        count++;
+                for (String dir : outputDirs) {
+                    File csv = new File(dir + "/features.csv");
+                    if (!csv.exists()) {
+                        System.out.println("[MERGE] SKIP (absent) : " + csv.getPath());
+                        continue;
                     }
-                }
-                totalLines += count;
-                System.out.println("[MERGE] " + dir + " -> " + count + " lignes");
-            }
 
-            System.out.println("\n=================================================");
-            System.out.println("  MERGE TERMINE");
-            System.out.println("=================================================");
-            System.out.println("  Fichier : " + mergedFile.getAbsolutePath());
-            System.out.println("  TOTAL   : " + totalLines + " paires");
-            System.out.println("=================================================");
+                    List<String> lines = Files.readAllLines(
+                            csv.toPath(), StandardCharsets.UTF_8);
+                    if (lines.isEmpty()) continue;
+
+                    if (!headerWritten) {
+                        pw.println(lines.get(0));
+                        headerWritten = true;
+                    }
+
+                    int count = 0;
+                    for (int i = 1; i < lines.size(); i++) {
+                        if (!lines.get(i).trim().isEmpty()) {
+                            pw.println(lines.get(i));
+                            count++;
+                        }
+                    }
+                    totalLines += count;
+                    System.out.println("[MERGE] " + dir + " -> " + count + " lignes");
+                }
+
+                System.out.println("\n=================================================");
+                System.out.println("  MERGE TERMINE");
+                System.out.println("=================================================");
+                System.out.println("  Fichier : " + mergedFile.getAbsolutePath());
+                System.out.println("  TOTAL   : " + totalLines + " paires");
+                System.out.println("=================================================");
+            }
         }
     }
 
@@ -148,10 +154,10 @@ public class AnalyzerMain {
                 mergedFile.toPath(), StandardCharsets.UTF_8);
         if (lines.size() < 2) return;
 
-        String header = lines.get(0);
-        List<String> data = new ArrayList<>(lines.subList(1, lines.size()));
+        // Sauter sep=, et header (2 premières lignes)
+        String header = lines.get(1);
+        List<String> data = new ArrayList<>(lines.subList(2, lines.size()));
 
-        // Melange aleatoire
         Collections.shuffle(data);
 
         int trainSize = (int) (data.size() * trainRatio);
@@ -175,10 +181,19 @@ public class AnalyzerMain {
                                    String header,
                                    List<String> rows) throws Exception {
         file.getParentFile().mkdirs();
-        try (PrintWriter pw = new PrintWriter(new OutputStreamWriter(
-                new FileOutputStream(file), StandardCharsets.UTF_8))) {
-            pw.println(header);
-            for (String row : rows) pw.println(row);
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            // ✅ BOM UTF-8
+            fos.write(new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF});
+
+            try (PrintWriter pw = new PrintWriter(
+                    new OutputStreamWriter(fos, StandardCharsets.UTF_8))) {
+                // ✅ Force séparateur virgule pour Excel
+                pw.println("sep=,");
+                pw.println(header);
+                for (String row : rows) {
+                    if (!row.trim().isEmpty()) pw.println(row);
+                }
+            }
         }
     }
 }
