@@ -1,27 +1,25 @@
-"""
-train_model.py
-==============
-Trains a RandomForest classifier on the metamodel change dataset.
-Adapts automatically to available columns.
-Semaine 5 - IA/ML
-"""
-import os, json, pickle, warnings
+﻿import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import json, pickle, warnings
 import pandas as pd
 import numpy as np
 from sklearn.ensemble        import RandomForestClassifier
 from sklearn.preprocessing   import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics         import classification_report, accuracy_score
+from config import (
+    DATASET_TRAIN, DATASET_VAL, DATASET_ALL,
+    MODELS_ML_DIR, REPORTS_DIR, LABELS
+)
+
 warnings.filterwarnings("ignore")
 
-BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
-DATASET_DIR = os.path.join(BASE_DIR, "..", "..", "dataset", "ml")
-MODELS_DIR  = os.path.join(BASE_DIR, "models")
-REPORTS_DIR = os.path.join(BASE_DIR, "reports")
-os.makedirs(MODELS_DIR,  exist_ok=True)
-os.makedirs(REPORTS_DIR, exist_ok=True)
+MODELS_ML_DIR.mkdir(parents=True, exist_ok=True)
+REPORTS_DIR.mkdir(parents=True,   exist_ok=True)
 
 LABEL_COL = "label"
+
 ALL_POSSIBLE_FEATURES = [
     "nb_added_classes","nb_removed_classes",
     "nb_added_attributes","nb_removed_attributes",
@@ -36,21 +34,14 @@ def get_feature_cols(df):
     if not cols:
         cols = [c for c in df.columns
                 if c != LABEL_COL and pd.api.types.is_numeric_dtype(df[c])]
-    print(f"[INFO] Features ({len(cols)}): {cols}")
+    print(f"Features ({len(cols)}): {cols}")
     return cols
 
 def generate_synthetic():
     np.random.seed(42)
     feat = [c for c in ALL_POSSIBLE_FEATURES if c != "total_changes"]
-    labels = [
-        "ECLASS_ADDED","ECLASS_REMOVED","EATTRIBUTE_ADDED",
-        "EATTRIBUTE_REMOVED","EATTRIBUTE_TYPE_CHANGED",
-        "EREFERENCE_ADDED","EREFERENCE_REMOVED",
-        "EREFERENCE_MULTIPLICITY_CHANGED","EREFERENCE_CONTAINMENT_CHANGED",
-        "ECLASS_ABSTRACT_CHANGED","ECLASS_SUPERTYPE_ADDED","MIXED"
-    ]
     rows = []
-    for i, label in enumerate(labels):
+    for i, label in enumerate(LABELS):
         for _ in range(80):
             row = {c: 0 for c in feat}
             if i < len(feat):
@@ -63,21 +54,23 @@ def generate_synthetic():
     return tr, v, te
 
 def load_data():
-    print("[INFO] Loading dataset ...")
-    tc = os.path.join(DATASET_DIR, "train.csv")
-    fc = os.path.join(DATASET_DIR, "features.csv")
-    if os.path.exists(tc):
-        tr = pd.read_csv(tc)
-        v  = pd.read_csv(os.path.join(DATASET_DIR, "val.csv"))
-        te = pd.read_csv(os.path.join(DATASET_DIR, "test.csv"))
-    elif os.path.exists(fc):
-        df = pd.read_csv(fc)
+    print("Loading dataset ...")
+    if DATASET_TRAIN.exists() and DATASET_VAL.exists():
+        tr = pd.read_csv(DATASET_TRAIN)
+        v  = pd.read_csv(DATASET_VAL,   skiprows=1)
+        if DATASET_ALL.exists():
+            full = pd.read_csv(DATASET_ALL)
+            _, te = train_test_split(full, test_size=0.10, random_state=42, stratify=full[LABEL_COL])
+        else:
+            _, te = train_test_split(v, test_size=0.50, random_state=42, stratify=v[LABEL_COL])
+    elif DATASET_ALL.exists():
+        df = pd.read_csv(DATASET_ALL)
         tr, tmp = train_test_split(df, test_size=0.30, random_state=42, stratify=df[LABEL_COL])
         v,  te  = train_test_split(tmp, test_size=0.50, random_state=42, stratify=tmp[LABEL_COL])
     else:
-        print("[WARN] No CSV found - using synthetic data")
+        print("No CSV found - using synthetic data")
         tr, v, te = generate_synthetic()
-    print(f"  train={len(tr)} | val={len(v)} | test={len(te)}")
+    print(f"train={len(tr)} | val={len(v)} | test={len(te)}")
     return tr, v, te
 
 def train(tr, v, feat_cols):
@@ -98,15 +91,15 @@ def train(tr, v, feat_cols):
     report  = classification_report(
         y_v, y_pred, target_names=le.classes_, output_dict=True, zero_division=0)
 
-    print(f"\n  Validation Accuracy : {val_acc*100:.2f}%")
+    print(f"Validation Accuracy : {val_acc*100:.2f}%")
     print(classification_report(y_v, y_pred, target_names=le.classes_, zero_division=0))
     return model, le, val_acc, report
 
 def save_model(model, le, val_acc, report, feat_cols):
     for name in ["random_forest.pkl", "best_model.pkl"]:
-        with open(os.path.join(MODELS_DIR, name), "wb") as f:
+        with open(MODELS_ML_DIR / name, "wb") as f:
             pickle.dump(model, f)
-    with open(os.path.join(MODELS_DIR, "label_encoder.pkl"), "wb") as f:
+    with open(MODELS_ML_DIR / "label_encoder.pkl", "wb") as f:
         pickle.dump(le, f)
 
     importances = {}
@@ -124,22 +117,22 @@ def save_model(model, le, val_acc, report, feat_cols):
         "classification_report": report,
         "feature_importances": importances,
     }
-    rp = os.path.join(REPORTS_DIR, "train_report.json")
+    rp = REPORTS_DIR / "train_report.json"
     with open(rp, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
-    print(f"\n[OK] Models : {MODELS_DIR}")
-    print(f"[OK] Report : {rp}")
+    print(f"Models : {MODELS_ML_DIR}")
+    print(f"Report : {rp}")
 
 def main():
     print("=" * 60)
-    print("  TRAIN MODEL - RandomForest - Semaine 5")
+    print("  TRAIN MODEL - RandomForest")
     print("=" * 60)
     tr, v, te = load_data()
     feat_cols = get_feature_cols(tr)
     model, le, val_acc, report = train(tr, v, feat_cols)
     save_model(model, le, val_acc, report, feat_cols)
-    print("\n" + "=" * 60)
+    print("=" * 60)
     if val_acc >= 0.75:
         print(f"  OK  Validation Accuracy = {val_acc*100:.2f}%")
     else:
@@ -148,3 +141,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

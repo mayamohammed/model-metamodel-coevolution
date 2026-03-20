@@ -1,0 +1,17 @@
+{
+  "features_all.csv": {
+    "rows": 4840,
+    "issues": [],
+    "status": "OK"
+  },
+  "train.csv": {
+    "rows": 3388,
+    "issues": [],
+    "status": "OK"
+  },
+  "val.csv": {
+    "rows": 726,
+    "issues": [],
+    "status": "OK"
+  }
+}

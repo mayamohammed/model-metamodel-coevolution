@@ -24,23 +24,35 @@ public class CollectorMain {
             String outputDir = source[1];
             int    maxPairs  = Integer.parseInt(source[2]);
 
-            System.out.println("\n[SOURCE] " + new File(repoPath).getAbsolutePath());
+            File repoDir = new File(repoPath);
+
+            System.out.println("\n[SOURCE] " + repoDir.getAbsolutePath());
             System.out.println("   Output  : " + outputDir);
             System.out.println("   Max     : " + maxPairs);
             System.out.println("-------------------------------------------------");
 
-            File repoDir = new File(repoPath);
             if (!repoDir.exists() || !repoDir.isDirectory()) {
-                System.err.println("   [SKIP] dossier introuvable : "
-                        + repoDir.getAbsolutePath());
+                System.err.println("   [SKIP] dossier introuvable");
                 continue;
             }
+
+            File[] subDirs = repoDir.listFiles(File::isDirectory);
+            if (subDirs == null || subDirs.length == 0) {
+                System.out.println("   [SKIP] dossier vide : " + repoDir.getAbsolutePath());
+                continue;
+            }
+
+            System.out.println("   Sous-dossiers : " + subDirs.length);
 
             GitRepositoryManager gitManager = new GitRepositoryManager();
             try {
                 gitManager.scanAllRepos(repoPath);
-                System.out.println("   Ecore trouves : "
-                        + gitManager.getTotalEcoreFiles());
+                System.out.println("   Ecore trouves : " + gitManager.getTotalEcoreFiles());
+
+                if (gitManager.getTotalEcoreFiles() == 0) {
+                    System.out.println("   [SKIP] Aucun .ecore trouve");
+                    continue;
+                }
 
                 File outDir = new File(outputDir);
                 CollectionPipeline pipeline =
@@ -49,7 +61,7 @@ public class CollectorMain {
                 pipeline.run();
 
                 int collected = pipeline.getPairsCollected();
-                totalPaires += collected;
+                totalPaires  += collected;
 
                 System.out.println("   [OK] Paires    : " + collected);
                 System.out.println("   Identiques     : " + pipeline.getPairsIdentical());

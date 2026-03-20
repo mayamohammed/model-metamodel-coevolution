@@ -1,0 +1,23 @@
+{
+  "rows_before": 4768,
+  "rows_after": 4840,
+  "rows_added": 72,
+  "train": 3388,
+  "val": 726,
+  "test": 726,
+  "feature_cols": [
+    "nb_added_classes",
+    "nb_removed_classes",
+    "nb_added_attributes",
+    "nb_removed_attributes",
+    "nb_type_changes",
+    "nb_added_references",
+    "nb_removed_references",
+    "nb_multiplicity_changes",
+    "nb_containment_changes",
+    "nb_abstract_changes",
+    "nb_supertype_changes",
+    "nsuri_changed"
+  ],
+  "target_min": 80
+}
