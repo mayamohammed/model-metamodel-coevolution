@@ -1,4 +1,4 @@
-﻿package com.coevolution.core.emf;
+package com.coevolution.core.emf;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
@@ -18,7 +18,6 @@ public class ModelLoader {
         this.resourceSet = ResourceSetConfig.createForXmi();
     }
 
-    
     public Resource load(String xmiPath, EPackage ePackage) {
         File file = new File(xmiPath);
 
@@ -37,31 +36,26 @@ public class ModelLoader {
             resourceSet.getPackageRegistry()
                        .put(ePackage.getNsURI(), ePackage);
 
-            URI uri = URI.createFileURI(
-                file.getAbsolutePath()
-            );
-            Resource resource =
-                resourceSet.getResource(uri, true);
-            resource.load(null);
+            URI uri = URI.createFileURI(file.getAbsolutePath());
+
+            
+            Resource resource = resourceSet.getResource(uri, true);
 
             System.out.println(
                 "[ModelLoader] Loaded : " + xmiPath
-                + " (" + resource.getContents().size()
-                + " objects)"
+                + " (" + resource.getContents().size() + " objects)"
             );
             return resource;
 
         } catch (Exception e) {
             throw new RuntimeException(
                 "Failed to load : " + xmiPath
-                + " â†’ " + e.getMessage(), e
+                + " -> " + e.getMessage(), e
             );
         }
     }
 
-    
-    public List<Resource> loadAll(String dirPath,
-                                   EPackage ePackage) {
+    public List<Resource> loadAll(String dirPath, EPackage ePackage) {
         List<Resource> resources = new ArrayList<>();
         File dir = new File(dirPath);
 
@@ -84,31 +78,25 @@ public class ModelLoader {
 
         for (File f : files) {
             try {
-                Resource r = load(
-                    f.getAbsolutePath(), ePackage
-                );
+                Resource r = load(f.getAbsolutePath(), ePackage);
                 resources.add(r);
             } catch (Exception e) {
                 System.err.println(
                     "[ModelLoader] ERROR : "
-                    + f.getName()
-                    + " â†’ " + e.getMessage()
+                    + f.getName() + " -> " + e.getMessage()
                 );
             }
         }
 
         System.out.println(
-            "[ModelLoader] Loaded "
-            + resources.size() + " models"
+            "[ModelLoader] Loaded " + resources.size() + " models"
         );
         return resources;
     }
 
-    
     public List<EObject> getObjects(Resource resource) {
         List<EObject> objects = new ArrayList<>();
-        resource.getAllContents()
-                .forEachRemaining(objects::add);
+        resource.getAllContents().forEachRemaining(objects::add);
         return objects;
     }
 }

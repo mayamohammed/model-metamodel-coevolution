@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="SaharaCo_7"
+    location="Rabat"
+>
+  <departments name="RessourcesHumaines">
+    <employees name="Tariq" salary="5807.0" age="45" phone="+212667470157"/>
+  </departments>
+</company:Company>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Marrakech_2"
+>
+  <products name="Camera_2" price="1614.99" weight="14.0" stock="444"/>
+</ecommerce:Shop>

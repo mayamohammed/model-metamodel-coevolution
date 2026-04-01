@@ -1,0 +1,81 @@
+-- ============================================================
+-- mixed_changes_migration.atl
+-- Label  : MIXED
+-- Source : ecommerce_complex_v1.ecore
+-- Target : ecommerce_complex_v2.ecore
+-- Deltas : 12
+--   +classes : [Item | EClass added, Invoice | EClass added]
+--   -classes : []
+--   +attrs   : [unitPrice, quantityInStock, sku, fullName, email, invoiceNumber]
+--   -attrs   : [title, price, stock]
+--   renames  : {name=name}
+--   +refs    : []
+--   -refs    : []
+-- ============================================================
+module mixed_changes_migration;
+create OUT : Ecore from IN : Ecore;
+
+helper def : classesToRemove : Set(String)        = Set{};
+helper def : attrsToRemove   : Set(String)        = Set{'title', 'price', 'stock'};
+helper def : refsToRemove    : Set(String)        = Set{};
+helper def : renameMap       : Map(String,String) = Map{'name' -> 'name'};
+
+rule MixedEPackage {
+    from s : Ecore!EPackage
+    to   t : Ecore!EPackage (
+        name         <- s.name,
+        nsURI        <- s.nsURI,
+        nsPrefix     <- s.nsPrefix,
+        eClassifiers <- s.eClassifiers
+            ->select(c | not thisModule.classesToRemove->includes(c.name))
+            ->collect(c | thisModule.resolveTemp(c, 't'))
+    )
+}
+
+rule MixedEClass {
+    from s : Ecore!EClass (
+        not thisModule.classesToRemove->includes(s.name)
+    )
+    to   t : Ecore!EClass (
+        name        <- s.name,
+        abstract    <- s.abstract,
+        eSuperTypes <- s.eSuperTypes
+            ->select(st | not thisModule.classesToRemove->includes(st.name)),
+        eStructuralFeatures <- s.eStructuralFeatures
+            ->reject(f | (f.oclIsKindOf(Ecore!EAttribute)
+                          and thisModule.attrsToRemove->includes(f.name))
+                      or (f.oclIsKindOf(Ecore!EReference)
+                          and thisModule.refsToRemove->includes(f.name)))
+            ->collect(f | thisModule.resolveTemp(f, 't'))
+    )
+}
+
+rule MixedEAttribute {
+    from s : Ecore!EAttribute (
+        not thisModule.attrsToRemove->includes(s.name)
+    )
+    to   t : Ecore!EAttribute (
+        name <- if thisModule.renameMap->includesKey(s.name)
+                then thisModule.renameMap->get(s.name)
+                else s.name endif,
+        eType      <- s.eType,
+        lowerBound <- s.lowerBound,
+        upperBound <- s.upperBound,
+        changeable <- s.changeable,
+        derived    <- s.derived
+    )
+}
+
+rule MixedEReference {
+    from s : Ecore!EReference (
+        not thisModule.refsToRemove->includes(s.name)
+        and not thisModule.classesToRemove->includes(s.eType.name)
+    )
+    to   t : Ecore!EReference (
+        name        <- s.name,
+        eType       <- s.eType,
+        lowerBound  <- s.lowerBound,
+        upperBound  <- s.upperBound,
+        containment <- s.containment
+    )
+}

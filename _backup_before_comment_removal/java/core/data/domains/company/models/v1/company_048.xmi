@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="RifGroup_48"
+    location="Kenitra"
+>
+  <departments name="Operations">
+    <employees name="Fatima" salary="8137.0" age="26" phone="+212604019696"/>
+  </departments>
+</company:Company>

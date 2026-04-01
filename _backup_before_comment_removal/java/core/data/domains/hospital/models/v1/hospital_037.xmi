@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueTanger_37"
+>
+  <wards name="Service_37">
+    <patients name="Meriem" diagnosis="Infection" room="178" phone="+212609538682"/>
+    <doctors name="Dr_Khalid" specialty="Radiologie"/>
+  </wards>
+</hospital:Hospital>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Meknes_15"
+>
+  <products name="Imprimante_15" price="1488.99" weight="6.0" stock="454"/>
+</ecommerce:Shop>

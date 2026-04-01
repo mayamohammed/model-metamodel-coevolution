@@ -36,3 +36,9 @@ data/domains/*/models/v3/*.xmi
 
 # Ne pas ignorer les .gitkeep
 !.gitkeep
+# Rapports générés localement
+report_gui_*.json
+*.json.bak
+
+# Rapports gÃ©nÃ©rÃ©s localement (contiennent des chemins absolus)
+report_gui_*.json

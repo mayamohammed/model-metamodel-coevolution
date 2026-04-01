@@ -1,0 +1,2 @@
+index,source,label,atl_file,confidence,success,duration_ms,lines_in,lines_out
+0,university_complex_v1.ecore,MIXED,mixed_changes_migration.atl,0.9892,true,45,100,138

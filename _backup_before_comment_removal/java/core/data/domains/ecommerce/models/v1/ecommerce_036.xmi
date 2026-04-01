@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Rabat_36"
+>
+  <products name="Clavier_36" price="4129.99" weight="15.0" stock="216"/>
+</ecommerce:Shop>

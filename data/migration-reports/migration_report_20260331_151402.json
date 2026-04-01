@@ -1,0 +1,31 @@
+{
+  "report_type": "migration_s7",
+  "date": "2026-03-31 15:14:02",
+  "semaine": 7,
+  "summary": {
+    "total":   1,
+    "success": 1,
+    "failed":  0,
+    "valid":   1,
+    "success_rate_pct": 100.00,
+    "validation_rate_pct": 100.00
+  },
+  "label_distribution": {
+    "MIXED": 1
+  },
+  "details": [
+    {
+      "index": 0,
+      "source":     "ecommerce_complex_v1.ecore",
+      "atl_file":   "mixed_changes_migration.atl",
+      "label":      "MIXED",
+      "confidence": 0.9733,
+      "success":    true,
+      "duration_ms":24,
+      "lines_in":   44,
+      "lines_out":  64,
+      "valid":      true,
+      "warnings":   0
+    }
+  ]
+}

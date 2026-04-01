@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="HopitalAgadir_33"
+>
+  <wards name="Service_33">
+    <patients name="Mohammed" diagnosis="Asthme" room="354" phone="+212672390516"/>
+    <doctors name="Dr_Omar" specialty="Gynecologie"/>
+  </wards>
+</hospital:Hospital>

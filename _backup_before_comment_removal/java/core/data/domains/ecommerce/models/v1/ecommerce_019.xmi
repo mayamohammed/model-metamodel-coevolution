@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Fes_19"
+>
+  <products name="Camera_19" price="3210.99" weight="20.0" stock="227"/>
+</ecommerce:Shop>

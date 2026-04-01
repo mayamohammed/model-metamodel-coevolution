@@ -1,0 +1,2 @@
+pair_id,nb_classes_v1,nb_classes_v2,delta_classes,nb_added_classes,nb_removed_classes,nb_attributes_v1,nb_attributes_v2,delta_attributes,nb_added_attributes,nb_removed_attributes,nb_type_changes,nb_references_v1,nb_references_v2,delta_references,nb_added_references,nb_removed_references,nb_multiplicity_changes,nb_containment_changes,nb_abstract_changes,nb_supertype_changes,nsuri_changed,label
+tests_org.eclipse.emfcloud.modelserver.emf.tests_resources_Test1__b2e4b78__94a5a6d,2,2,0,0,0,2,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,MIXED

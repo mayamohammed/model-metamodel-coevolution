@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Fes_30"
+>
+  <products name="Souris_30" price="287.99" weight="2.0" stock="395"/>
+</ecommerce:Shop>

@@ -1,0 +1,135 @@
+{
+  "model": "RandomForestClassifier",
+  "n_estimators": 200,
+  "val_accuracy": 0.8212,
+  "val_accuracy_pct": 82.12,
+  "classes": [
+    "EATTRIBUTE_ADDED",
+    "EATTRIBUTE_REMOVED",
+    "EATTRIBUTE_TYPE_CHANGED",
+    "ECLASS_ABSTRACT_CHANGED",
+    "ECLASS_ADDED",
+    "ECLASS_REMOVED",
+    "ECLASS_SUPERTYPE_ADDED",
+    "EREFERENCE_ADDED",
+    "EREFERENCE_CONTAINMENT_CHANGED",
+    "EREFERENCE_MULTIPLICITY_CHANGED",
+    "EREFERENCE_REMOVED",
+    "MIXED"
+  ],
+  "feature_cols": [
+    "nb_added_classes",
+    "nb_removed_classes",
+    "nb_added_attributes",
+    "nb_removed_attributes",
+    "nb_type_changes",
+    "nb_added_references",
+    "nb_removed_references",
+    "nb_multiplicity_changes",
+    "nb_containment_changes",
+    "nb_abstract_changes",
+    "nb_supertype_changes",
+    "nsuri_changed"
+  ],
+  "classification_report": {
+    "EATTRIBUTE_ADDED": {
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "f1-score": 0.96,
+      "support": 12.0
+    },
+    "EATTRIBUTE_REMOVED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "EATTRIBUTE_TYPE_CHANGED": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.9090909090909091,
+      "support": 12.0
+    },
+    "ECLASS_ABSTRACT_CHANGED": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 12.0
+    },
+    "ECLASS_ADDED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 14.0
+    },
+    "ECLASS_REMOVED": {
+      "precision": 0.5,
+      "recall": 0.75,
+      "f1-score": 0.6,
+      "support": 12.0
+    },
+    "ECLASS_SUPERTYPE_ADDED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "EREFERENCE_ADDED": {
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1-score": 0.9230769230769231,
+      "support": 12.0
+    },
+    "EREFERENCE_CONTAINMENT_CHANGED": {
+      "precision": 0.8333333333333334,
+      "recall": 0.4166666666666667,
+      "f1-score": 0.5555555555555556,
+      "support": 12.0
+    },
+    "EREFERENCE_MULTIPLICITY_CHANGED": {
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7272727272727273,
+      "support": 12.0
+    },
+    "EREFERENCE_REMOVED": {
+      "precision": 0.625,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.7142857142857143,
+      "support": 12.0
+    },
+    "MIXED": {
+      "precision": 1.0,
+      "recall": 0.47058823529411764,
+      "f1-score": 0.64,
+      "support": 17.0
+    },
+    "accuracy": 0.8211920529801324,
+    "macro avg": {
+      "precision": 0.8504349816849817,
+      "recall": 0.8308823529411765,
+      "f1-score": 0.819106819106819,
+      "support": 151.0
+    },
+    "weighted avg": {
+      "precision": 0.8573684593552143,
+      "recall": 0.8211920529801324,
+      "f1-score": 0.8155720659031919,
+      "support": 151.0
+    }
+  },
+  "feature_importances": {
+    "nb_added_classes": 0.097485,
+    "nb_removed_classes": 0.077133,
+    "nb_added_attributes": 0.110542,
+    "nb_removed_attributes": 0.098838,
+    "nb_type_changes": 0.090429,
+    "nb_added_references": 0.093492,
+    "nb_removed_references": 0.084877,
+    "nb_multiplicity_changes": 0.074923,
+    "nb_containment_changes": 0.051858,
+    "nb_abstract_changes": 0.089189,
+    "nb_supertype_changes": 0.103131,
+    "nsuri_changed": 0.028101
+  }
+}

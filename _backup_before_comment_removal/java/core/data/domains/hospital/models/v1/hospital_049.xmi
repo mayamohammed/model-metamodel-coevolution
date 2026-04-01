@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueTanger_49"
+>
+  <wards name="Service_49">
+    <patients name="Hassan" diagnosis="Diabete" room="287" phone="+212604475712"/>
+    <doctors name="Dr_Amine" specialty="Dermatologie"/>
+  </wards>
+</hospital:Hospital>

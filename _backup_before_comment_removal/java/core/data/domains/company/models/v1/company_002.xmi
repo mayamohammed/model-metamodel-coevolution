@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="GammaInc_2"
+    location="Oujda"
+>
+  <departments name="Informatique">
+    <employees name="Mohammed" salary="6502.0" age="34" phone="+212619572292"/>
+  </departments>
+</company:Company>

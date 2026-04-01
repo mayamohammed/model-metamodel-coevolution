@@ -1,4 +1,4 @@
-﻿package com.coevolution.analyzer.features;
+package com.coevolution.analyzer.features;
 
 import com.coevolution.analyzer.diff.EcoreDiff;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -55,7 +55,7 @@ public class FeatureExtractor {
         values[19] = EcoreDiff.countSuperTypeChanges(v1, v2);
         values[20] = EcoreDiff.nsUriChanged(v1, v2);
 
-        // ✅ Lecture label depuis manifest.json
+        
         String label = "UNKNOWN";
         if (manifestFile.exists()) {
             try {
@@ -73,7 +73,7 @@ public class FeatureExtractor {
                     label = "MIXED";
                 }
 
-                // ✅ Normalise le label en MAJUSCULES
+                
                 label = label.toUpperCase().trim();
 
             } catch (Exception e) {

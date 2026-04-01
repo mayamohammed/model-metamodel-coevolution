@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="BetaSolutions_43"
+    location="Tanger"
+>
+  <departments name="Finance">
+    <employees name="Meriem" salary="4241.0" age="55" phone="+212678955047"/>
+  </departments>
+</company:Company>

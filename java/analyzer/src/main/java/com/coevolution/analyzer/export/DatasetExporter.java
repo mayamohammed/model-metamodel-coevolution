@@ -1,4 +1,4 @@
-﻿package com.coevolution.analyzer.export;
+package com.coevolution.analyzer.export;
 
 import com.coevolution.analyzer.features.FeatureExtractor;
 import com.coevolution.analyzer.features.FeatureVector;
@@ -28,7 +28,7 @@ public class DatasetExporter {
 
         List<FeatureVector> vectors = new ArrayList<>();
 
-        // ✅ FIX : scanne directement le datasetDir (pas sous-dossiers "pairs"/"augmented")
+        
         File[] pairDirs = datasetDir.listFiles(File::isDirectory);
         if (pairDirs == null || pairDirs.length == 0) {
             System.err.println("   ⚠️  Aucun dossier trouvé dans : "
@@ -42,7 +42,7 @@ public class DatasetExporter {
         for (File pairDir : pairDirs) {
             if (!pairDir.isDirectory()) continue;
 
-            // Vérifie que v1.ecore et v2.ecore existent
+            
             File v1 = new File(pairDir, "v1.ecore");
             File v2 = new File(pairDir, "v2.ecore");
             if (!v1.exists() || !v2.exists()) {
@@ -63,7 +63,7 @@ public class DatasetExporter {
             }
         }
 
-        // Écrit le CSV
+        
         File csvFile = new File(outputDir, "features.csv");
         try (PrintWriter pw = new PrintWriter(new OutputStreamWriter(
                 new FileOutputStream(csvFile), StandardCharsets.UTF_8))) {
@@ -73,7 +73,7 @@ public class DatasetExporter {
             }
         }
 
-        // Distribution labels
+        
         Map<String, Integer> labelCount = new LinkedHashMap<>();
         for (FeatureVector fv : vectors)
             labelCount.merge(fv.getLabel(), 1, Integer::sum);

@@ -1,0 +1,57 @@
+{
+  "features.csv": {
+    "rows": 631,
+    "issues": [
+      "Missing columns: ['total_changes']",
+      "EREFERENCE_CONTAINMENT_CHANGED: 3 < 10",
+      "ECLASS_SUPERTYPE_ADDED: 6 < 10"
+    ],
+    "status": "ISSUES"
+  },
+  "train.csv": {
+    "rows": 504,
+    "issues": [
+      "Missing columns: ['total_changes']",
+      "EREFERENCE_CONTAINMENT_CHANGED: 1 < 10",
+      "ECLASS_SUPERTYPE_ADDED: 5 < 10"
+    ],
+    "status": "ISSUES"
+  },
+  "val.csv": {
+    "rows": 63,
+    "issues": [
+      "Missing columns: ['total_changes']",
+      "Only 63 rows (min=100)",
+      "ECLASS_REMOVED: 1 < 10",
+      "EATTRIBUTE_ADDED: 7 < 10",
+      "EATTRIBUTE_REMOVED: 8 < 10",
+      "EATTRIBUTE_TYPE_CHANGED: 7 < 10",
+      "EREFERENCE_ADDED: 2 < 10",
+      "EREFERENCE_REMOVED: 3 < 10",
+      "EREFERENCE_MULTIPLICITY_CHANGED: 2 < 10",
+      "EREFERENCE_CONTAINMENT_CHANGED: 1 < 10",
+      "ECLASS_SUPERTYPE_ADDED: 1 < 10",
+      "MIXED: 6 < 10"
+    ],
+    "status": "ISSUES"
+  },
+  "test.csv": {
+    "rows": 64,
+    "issues": [
+      "Missing columns: ['total_changes']",
+      "Only 64 rows (min=100)",
+      "ECLASS_REMOVED: 4 < 10",
+      "EATTRIBUTE_ADDED: 9 < 10",
+      "EATTRIBUTE_REMOVED: 9 < 10",
+      "EATTRIBUTE_TYPE_CHANGED: 3 < 10",
+      "EREFERENCE_ADDED: 6 < 10",
+      "Missing label: EREFERENCE_REMOVED",
+      "EREFERENCE_MULTIPLICITY_CHANGED: 1 < 10",
+      "EREFERENCE_CONTAINMENT_CHANGED: 1 < 10",
+      "ECLASS_ABSTRACT_CHANGED: 9 < 10",
+      "Missing label: ECLASS_SUPERTYPE_ADDED",
+      "MIXED: 6 < 10"
+    ],
+    "status": "ISSUES"
+  }
+}

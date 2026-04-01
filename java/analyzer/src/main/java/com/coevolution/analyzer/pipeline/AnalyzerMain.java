@@ -1,4 +1,4 @@
-﻿package com.coevolution.analyzer.pipeline;
+package com.coevolution.analyzer.pipeline;
 
 import com.coevolution.analyzer.export.DatasetExporter;
 import java.io.File;
@@ -91,13 +91,13 @@ public class AnalyzerMain {
         mergedFile.getParentFile().mkdirs();
 
         try (FileOutputStream fos = new FileOutputStream(mergedFile)) {
-            // ✅ BOM UTF-8
+            
             fos.write(new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF});
 
             try (PrintWriter pw = new PrintWriter(
                     new OutputStreamWriter(fos, StandardCharsets.UTF_8))) {
 
-                // ✅ Force séparateur virgule pour Excel
+                
                 pw.println("sep=,");
 
                 boolean headerWritten = false;
@@ -154,7 +154,7 @@ public class AnalyzerMain {
                 mergedFile.toPath(), StandardCharsets.UTF_8);
         if (lines.size() < 2) return;
 
-        // Sauter sep=, et header (2 premières lignes)
+        
         String header = lines.get(1);
         List<String> data = new ArrayList<>(lines.subList(2, lines.size()));
 
@@ -182,12 +182,12 @@ public class AnalyzerMain {
                                    List<String> rows) throws Exception {
         file.getParentFile().mkdirs();
         try (FileOutputStream fos = new FileOutputStream(file)) {
-            // ✅ BOM UTF-8
+            
             fos.write(new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF});
 
             try (PrintWriter pw = new PrintWriter(
                     new OutputStreamWriter(fos, StandardCharsets.UTF_8))) {
-                // ✅ Force séparateur virgule pour Excel
+                
                 pw.println("sep=,");
                 pw.println(header);
                 for (String row : rows) {

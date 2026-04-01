@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="university"
+    nsURI="http://example.org/university/v1"
+    nsPrefix="univ">
+
+  <!-- CLASSES DE BASE -->
+  <eClassifiers xsi:type="ecore:EClass" name="Person">
+
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="fullName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="email"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="birthYear"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="Student">
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="program"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+        name="enrollments"
+        eType="#//Enrollment"
+        upperBound="-1"
+        containment="true"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="Professor">
+
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="title"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="officeNumber"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="Course">
+<eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="credits"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference"
+        name="professor"
+        eType="#//Professor"
+        upperBound="1"
+        containment="false"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="courseName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="courseCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="Department">
+<eStructuralFeatures xsi:type="ecore:EReference"
+        name="courses"
+        eType="#//Course"
+        upperBound="-1"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference"
+        name="professors"
+        eType="#//Professor"
+        upperBound="-1"
+        containment="false"/>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+        name="head"
+        eType="#//Professor"
+        upperBound="1"
+        containment="false"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="University">
+<eStructuralFeatures xsi:type="ecore:EReference"
+        name="departments"
+        eType="#//Department"
+        upperBound="-1"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference"
+        name="students"
+        eType="#//Student"
+        upperBound="-1"
+        containment="false"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="city"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="foundedYear"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+
+
+  <eClassifiers xsi:type="ecore:EClass" name="Enrollment">
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="grade"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="semester"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference"
+        name="course"
+        eType="#//Course"
+        upperBound="1"
+        containment="false"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="Campus">
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="campusName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="capacity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference"
+        name="buildings"
+        eType="#//Building"
+        upperBound="-1"
+        containment="true"/>
+  </eClassifiers>
+
+  <eClassifiers xsi:type="ecore:EClass" name="Building">
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="buildingName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute"
+        name="floors"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+
+  <!-- ATL Migration Applied | label=MIXED | ATL=mixed_changes_migration.atl | actions=31 -->
+</ecore:EPackage>

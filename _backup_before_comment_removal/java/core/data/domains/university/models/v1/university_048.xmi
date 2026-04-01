@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Agadir_48"
+>
+  <faculties name="Faculte_48">
+    <students name="Soufiane" grade="16.0" year="2" credits="34"/>
+    <courses title="Mathematiques" credits="4"/>
+  </faculties>
+</university:University>

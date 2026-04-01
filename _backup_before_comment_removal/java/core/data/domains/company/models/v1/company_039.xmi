@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="DeltaMaroc_39"
+    location="BeniMellal"
+>
+  <departments name="Logistique">
+    <employees name="Khalid" salary="4294.0" age="40" phone="+212652900788"/>
+  </departments>
+</company:Company>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:university="http://www.coevolution.com/university/v1"
+    name="Universite_Meknes_24"
+>
+  <faculties name="Faculte_24">
+    <students name="Omar" grade="10.0" year="1" credits="27"/>
+    <courses title="Histoire" credits="5"/>
+  </faculties>
+</university:University>

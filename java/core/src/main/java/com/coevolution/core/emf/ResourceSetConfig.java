@@ -1,4 +1,4 @@
-﻿package com.coevolution.core.emf;
+package com.coevolution.core.emf;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -9,16 +9,15 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 public class ResourceSetConfig {
 
     
-    public static ResourceSet createForEcore() {
-        ResourceSet rs = new ResourceSetImpl();
-        rs.getResourceFactoryRegistry()
-          .getExtensionToFactoryMap()
-          .put("ecore", new EcoreResourceFactoryImpl());
-        rs.getPackageRegistry()
-          .put(EPackage.Registry.INSTANCE.toString(),
-               EPackage.Registry.INSTANCE);
-        return rs;
-    }
+   
+public static ResourceSet createForEcore() {
+    ResourceSet rs = new ResourceSetImpl();
+    rs.getResourceFactoryRegistry()
+      .getExtensionToFactoryMap()
+      .put("ecore", new EcoreResourceFactoryImpl());
+    
+    return rs;
+}
 
     
     public static ResourceSet createForXmi() {

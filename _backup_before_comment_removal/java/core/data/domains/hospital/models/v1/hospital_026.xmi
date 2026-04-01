@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="HopitalOujda_26"
+>
+  <wards name="Service_26">
+    <patients name="Hamza" diagnosis="Hypertension" room="364" phone="+212698423974"/>
+    <doctors name="Dr_Mohammed" specialty="Dermatologie"/>
+  </wards>
+</hospital:Hospital>

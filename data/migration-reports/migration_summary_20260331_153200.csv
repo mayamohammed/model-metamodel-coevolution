@@ -1,0 +1,2 @@
+index,source,label,atl_file,confidence,success,duration_ms,lines_in,lines_out
+0,ecommerce_complex_v1.ecore,MIXED,mixed_changes_migration.atl,0.9733,true,30,44,64

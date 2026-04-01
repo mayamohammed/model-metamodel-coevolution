@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank:Bank
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:bank="http://www.coevolution.com/bank/v1"
+    name="BanqueMaroc_44"
+>
+  <accounts owner="Meriem_44" balance="46109.0" rate="3.0" status="ACTIF"/>
+</bank:Bank>

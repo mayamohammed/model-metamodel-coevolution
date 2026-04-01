@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.coevolution.gui.MainController"
+            styleClass="root-pane"
+            prefWidth="1280" prefHeight="800">
+
+  <top>
+    <HBox styleClass="nav-bar" alignment="CENTER_LEFT" spacing="0">
+      <HBox alignment="CENTER" spacing="10" styleClass="nav-brand">
+        <Label text="&#x2B21;" styleClass="nav-logo"/>
+        <VBox spacing="0" alignment="CENTER_LEFT">
+          <Label text="METAMODEL COEVOLUTION" styleClass="nav-title"/>
+          <Label text="AI-Powered Migration Tool" styleClass="nav-subtitle"/>
+        </VBox>
+      </HBox>
+      <Region HBox.hgrow="ALWAYS"/>
+      <HBox spacing="8" alignment="CENTER" styleClass="nav-actions">
+        <Button text="&#x2699; AI Config" styleClass="btn-nav-ghost" onAction="#onConfigureAI"/>
+        <Separator orientation="VERTICAL" styleClass="nav-sep"/>
+        <Button text="&#x25BA; Run Analysis" styleClass="btn-primary" onAction="#onRunAnalysis"/>
+        <Button fx:id="btnRunMigration" text="&#x1F680; Run Migration" styleClass="btn-success" onAction="#onRunMigration" disable="true"/>
+      </HBox>
+      <Region minWidth="16"/>
+      <HBox alignment="CENTER" styleClass="api-status-box" spacing="6">
+        <Label fx:id="lblApiStatus" text="&#x25CF; API" styleClass="api-dot-offline"/>
+      </HBox>
+    </HBox>
+  </top>
+
+  <center>
+    <VBox spacing="0">
+
+      <HBox styleClass="file-bar" spacing="0">
+        <HBox styleClass="file-chip" spacing="8" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+          <Label text="V1 SOURCE" styleClass="chip-label-v1"/>
+          <Label fx:id="lblM1Title" text="No file loaded" styleClass="chip-file" HBox.hgrow="ALWAYS"/>
+        </HBox>
+        <Separator orientation="VERTICAL" styleClass="file-sep"/>
+        <HBox styleClass="file-chip" spacing="8" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+          <Label text="V2 TARGET" styleClass="chip-label-v2"/>
+          <Label fx:id="lblM2Title" text="No file loaded" styleClass="chip-file" HBox.hgrow="ALWAYS"/>
+        </HBox>
+      </HBox>
+
+      <SplitPane orientation="VERTICAL" VBox.vgrow="ALWAYS"
+                 dividerPositions="0.45" styleClass="main-split">
+
+        <SplitPane orientation="HORIZONTAL" dividerPositions="0.5" styleClass="tree-split">
+
+          <VBox styleClass="panel-card" spacing="0">
+            <HBox styleClass="panel-header" alignment="CENTER_LEFT" spacing="8">
+              <Label text="&#x25C8;" styleClass="panel-icon-v1"/>
+              <Label text="Source Metamodel" styleClass="panel-title"/>
+              <Region HBox.hgrow="ALWAYS"/>
+              <Button fx:id="btnLoadV1" text="&#x1F4C2; Source V1"
+                      styleClass="btn-header-v1" onAction="#onLoadV1"/>
+              <Label text="V1" styleClass="badge-v1"/>
+            </HBox>
+            <TreeView fx:id="tvM1" VBox.vgrow="ALWAYS" styleClass="tree-view-dark"/>
+          </VBox>
+
+          <VBox styleClass="panel-card" spacing="0">
+            <HBox styleClass="panel-header" alignment="CENTER_LEFT" spacing="8">
+              <Label text="&#x25C8;" styleClass="panel-icon-v2"/>
+              <Label text="Target Metamodel" styleClass="panel-title"/>
+              <Region HBox.hgrow="ALWAYS"/>
+              <Button fx:id="btnLoadV2" text="&#x1F4C2; Target V2"
+                      styleClass="btn-header-v2" onAction="#onLoadV2"/>
+              <Label text="V2" styleClass="badge-v2"/>
+            </HBox>
+            <TreeView fx:id="tvM2" VBox.vgrow="ALWAYS" styleClass="tree-view-dark"/>
+          </VBox>
+
+        </SplitPane>
+
+        <VBox styleClass="bottom-panel" spacing="0" VBox.vgrow="ALWAYS">
+
+          <HBox styleClass="stats-bar" spacing="0"
+                minHeight="64" maxHeight="64" prefHeight="64">
+            <VBox styleClass="stat-card" alignment="CENTER" HBox.hgrow="ALWAYS">
+              <Label fx:id="lblDeltaSize" text="&#x2014;" styleClass="stat-value"/>
+              <Label text="DELTAS" styleClass="stat-label"/>
+            </VBox>
+            <Separator orientation="VERTICAL" styleClass="stat-sep"/>
+            <VBox styleClass="stat-card" alignment="CENTER" HBox.hgrow="ALWAYS">
+              <Label fx:id="lblComplexity" text="&#x2014;" styleClass="stat-value"/>
+              <Label text="COMPLEXITY" styleClass="stat-label"/>
+            </VBox>
+            <Separator orientation="VERTICAL" styleClass="stat-sep"/>
+            <VBox styleClass="stat-card" alignment="CENTER" HBox.hgrow="ALWAYS">
+              <Label fx:id="lblBreaking" text="&#x2014;" styleClass="stat-value-breaking"/>
+              <Label text="BREAKING" styleClass="stat-label"/>
+            </VBox>
+            <Separator orientation="VERTICAL" styleClass="stat-sep"/>
+            <VBox styleClass="stat-card" alignment="CENTER" HBox.hgrow="ALWAYS">
+              <Label fx:id="lblMigStatus" text="&#x2014;" styleClass="stat-value"/>
+              <Label text="STATUS" styleClass="stat-label"/>
+            </VBox>
+            <Separator orientation="VERTICAL" styleClass="stat-sep"/>
+            <VBox styleClass="stat-card" alignment="CENTER" HBox.hgrow="ALWAYS">
+              <Label fx:id="lblMigValid" text="&#x2014;" styleClass="stat-value"/>
+              <Label text="VALID" styleClass="stat-label"/>
+            </VBox>
+            <Separator orientation="VERTICAL" styleClass="stat-sep"/>
+            <VBox styleClass="stat-card-wide" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+              <Label fx:id="lblMigAtl" text="&#x2014;" styleClass="stat-atl"/>
+              <Label text="ATL FILE" styleClass="stat-label"/>
+            </VBox>
+            <Separator orientation="VERTICAL" styleClass="stat-sep"/>
+            <VBox styleClass="stat-card" alignment="CENTER" HBox.hgrow="NEVER">
+              <ProgressIndicator fx:id="piMigration" visible="false"
+                                 prefWidth="28" prefHeight="28"
+                                 styleClass="progress-spin"/>
+            </VBox>
+          </HBox>
+
+          <TabPane fx:id="bottomTabPane" VBox.vgrow="ALWAYS"
+                   styleClass="result-tabs" tabClosingPolicy="UNAVAILABLE">
+
+            <Tab text="  Deltas  " styleClass="tab-item">
+              <VBox spacing="0" VBox.vgrow="ALWAYS">
+                <TableView fx:id="tblDeltas" VBox.vgrow="ALWAYS" styleClass="delta-table">
+                  <columns>
+                    <TableColumn fx:id="colDeltaType"    text="TYPE"    prefWidth="110"/>
+                    <TableColumn fx:id="colDeltaElement" text="ELEMENT" prefWidth="260"/>
+                    <TableColumn fx:id="colDeltaDetails" text="DETAILS" prefWidth="700"/>
+                  </columns>
+                  <placeholder>
+                    <Label text="Run Analysis to see deltas here..." styleClass="table-placeholder"/>
+                  </placeholder>
+                </TableView>
+              </VBox>
+            </Tab>
+
+            <Tab text="  AI Summary  " styleClass="tab-item">
+              <VBox spacing="0" styleClass="ai-panel" VBox.vgrow="ALWAYS">
+                <TextArea fx:id="taAiSummary"
+                          VBox.vgrow="ALWAYS"
+                          editable="false"
+                          wrapText="true"
+                          styleClass="ai-textarea"
+                          promptText="Run Analysis to see AI prediction here..."/>
+              </VBox>
+            </Tab>
+
+            <Tab text="  Migration  " styleClass="tab-item">
+              <VBox spacing="12" styleClass="migration-panel" VBox.vgrow="ALWAYS">
+                <padding>
+                  <Insets top="12" right="12" bottom="12" left="12"/>
+                </padding>
+                <HBox spacing="8" alignment="CENTER_LEFT">
+                  <Button fx:id="btnOpenOutput"
+                          text="&#x1F4C4; Open Output .ecore"
+                          styleClass="btn-file"
+                          onAction="#onOpenOutputEcore"
+                          disable="true"/>
+                  <Button fx:id="btnOpenReportJson"
+                          text="&#x1F4CB; Report JSON"
+                          styleClass="btn-file"
+                          onAction="#onOpenReportJson"
+                          disable="true"/>
+                  <Button fx:id="btnOpenReportCsv"
+                          text="&#x1F4CA; Report CSV"
+                          styleClass="btn-file"
+                          onAction="#onOpenReportCsv"
+                          disable="true"/>
+                  <Button fx:id="btnOpenOutputDir"
+                          text="&#x1F4C1; Open Folder"
+                          styleClass="btn-file"
+                          onAction="#onOpenOutputFolder"
+                          disable="true"/>
+                  <Button fx:id="btnOpenAtlFile"
+                          text="&#x2699; Open ATL"
+                          styleClass="btn-file"
+                          onAction="#onOpenAtlFile"
+                          disable="true"/>
+                </HBox>
+                <TextArea fx:id="taMigrationResult"
+                          VBox.vgrow="ALWAYS"
+                          editable="false"
+                          wrapText="true"
+                          styleClass="migration-textarea"
+                          promptText="Run Migration to see results here..."/>
+              </VBox>
+            </Tab>
+
+          </TabPane>
+        </VBox>
+
+      </SplitPane>
+    </VBox>
+  </center>
+
+  <bottom>
+    <HBox styleClass="status-bar" alignment="CENTER_LEFT" spacing="12">
+      <Label text="&#x2B21;" styleClass="status-icon"/>
+      <Label fx:id="lblStatusBar" text="Ready" styleClass="status-text" HBox.hgrow="ALWAYS"/>
+      <Label text="v1.0.0" styleClass="status-version"/>
+    </HBox>
+  </bottom>
+
+</BorderPane>

@@ -1,4 +1,4 @@
-﻿package com.coevolution.core.util;
+package com.coevolution.core.util;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -72,7 +72,7 @@ public class XmiGenerator {
         "ACTIF","INACTIF","EN_ATTENTE","FERME"
     };
 
-    // ✅ URLs complètes restaurées
+    
     private static final String XMI_NS  = "http://www.omg.org/XMI";
     private static final String BASE_NS = "http://www.example.org/";
 

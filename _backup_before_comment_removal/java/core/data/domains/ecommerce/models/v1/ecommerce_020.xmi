@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Tetouan_20"
+>
+  <products name="Casque_20" price="2326.99" weight="6.0" stock="224"/>
+</ecommerce:Shop>

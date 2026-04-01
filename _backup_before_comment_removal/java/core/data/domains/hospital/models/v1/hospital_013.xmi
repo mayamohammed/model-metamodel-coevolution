@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueBeniMellal_13"
+>
+  <wards name="Service_13">
+    <patients name="Fatima" diagnosis="Fracture" room="400" phone="+212609442054"/>
+    <doctors name="Dr_Hamza" specialty="Cardiologie"/>
+  </wards>
+</hospital:Hospital>

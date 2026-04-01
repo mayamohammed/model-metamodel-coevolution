@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.coevolution.gui.ReportDialogController"
+            prefWidth="900" prefHeight="650"
+            styleClass="root-pane">
+
+    <top>
+        <HBox styleClass="dialog-header" alignment="CENTER_LEFT" spacing="12">
+            <padding><Insets top="14" right="20" bottom="14" left="20"/></padding>
+            <Label text="✦" styleClass="ai-card-icon"/>
+            <Label text="RAPPORT COMPLET — AI CLASSIFICATION" styleClass="dialog-title"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="✕ Fermer" onAction="#onClose" styleClass="btn-close-dialog"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox>
+            <padding><Insets top="10" right="16" bottom="10" left="16"/></padding>
+            <TextArea fx:id="taFullReport"
+                      editable="false"
+                      wrapText="true"
+                      VBox.vgrow="ALWAYS"
+                      prefHeight="520"
+                      styleClass="report-area"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox spacing="12" alignment="CENTER_RIGHT" styleClass="dialog-footer">
+            <padding><Insets top="12" right="20" bottom="12" left="20"/></padding>
+            <Label fx:id="lblDownloadStatus" text="" styleClass="download-status"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="⬇  Télécharger .txt"  onAction="#onDownloadTxt"  styleClass="tb-btn"/>
+            <Button text="⬇  Télécharger .json" onAction="#onDownloadJson" styleClass="tb-btn"/>
+            <Button text="✕ Fermer"             onAction="#onClose"        styleClass="btn-close-dialog"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

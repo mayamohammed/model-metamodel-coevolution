@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:ecommerce="http://www.coevolution.com/ecommerce/v1"
+    name="Boutique_Oujda_47"
+>
+  <products name="Tablette_47" price="4858.99" weight="11.0" stock="101"/>
+</ecommerce:Shop>

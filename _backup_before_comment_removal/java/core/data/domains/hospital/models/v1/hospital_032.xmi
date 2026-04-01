@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="HopitalRabat_32"
+>
+  <wards name="Service_32">
+    <patients name="Amine" diagnosis="Hypertension" room="115" phone="+212618005889"/>
+    <doctors name="Dr_Amine" specialty="Dermatologie"/>
+  </wards>
+</hospital:Hospital>

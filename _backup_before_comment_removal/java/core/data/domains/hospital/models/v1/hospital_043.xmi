@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital:Hospital
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:hospital="http://www.coevolution.com/hospital/v1"
+    name="CliniqueBeniMellal_43"
+>
+  <wards name="Service_43">
+    <patients name="Hassan" diagnosis="Migraine" room="272" phone="+212671963040"/>
+    <doctors name="Dr_Omar" specialty="Radiologie"/>
+  </wards>
+</hospital:Hospital>

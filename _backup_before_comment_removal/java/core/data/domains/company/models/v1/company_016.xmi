@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:Company
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:company="http://www.coevolution.com/company/v1"
+    name="AtlasCorp_16"
+    location="Tetouan"
+>
+  <departments name="Informatique">
+    <employees name="Meriem" salary="3522.0" age="22" phone="+212624308104"/>
+  </departments>
+</company:Company>
